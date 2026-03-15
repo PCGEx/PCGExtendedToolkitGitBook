@@ -2,7 +2,7 @@
 icon: share-nodes
 cover: .gitbook/assets/Main.png
 coverY: 0
-coverHeight: 352
+coverHeight: 216
 ---
 
 # PCG Extended Toolkit
