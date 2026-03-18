@@ -22,13 +22,15 @@ The non-Euclidean metrics (Manhattan and Chebyshev) create visually striking gri
 2. **Voronoi Construction**: Computes the Voronoi diagram using the selected distance metric
 3. **Cell Positioning**: Places vertices at cell centers using the specified method (centroid, circumcenter, or balanced)
 4. **Graph Construction**: Creates edges between vertices whose Voronoi cells share an edge
-5.  **Site Output** (optional): Outputs the original seed points with additional cell metrics
+5. **Site Output** (optional): Outputs the original seed points with additional cell metrics
 
-    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>#### Non-Euclidean Metrics Require Edge Fusing</p></div>
+{% hint style="warning" %}
+## Non-Euclidean Metrics Require Edge Fusing
 
 Manhattan and Chebyshev metrics produce axis-aligned edges that can result in **perfectly overlapping edges** when points align on grid axes. This creates degenerate topology that breaks DCEL-based operations like cell enumeration.
 
 **Before using the output with face enumeration or other DCEL operations**, run the cluster through a **Fuse Clusters** node to merge overlapping edges into clean topology.
+{% endhint %}
 
 **Usage Notes**
 
@@ -276,5 +278,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersDiagrams/Public/Elements/PCGExBuildVoronoiGraph2D.h)
-
-
