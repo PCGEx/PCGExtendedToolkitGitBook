@@ -34,6 +34,8 @@ Once you have the basics, these channels explore specific techniques and workflo
 
 * [**Procedural Minds**](https://www.youtube.com/@procedural_minds) — PCG tutorials and procedural tool development
   * [PCGEx-focused playlist](https://www.youtube.com/watch?v=wnlU3ZKLrJ4\&list=PLokuMVKY46wjdTePd55zSB4RK0Gy2kyPX)
+* [DK 3D](https://www.youtube.com/@dk_3d/) — Wide range of unreal tutorials with a focus on PCG & building content in Unreal
+  * [PCG Essentials playlist](https://www.youtube.com/watch?v=Ayd9laKYBmw\&list=PLYrS3D9rJwiS5Mhp5HZFxXnj-_NmfilrW)
 * [**Aziel Art**](https://www.youtube.com/@azielarts) — Practical skills for digital artists working with procedural tools
 
 {% hint style="success" %}
