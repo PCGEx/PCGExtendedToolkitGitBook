@@ -1,0 +1,173 @@
+{
+  "path": "PCGExCollections/Public/Helpers/PCGExActorContentFilter.h",
+  "module": "PCGExCollections",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [
+    {
+      "name": "UPCGExActorContentFilter",
+      "display_name": "UPCGExActorContentFilter",
+      "description": "",
+      "base_class": "UObject",
+      "uclass_meta": "Abstract, Blueprintable, BlueprintType, EditInlineNew, DefaultToInstanced",
+      "uproperties": [],
+      "classification": {
+        "type": "unknown",
+        "is_abstract": true,
+        "is_provider": false,
+        "is_consumer": false,
+        "is_instanced_factory": false,
+        "is_factory_data": false,
+        "is_config_struct": false,
+        "factory_type": null,
+        "consumed_factory_types": [],
+        "instanced_properties": []
+      },
+      "has_point_filter": false,
+      "point_filter_label": null,
+      "filter_inputs": [],
+      "inputs": [],
+      "outputs": [],
+      "consumed_factories": [],
+      "consumed_filters": [],
+      "all_properties": []
+    },
+    {
+      "name": "UPCGExDefaultActorContentFilter",
+      "display_name": "UPCGExDefaultActorContentFilter",
+      "description": "",
+      "base_class": "UPCGExActorContentFilter",
+      "uclass_meta": "DisplayName = \"Default Actor Content Filter\"",
+      "uproperties": [
+        {
+          "name": "IncludeTags",
+          "display_name": "IncludeTags",
+          "type": "TArray<FName>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "ExcludeTags",
+          "display_name": "ExcludeTags",
+          "type": "TArray<FName>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "IncludeClasses",
+          "display_name": "IncludeClasses",
+          "type": "TArray<TSoftClassPtr<AActor>>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "ExcludeClasses",
+          "display_name": "ExcludeClasses",
+          "type": "TArray<TSoftClassPtr<AActor>>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        }
+      ],
+      "classification": {
+        "type": "unknown",
+        "is_abstract": true,
+        "is_provider": false,
+        "is_consumer": false,
+        "is_instanced_factory": false,
+        "is_factory_data": false,
+        "is_config_struct": false,
+        "factory_type": null,
+        "consumed_factory_types": [],
+        "instanced_properties": []
+      },
+      "has_point_filter": false,
+      "point_filter_label": null,
+      "filter_inputs": [],
+      "inputs": [],
+      "outputs": [],
+      "consumed_factories": [],
+      "consumed_filters": [],
+      "all_properties": [
+        {
+          "name": "IncludeTags",
+          "display_name": "IncludeTags",
+          "type": "TArray<FName>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "ExcludeTags",
+          "display_name": "ExcludeTags",
+          "type": "TArray<FName>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "IncludeClasses",
+          "display_name": "IncludeClasses",
+          "type": "TArray<TSoftClassPtr<AActor>>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        },
+        {
+          "name": "ExcludeClasses",
+          "display_name": "ExcludeClasses",
+          "type": "TArray<TSoftClassPtr<AActor>>",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Filtering",
+          "advanced": false
+        }
+      ]
+    }
+  ],
+  "operations": [],
+  "namespaces": {}
+}

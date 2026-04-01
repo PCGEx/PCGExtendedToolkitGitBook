@@ -1,6 +1,6 @@
 ---
 icon: diagram-project
-description: 'Cluster to Zone Graph - Create Zone Graph shapes from clusters'
+description: 'Cluster to Zone Graph - Create Zone Graph from clusters.'
 ---
 
 # Cluster to Zone Graph
@@ -9,33 +9,32 @@ Create Zone Graph from clusters.
 
 ## Overview
 
-Decomposes clusters into Zone Graph polygon shapes (intersections) and spline shapes (roads). Non-leaf vertices become polygons; chains of edges between them become roads. The result is a fully navigable Zone Graph created directly from cluster topology.
+Cluster to Zone Graph converts PCGEx cluster data into Unreal's ZoneGraph representation. It decomposes the cluster into intersection polygons (at Vtx with 2+ edges) and road spline shapes (along edge chains), then spawns configured `UZoneShapeComponent` actors. Each shape carries lane profiles, routing types, and tangent settings derived from the cluster topology and per-point attributes.
 
 ## How It Works
 
-1. **Chain Extraction**: Decomposes the cluster into chains between intersection vertices. Vertices matching the Break Conditions filter act as additional chain-breaking points.
-2. **Orientation**: Each road is oriented using sort-direction rules, BFS depth ordering, or a global direction vector.
-3. **Lane Profile Resolution**: Each road resolves its lane profile from node settings or per-edge attribute override (majority vote across the chain's edges).
-4. **Polygon Construction**: Non-leaf vertices become polygon shapes. Connected roads are sorted angularly around the center, with connection points placed at the polygon radius.
-5. **Auto-Radius**: If enabled, polygon radii are derived from connected road lane widths.
-6. **Road Trimming**: Road endpoints are clipped to the polygon boundary. An optional buffer distance prevents auto-bezier artifacts near the trim edge.
-7. **Component Creation**: Zone Shape components are created on the target actor.
+1. **Decompose Cluster**: Breaks the cluster into node chains (sequences of edges between branching points) and intersection nodes (Vtx with multiple connections)
+2. **Orient Roads**: Determines road direction using the selected orientation mode — depth-first traversal, sorting rules, or a global direction vector
+3. **Build Polygons**: Creates polygon shapes at intersection nodes. Polygon radius can be fixed, per-point, or auto-computed from connected road lane profiles.
+4. **Build Roads**: Creates road spline shapes along each chain. Endpoints are optionally trimmed to the polygon boundary to prevent overlap.
+5. **Resolve Overrides**: Reads per-point/per-edge attribute overrides for lane profiles, routing types, point types, intersection tags, and tangent lengths
+6. **Spawn Components**: Creates `UZoneShapeComponent` actors for each polygon and road, configured with the resolved settings
 
 #### Usage Notes
 
-- **Editor Only**: Cannot run in runtime-generated PCG components. Zone Graph requires editor-time execution.
-- **Degenerate Roads**: Roads entirely contained within a polygon radius are discarded. This can happen when vertices are very close together relative to the radius.
-- **Component Tags**: All created Zone Shape components receive the configured tags.
-
-→ See [Zone Graph Techniques](Guide-ZoneGraphTechniques.md) for practical patterns: forced intersections, auto-radius, trim buffer, orientation, and more.
+- **Main Thread Only**: ZoneGraph component creation must happen on the main thread. This node cannot be parallelized.
+- **Break Conditions**: Optional Vtx filters mark additional points as "break" points, forcing polygon creation at those locations even if they have only 2 connections
+- **Lane Profile Lookup**: Per-point lane profile overrides use `FName` attribute values that must match registered lane profile names in ZoneGraph project settings
+- **Tangent Control**: Road bezier curves are controlled via the tangent length mode — Default lets ZoneGraph handle it, Auto computes from neighbor distances, Catmull-Rom uses standard spline math, Manual reads a constant or attribute value
+- **Output Paths**: Optionally outputs the polygon boundaries and road splines as PCG paths for visualization or downstream processing
 
 ## Inputs
 
 | Pin | Type | Description |
 |-----|------|-------------|
-| **Vtx** | Points | Cluster vertex points |
+| **Vtx** | Points | Cluster vertices |
 | **Edges** | Points | Cluster edge data |
-| **Break Conditions** | Factories (Filters) | Optional filters to designate vertices as chain-breaking intersection points |
+| **Break Conditions** | Factories | Optional Vtx filters to force polygon creation at specific vertices |
 
 ## Settings
 
@@ -44,11 +43,11 @@ Decomposes clusters into Zone Graph polygon shapes (intersections) and spline sh
 <details>
 <summary><strong>Direction Settings</strong> <code>FPCGExEdgeDirectionSettings</code></summary>
 
-Defines the direction in which points will be ordered to form the final paths.
+Defines the direction in which points are ordered to form final paths. Used when Orientation Mode is set to Sort Direction.
 
 ⚡ PCG Overridable
 
-→ See [Edge Direction Settings](../../PCGExCore/_structs/Clusters/PCGExEdgeDirectionDetails/FPCGExEdgeDirectionSettings.md) for details.
+→ See [Edge Direction Settings](../../node-library/clusters/common-settings/edge-direction-settings.md) for details.
 
 </details>
 
@@ -59,9 +58,9 @@ How road orientation is determined. Affects lane profile alignment at intersecti
 
 | Option | Description |
 |--------|-------------|
-| **Sort Direction** | Use the Direction Settings sorting rules to determine road orientation |
-| **Depth-First** | Use BFS depth ordering to orient roads from lower to higher depth. Consistent for tree-like graphs |
-| **Global Direction** | Orient all roads to flow along a global direction vector |
+| **Sort Direction** | Uses the Direction Settings sorting rules to determine road orientation |
+| **Depth-First** | Uses BFS depth ordering to orient roads from lower to higher depth. Consistent for tree-like topologies |
+| **Global Direction** | Orients all roads to flow along a global direction vector |
 
 Default: `Depth-First`
 
@@ -70,11 +69,11 @@ Default: `Depth-First`
 <details>
 <summary><strong>Invert Orientation</strong> <code>bool</code></summary>
 
-Flip all road orientations.
+Flips all road orientations.
 
 Default: `false`
 
-📋 *Visible when Orientation Mode ≠ Sort Direction*
+📋 *Visible when Orientation Mode is not Sort Direction*
 
 </details>
 
@@ -92,9 +91,9 @@ Default: `(1, 0, 0)` (Forward)
 ### General
 
 <details>
-<summary><strong>Comma Separated Component Tags</strong> <code>FString</code></summary>
+<summary><strong>Component Tags</strong> <code>FString</code></summary>
 
-Comma-separated tags applied to all created Zone Shape components.
+Comma-separated tags applied to all spawned ZoneShapeComponent actors.
 
 Default: `"PCGExZoneGraph"`
 
@@ -102,42 +101,42 @@ Default: `"PCGExZoneGraph"`
 
 </details>
 
-### Zone Graph
+### ZoneGraph
 
 <details>
 <summary><strong>Polygon Radius</strong> <code>double</code></summary>
 
-Base radius for polygon intersection shapes. Determines how far connection points are placed from the intersection center.
+Base radius for intersection polygon shapes.
 
 Default: `100`
 
 </details>
 
 <details>
-<summary><strong>Radius (Attr)</strong> <code>FName</code></summary>
+<summary><strong>Polygon Radius (Attr)</strong> <code>FName</code></summary>
 
-Per-point polygon radius override. Read from vertex points.
+Per-point polygon radius override attribute.
 
 Default: `"ZG.PolygonRadius"`
 
-📋 *Visible when Override Polygon Radius is enabled*
-
 ⚡ PCG Overridable
+
+📋 *Visible when Override Polygon Radius is enabled*
 
 </details>
 
 <details>
 <summary><strong>Auto Radius Mode</strong> <code>EPCGExZGAutoRadiusMode</code></summary>
 
-Auto-compute polygon radius from connected road lane profiles.
+Auto-computes polygon radius from connected road lane profiles.
 
 | Option | Description |
 |--------|-------------|
 | **Disabled** | Use user radius only |
-| **Widest Lane** | Radius equals the widest single lane across connected roads |
-| **Half Profile Width** | Radius equals the maximum total profile width / 2 across connected roads |
+| **Widest Lane** | Radius = widest single lane across connected roads |
+| **Half Profile** | Radius = max(total profile width) / 2 across connected roads |
 | **Widest Lane (Min)** | Use the larger of user radius and widest lane |
-| **Half Profile Width (Min)** | Use the larger of user radius and half profile width |
+| **Half Profile (Min)** | Use the larger of user radius and half profile width |
 
 Default: `Disabled`
 
@@ -146,7 +145,7 @@ Default: `Disabled`
 <details>
 <summary><strong>Trim Road Endpoints</strong> <code>bool</code></summary>
 
-Trim road shape points inside the polygon boundary so roads start/end precisely at the polygon edge. When disabled, road endpoints are simply offset by the polygon radius along the road direction.
+Trims road shape points inside the polygon boundary so roads start and end precisely at the polygon edge. When disabled, road endpoints are offset by the polygon radius along the road direction.
 
 Default: `true`
 
@@ -155,121 +154,74 @@ Default: `true`
 <details>
 <summary><strong>Endpoint Trim Buffer</strong> <code>double</code></summary>
 
-After trimming, remove road points closer than this distance to the polygon boundary. Prevents auto-bezier artifacts from near-coincident points at the trim boundary.
+After trimming, removes road points closer than this distance to the polygon boundary. Prevents auto-bezier artifacts from near-coincident points at the trim boundary.
 
 Default: `0`
 
-📋 *Visible when Trim Road Endpoints = true*
-
 ⚡ PCG Overridable
+
+📋 *Visible when Trim Road Endpoints is enabled*
 
 </details>
 
 <details>
 <summary><strong>Polygon Routing Type</strong> <code>EZoneShapePolygonRoutingType</code></summary>
 
-Routing type for polygon intersection shapes.
+Default routing type for polygon shapes.
 
 Default: `Arcs`
 
 </details>
 
 <details>
-<summary><strong>Polygon Routing (Attr)</strong> <code>FName</code></summary>
-
-Per-point polygon routing override. Read from vertex points. Values: 0 = Bezier, 1 = Arcs.
-
-Default: `"PolygonRoutingType"`
-
-📋 *Visible when Override Polygon Routing Type is enabled*
-
-⚡ PCG Overridable
-
-</details>
-
-<details>
 <summary><strong>Polygon Point Type</strong> <code>FZoneShapePointType</code></summary>
 
-Shape point type for polygon connection points.
+Default shape point type for polygon shapes.
 
 Default: `LaneProfile`
 
 </details>
 
 <details>
-<summary><strong>Polygon Point Type (Attr)</strong> <code>FName</code></summary>
-
-Per-point polygon shape point type override. Read from vertex points. Values: 0 = Sharp, 1 = Bezier, 2 = AutoBezier, 3 = LaneProfile.
-
-Default: `"PolygonPointType"`
-
-📋 *Visible when Override Polygon Point Type is enabled*
-
-⚡ PCG Overridable
-
-</details>
-
-<details>
 <summary><strong>Road Point Type</strong> <code>FZoneShapePointType</code></summary>
 
-Shape point type for road spline points.
+Default shape point type for road shapes.
 
 Default: `AutoBezier`
 
 </details>
 
 <details>
-<summary><strong>Road Point Type (Attr)</strong> <code>FName</code></summary>
+<summary><strong>Tangent Length Mode</strong> <code>EPCGExZGTangentLengthMode</code></summary>
 
-Per-edge road shape point type override. Read from vertex points. Values: 0 = Sharp, 1 = Bezier, 2 = AutoBezier, 3 = LaneProfile.
+How road tangent lengths are determined. Controls bezier curve tightness.
 
-Default: `"RoadPointType"`
+| Option | Description |
+|--------|-------------|
+| **Default** | ZoneGraph handles tangent length automatically |
+| **Manual** | Uses a constant or per-point attribute value |
+| **Auto** | Average distance to chain neighbors, divided by 3 |
+| **Catmull-Rom** | \|P_next - P_prev\| * 0.5 — standard Catmull-Rom tangent length |
 
-📋 *Visible when Override Road Point Type is enabled*
+Default: `Default`
 
-⚡ PCG Overridable
+📋 *Visible when Road Point Type supports custom tangent lengths (Bezier/AutoBezier)*
 
 </details>
 
 <details>
 <summary><strong>Lane Profile</strong> <code>FZoneLaneProfileRef</code></summary>
 
-Default lane profile used for all roads and polygons. Initialized from the first profile in Zone Graph settings.
-
-</details>
-
-<details>
-<summary><strong>Lane Profile (Attr)</strong> <code>FName</code></summary>
-
-Lane profile override by name. For roads, reads from edge attributes (majority vote across the chain). For polygons, reads from vertex points. The attribute value must match a registered lane profile name in Zone Graph settings.
-
-Default: `"LaneProfile"`
-
-📋 *Visible when Override Lane Profile is enabled*
-
-⚡ PCG Overridable
+Default lane profile applied to all shapes. Initialized from the first profile in ZoneGraph project settings.
 
 </details>
 
 <details>
 <summary><strong>Additional Intersection Tags</strong> <code>FZoneGraphTagMask</code></summary>
 
-Additional Zone Graph tags applied to polygon intersection shapes.
+Additional ZoneGraph tags applied to intersection polygon shapes.
 
 Default: `None`
-
-</details>
-
-<details>
-<summary><strong>Intersection Tags (Attr)</strong> <code>FName</code></summary>
-
-Per-point intersection tag override. Read from vertex points. Attribute type: int32, interpreted as a Zone Graph tag bitmask.
-
-Default: `"IntersectionTags"`
-
-📋 *Visible when Override Additional Intersection Tags is enabled*
-
-⚡ PCG Overridable
 
 </details>
 
@@ -278,7 +230,7 @@ Default: `"IntersectionTags"`
 <details>
 <summary><strong>Output Polygon Paths</strong> <code>bool</code></summary>
 
-Output polygon shapes as closed PCG paths on the Polygon Paths pin.
+Output polygon shapes as closed PCG paths.
 
 Default: `false`
 
@@ -287,35 +239,22 @@ Default: `false`
 <details>
 <summary><strong>Output Road Paths</strong> <code>bool</code></summary>
 
-Output road splines as PCG paths with tangent attributes on the Road Paths pin.
+Output road splines as PCG paths with tangent attributes.
 
 Default: `false`
 
 </details>
 
 <details>
-<summary><strong>Arrive Name</strong> <code>FName</code></summary>
+<summary><strong>Arrive Name / Leave Name</strong> <code>FName</code></summary>
 
-Attribute name for the arrive tangent vector written to road path outputs.
+Attribute names for arrive and leave tangent vectors written to road path output.
 
-Default: `"ArriveTangent"`
-
-📋 *Visible when Output Road Paths = true*
+Defaults: `"ArriveTangent"` / `"LeaveTangent"`
 
 ⚡ PCG Overridable
 
-</details>
-
-<details>
-<summary><strong>Leave Name</strong> <code>FName</code></summary>
-
-Attribute name for the leave tangent vector written to road path outputs.
-
-Default: `"LeaveTangent"`
-
-📋 *Visible when Output Road Paths = true*
-
-⚡ PCG Overridable
+📋 *Visible when Output Road Paths is enabled*
 
 </details>
 
@@ -324,16 +263,18 @@ Default: `"LeaveTangent"`
 <details>
 <summary><strong>Post Process Function Names</strong> <code>TArray&lt;FName&gt;</code></summary>
 
-Specify a list of functions to be called on the target actor after Zone Graph creation. Functions need to be parameter-less and with the "CallInEditor" flag enabled.
+List of functions to call on the target actor after zone shape creation. Functions must be parameter-less with the `CallInEditor` flag enabled.
+
+Default: Empty
 
 </details>
 
 <details>
 <summary><strong>Attachment Rules</strong> <code>FPCGExAttachmentRules</code></summary>
 
-Controls how created Zone Shape components are attached to the target actor.
+Controls how spawned zone shape actors are attached to the target actor.
 
-→ See [Attachment Rules](../../PCGExCore/_structs/Details/PCGExAttachmentRules/FPCGExAttachmentRules.md) for details.
+→ See [Attachment Rules](../../node-library/common-settings/transform-details/attachment-rules.md) for details.
 
 </details>
 
@@ -341,26 +282,27 @@ Controls how created Zone Shape components are attached to the target actor.
 
 This node inherits common settings from its base class.
 
-> See [Clusters Processor Settings](../../PCGExElementsClusters/Elements/Common/ClustersProcessor.md) for inherited options.
+→ See [Cluster Processor Settings](../../node-library/clusters/common-settings/cluster-processor-settings.md) for shared cluster processing options.
 
 ## Outputs
 
 | Pin | Type | Description |
 |-----|------|-------------|
-| **Vtx** | Points | Forwarded cluster vertices |
-| **Edges** | Points | Forwarded cluster edges |
-| **Polygon Paths** | Points | Polygon intersection shapes as closed paths (when enabled) |
+| **Vtx** | Points | Pass-through cluster vertices |
+| **Edges** | Points | Pass-through cluster edges |
+| **Polygon Paths** | Points | Polygon boundaries as closed paths (when enabled) |
 | **Road Paths** | Points | Road splines as paths with tangent attributes (when enabled) |
 
 ---
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsZoneGraph-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsZoneGraph/Public/Graph/PCGExClusterToZoneGraph.h)
 
+
+
 <!-- VERIFICATION REPORT
-Node-Specific Properties: 25 documented (OrientationMode, bInvertOrientation, OrientationDirection, CommaSeparatedComponentTags, PolygonRadius, bOverridePolygonRadius, PolygonRadiusAttribute, AutoRadiusMode, bTrimRoadEndpoints, EndpointTrimBuffer, PolygonRoutingType, bOverridePolygonRoutingType, PolygonRoutingTypeAttribute, PolygonPointType, bOverridePolygonPointType, PolygonPointTypeAttribute, RoadPointType, bOverrideRoadPointType, RoadPointTypeAttribute, LaneProfile, bOverrideLaneProfile, LaneProfileAttribute, AdditionalIntersectionTags, bOverrideAdditionalIntersectionTags, AdditionalIntersectionTagsAttribute, bOutputPolygonPaths, bOutputRoadPaths, ArriveName, LeaveName, PostProcessFunctionNames, AttachmentRules)
+Node-Specific Properties: 20+ documented (DirectionSettings, OrientationMode, bInvertOrientation, OrientationDirection, CommaSeparatedComponentTags, PolygonRadius, AutoRadiusMode, bTrimRoadEndpoints, EndpointTrimBuffer, PolygonRoutingType, PolygonPointType, RoadPointType, RoadTangentLengthMode, TangentLength, TangentLengthScale, LaneProfile, AdditionalIntersectionTags, bOutputPolygonPaths, bOutputRoadPaths, ArriveName, LeaveName, PostProcessFunctionNames, AttachmentRules, plus override toggles and attribute names)
 Inherited Properties: Referenced to UPCGExClustersProcessorSettings
-Shared Struct References: FPCGExEdgeDirectionSettings, FPCGExAttachmentRules
-Inputs: Vtx, Edges, Break Conditions (factory pin)
-Outputs: Vtx, Edges, Polygon Paths, Road Paths
-Nested Types: EPCGExZGOrientationMode, EPCGExZGAutoRadiusMode
+Inputs: Vtx (Points), Edges (Points), Break Conditions (Factories)
+Outputs: Vtx (Points), Edges (Points), Polygon Paths (Points), Road Paths (Points)
+Nested Types: EPCGExZGOrientationMode, EPCGExZGAutoRadiusMode, EPCGExZGTangentLengthMode documented inline
 -->

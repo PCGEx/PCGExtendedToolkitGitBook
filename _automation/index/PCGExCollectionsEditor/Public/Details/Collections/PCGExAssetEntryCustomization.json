@@ -13,6 +13,14 @@
     {
       "name": "FPCGExEntryHeaderCustomizationBase",
       "base_class": "FPCGExAssetEntryCustomization"
+    },
+    {
+      "name": "FPCGExActorEntryCustomization",
+      "base_class": "FPCGExEntryHeaderCustomizationBase"
+    },
+    {
+      "name": "FPCGExPCGDataAssetEntryCustomization",
+      "base_class": "FPCGExAssetEntryCustomization"
     }
   ],
   "namespaces": {}

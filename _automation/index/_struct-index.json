@@ -332,8 +332,8 @@
     "base_class": null,
     "is_config": false,
     "is_shared": true,
-    "usage_count": 6,
-    "user_facing_count": 5,
+    "usage_count": 7,
+    "user_facing_count": 6,
     "document_with": null
   },
   "FPCGExEdgeDirectionSettings": {
@@ -431,10 +431,10 @@
     "file": "PCGExCore/Public/Data/External/PCGExMeshImportDetails.h",
     "base_class": null,
     "is_config": false,
-    "is_shared": false,
-    "usage_count": 1,
-    "user_facing_count": 1,
-    "document_with": "UPCGExMeshToClustersSettings"
+    "is_shared": true,
+    "usage_count": 2,
+    "user_facing_count": 2,
+    "document_with": null
   },
   "FPCGExAttributeHashConfig": {
     "file": "PCGExCore/Public/Data/Utils/PCGExAttributeHasher.h",
@@ -683,7 +683,9 @@
     "base_class": "FPCGExInputShorthandNameBase",
     "is_config": false,
     "is_shared": false,
-    "usage_count": 0
+    "usage_count": 1,
+    "user_facing_count": 0,
+    "document_with": null
   },
   "FPCGExInputShorthandSelectorBase": {
     "file": "PCGExCore/Public/Details/PCGExInputShorthandsDetails.h",
@@ -713,7 +715,7 @@
     "base_class": "FPCGExInputShorthandSelectorBase",
     "is_config": false,
     "is_shared": false,
-    "usage_count": 8,
+    "usage_count": 9,
     "user_facing_count": 2,
     "document_with": null
   },
@@ -2075,6 +2077,15 @@
     "user_facing_count": 1,
     "document_with": "UPCGExPickerFilterProviderSettings"
   },
+  "FPCGExPrimitiveFilterConfig": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExPrimitiveFilter.h",
+    "base_class": null,
+    "is_config": true,
+    "is_shared": false,
+    "usage_count": 1,
+    "user_facing_count": 1,
+    "document_with": "UPCGExPrimitiveFilterProviderSettings"
+  },
   "FPCGExRandomFilterConfig": {
     "file": "PCGExFilters/Public/Filters/Points/PCGExRandomFilter.h",
     "base_class": null,
@@ -2146,6 +2157,15 @@
     "usage_count": 1,
     "user_facing_count": 1,
     "document_with": "UPCGExValueHashFilterProviderSettings"
+  },
+  "FPCGExVolumeFilterConfig": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
+    "base_class": null,
+    "is_config": true,
+    "is_shared": false,
+    "usage_count": 1,
+    "user_facing_count": 1,
+    "document_with": "UPCGExVolumeFilterProviderSettings"
   },
   "FPCGExWithinRangeFilterConfig": {
     "file": "PCGExFilters/Public/Filters/Points/PCGExWithinRangeFilter.h",
@@ -2380,8 +2400,8 @@
     "base_class": null,
     "is_config": false,
     "is_shared": true,
-    "usage_count": 19,
-    "user_facing_count": 17,
+    "usage_count": 20,
+    "user_facing_count": 18,
     "document_with": null
   },
   "FPCGExHeuristicConfigBase": {
@@ -2484,8 +2504,8 @@
     "base_class": null,
     "is_config": false,
     "is_shared": true,
-    "usage_count": 17,
-    "user_facing_count": 12,
+    "usage_count": 18,
+    "user_facing_count": 13,
     "document_with": null
   },
   "FPCGExMatchAttrToAttrConfig": {

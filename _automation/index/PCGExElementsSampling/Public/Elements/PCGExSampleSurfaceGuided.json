@@ -692,6 +692,7 @@
         }
       ],
       "inputs": [
+        "Primitives",
         "Labels",
         "SourceTexLabel"
       ],

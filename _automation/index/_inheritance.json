@@ -181,6 +181,7 @@
     "UPCGExAssetCollectionToSetSettings",
     "UPCGExCollectionToModuleInfosSettings",
     "UPCGExFactoryProviderSettings",
+    "UPCGExDynamicMeshToClustersSettings",
     "UPCGExSpawnDynamicMeshSettings",
     "UPCGExPointsProcessorSettings",
     "UPCGExBitmaskSettings",
@@ -189,6 +190,7 @@
     "UPCGExConstantsSettings",
     "UPCGExRecursionTrackerSettings",
     "UPCGExDebugSettings",
+    "UPCGExCullOnEmptySettings",
     "UPCGExIterationsSettings",
     "UPCGExTupleSettings"
   ],
@@ -196,6 +198,7 @@
     "FPCGExAssetCollectionToSetElement",
     "FPCGExCollectionToModuleInfosElement",
     "FPCGExFactoryProviderElement",
+    "FPCGExDynamicMeshToClustersElement",
     "FPCGExSpawnDynamicMeshElement",
     "FPCGExPointsProcessorElement",
     "FPCGExBitmaskElement",
@@ -471,14 +474,22 @@
     "FPCGExExtrudeTensorsElement",
     "FPCGExTopologyPathSurfaceElement"
   ],
-  "UPCGExLevelDataExporter": [
-    "UPCGExDefaultLevelDataExporter"
-  ],
   "UObject": [
+    "UPCGExActorContentFilter",
+    "UPCGExBoundsEvaluator",
     "UPCGExLevelDataExporter",
     "UPCGExInstancedFactory",
     "UPCGExCustomGraphSettings",
     "UPCGExWatabouFeaturesCollection"
+  ],
+  "UPCGExActorContentFilter": [
+    "UPCGExDefaultActorContentFilter"
+  ],
+  "UPCGExBoundsEvaluator": [
+    "UPCGExDefaultBoundsEvaluator"
+  ],
+  "UPCGExLevelDataExporter": [
+    "UPCGExDefaultLevelDataExporter"
   ],
   "UPCGMeshSelectorBase": [
     "UPCGExMeshSelectorStaged"
@@ -487,6 +498,9 @@
     "UPCGExCollectionsSettings",
     "UPCGExCollectionsEditorSettings",
     "UPCGExGlobalSettings"
+  ],
+  "FDecoratedDragDropOp": [
+    "FPCGExCollectionTileDragDropOp"
   ],
   "FAssetTypeActions_Base": [
     "FPCGExActorCollectionActions",
@@ -514,6 +528,11 @@
     "FPCGExMaterialOverrideCollectionCustomization",
     "FPCGExGridEnumCustomization",
     "FPCGExInlineEnumCustomization",
+    "FPCGExDotComparisonCustomization",
+    "FPCGExAdjacencySettingsCustomization",
+    "FPCGExEdgeEndpointsCheckFilterConfigCustomization",
+    "FPCGExEdgeEndpointsCompareNumFilterConfigCustomization",
+    "FPCGExEdgeNeighborsCountFilterConfigCustomization",
     "FPCGExBitmaskCustomization",
     "FPCGExBitmaskEntryCustomization",
     "FPCGExBitmaskRefCustomization",
@@ -531,11 +550,16 @@
     "FPCGExWeightedPropertyOverridesCustomization"
   ],
   "FPCGExAssetEntryCustomization": [
-    "FPCGExEntryHeaderCustomizationBase"
+    "FPCGExEntryHeaderCustomizationBase",
+    "FPCGExPCGDataAssetEntryCustomization"
+  ],
+  "FPCGExEntryHeaderCustomizationBase": [
+    "FPCGExActorEntryCustomization"
   ],
   "IPCGExEditorModuleInterface": [
     "FPCGExCollectionsEditorModule",
     "FPCGExCoreEditorModule",
+    "FPCGExElementsClustersEditorModule",
     "FPCGExFoundationsEditorModule",
     "FPCGExPropertiesEditorModule",
     "FPCGExElementsWatabouEditorModule"
@@ -698,6 +722,7 @@
     "UPCGExBuildDualGraphSettings",
     "UPCGExRefineEdgesSettings",
     "UPCGExRelaxClustersSettings",
+    "UPCGExBFSDepthSettings",
     "UPCGExClusterDiffusionSettings",
     "UPCGExPathfindingEdgesSettings",
     "UPCGExFindAllCellsSettings",
@@ -736,6 +761,7 @@
     "FPCGExBuildDualGraphElement",
     "FPCGExRefineEdgesElement",
     "FPCGExRelaxClustersElement",
+    "FPCGExBFSDepthElement",
     "FPCGExClusterDiffusionElement",
     "FPCGExPathfindingEdgesElement",
     "FPCGExFindAllCellsElement",
@@ -957,12 +983,14 @@
     "UPCGExNumericSelfCompareFilterFactory",
     "UPCGExPickerFilterFactory",
     "UPCGExPolyPathFilterFactory",
+    "UPCGExPrimitiveFilterFactory",
     "UPCGExRandomFilterFactory",
     "UPCGExRandomRatioFilterFactory",
     "UPCGExSegmentLengthFilterFactory",
     "UPCGExStringCompareFilterFactory",
     "UPCGExStringSelfCompareFilterFactory",
     "UPCGExValueHashFilterFactory",
+    "UPCGExVolumeFilterFactory",
     "UPCGExWithinRangeFilterFactory",
     "UPCGExRaycastFilterFactory"
   ],
@@ -987,6 +1015,7 @@
     "UPCGExNumericCompareNearestFilterProviderSettings",
     "UPCGExNumericSelfCompareFilterProviderSettings",
     "UPCGExPickerFilterProviderSettings",
+    "UPCGExPrimitiveFilterProviderSettings",
     "UPCGExRandomFilterProviderSettings",
     "UPCGExRandomRatioFilterProviderSettings",
     "UPCGExSegmentCrossFilterProviderSettings",
@@ -995,6 +1024,7 @@
     "UPCGExStringSelfCompareFilterProviderSettings",
     "UPCGExTimeFilterProviderSettings",
     "UPCGExValueHashFilterProviderSettings",
+    "UPCGExVolumeFilterProviderSettings",
     "UPCGExWithinRangeFilterProviderSettings",
     "UPCGExRaycastFilterProviderSettings"
   ],
@@ -1330,6 +1360,9 @@
   ],
   "UWorldSubsystem": [
     "UPCGExFiltersSubSystem"
+  ],
+  "IPCGElement": [
+    "FPCGExCullOnEmptyElement"
   ],
   "UPCGExTangentsInstancedFactory": [
     "UPCGExAutoTangents",

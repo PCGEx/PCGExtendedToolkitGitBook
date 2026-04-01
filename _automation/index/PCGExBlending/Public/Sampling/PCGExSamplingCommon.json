@@ -27,6 +27,10 @@
         {
           "name": "ActorReferences",
           "display_name": "Actor Reference"
+        },
+        {
+          "name": "Primitives",
+          "display_name": "Primitives"
         }
       ],
       "used_by": []

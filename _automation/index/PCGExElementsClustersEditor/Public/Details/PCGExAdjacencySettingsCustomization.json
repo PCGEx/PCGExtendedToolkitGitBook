@@ -1,0 +1,15 @@
+{
+  "path": "PCGExElementsClustersEditor/Public/Details/PCGExAdjacencySettingsCustomization.h",
+  "module": "PCGExElementsClustersEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExAdjacencySettingsCustomization",
+      "base_class": "IPropertyTypeCustomization"
+    }
+  ],
+  "namespaces": {}
+}

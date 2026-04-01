@@ -1,0 +1,15 @@
+{
+  "path": "PCGExCoreEditor/Public/Details/PCGExDotComparisonCustomization.h",
+  "module": "PCGExCoreEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExDotComparisonCustomization",
+      "base_class": "IPropertyTypeCustomization"
+    }
+  ],
+  "namespaces": {}
+}

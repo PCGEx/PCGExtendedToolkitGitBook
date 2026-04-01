@@ -1,0 +1,147 @@
+{
+  "path": "PCGExCollections/Public/Helpers/PCGExBoundsEvaluator.h",
+  "module": "PCGExCollections",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [
+    {
+      "name": "UPCGExBoundsEvaluator",
+      "display_name": "UPCGExBoundsEvaluator",
+      "description": "",
+      "base_class": "UObject",
+      "uclass_meta": "Abstract, Blueprintable, BlueprintType, EditInlineNew, DefaultToInstanced",
+      "uproperties": [],
+      "classification": {
+        "type": "unknown",
+        "is_abstract": true,
+        "is_provider": false,
+        "is_consumer": false,
+        "is_instanced_factory": false,
+        "is_factory_data": false,
+        "is_config_struct": false,
+        "factory_type": null,
+        "consumed_factory_types": [],
+        "instanced_properties": []
+      },
+      "has_point_filter": false,
+      "point_filter_label": null,
+      "filter_inputs": [],
+      "inputs": [],
+      "outputs": [],
+      "consumed_factories": [],
+      "consumed_filters": [],
+      "all_properties": []
+    },
+    {
+      "name": "UPCGExDefaultBoundsEvaluator",
+      "display_name": "UPCGExDefaultBoundsEvaluator",
+      "description": "",
+      "base_class": "UPCGExBoundsEvaluator",
+      "uclass_meta": "DisplayName = \"Default Bounds Evaluator\"",
+      "uproperties": [
+        {
+          "name": "bOnlyCollidingComponents",
+          "display_name": "bOnlyCollidingComponents",
+          "type": "bool",
+          "default": "false",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "bIgnoreLightComponents",
+          "display_name": "bIgnoreLightComponents",
+          "type": "bool",
+          "default": "true",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "bIncludeFromChildActors",
+          "display_name": "bIncludeFromChildActors",
+          "type": "bool",
+          "default": "false",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        }
+      ],
+      "classification": {
+        "type": "unknown",
+        "is_abstract": true,
+        "is_provider": false,
+        "is_consumer": false,
+        "is_instanced_factory": false,
+        "is_factory_data": false,
+        "is_config_struct": false,
+        "factory_type": null,
+        "consumed_factory_types": [],
+        "instanced_properties": []
+      },
+      "has_point_filter": false,
+      "point_filter_label": null,
+      "filter_inputs": [],
+      "inputs": [],
+      "outputs": [],
+      "consumed_factories": [],
+      "consumed_filters": [],
+      "all_properties": [
+        {
+          "name": "bOnlyCollidingComponents",
+          "display_name": "bOnlyCollidingComponents",
+          "type": "bool",
+          "default": "false",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "bIgnoreLightComponents",
+          "display_name": "bIgnoreLightComponents",
+          "type": "bool",
+          "default": "true",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "bIncludeFromChildActors",
+          "display_name": "bIncludeFromChildActors",
+          "type": "bool",
+          "default": "false",
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        }
+      ]
+    }
+  ],
+  "operations": [],
+  "namespaces": {}
+}

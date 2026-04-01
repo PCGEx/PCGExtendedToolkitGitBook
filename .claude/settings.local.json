@@ -30,7 +30,9 @@
       "WebFetch(domain:github.com)",
       "Bash(gh api:*)",
       "WebFetch(domain:www.fab.com)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:dev.epicgames.com)",
+      "WebFetch(domain:forums.unrealengine.com)"
     ]
   }
 }

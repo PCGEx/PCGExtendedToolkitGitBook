@@ -715,6 +715,7 @@
       "UPCGExBoundsPathIntersectionSettings",
       "UPCGExCopyToPathsSettings",
       "UPCGExPathInsertSettings",
+      "UPCGExPathStitchSettings",
       "UPCGExSampleInsidePathSettings",
       "UPCGExSampleNearestBoundsSettings",
       "UPCGExSampleNearestPathSettings",
@@ -724,7 +725,7 @@
       "UPCGExCopyToPointsSettings",
       "UPCGExMergePointsSettings"
     ],
-    "origin_count": 13,
+    "origin_count": 14,
     "origins": [
       "UPCGExClipper2ProcessorSettings",
       "UPCGExCopyClustersToPointsSettings",
@@ -732,6 +733,7 @@
       "UPCGExBoundsPathIntersectionSettings",
       "UPCGExCopyToPathsSettings",
       "UPCGExPathInsertSettings",
+      "UPCGExPathStitchSettings",
       "UPCGExSampleInsidePathSettings",
       "UPCGExSampleNearestBoundsSettings",
       "UPCGExSampleNearestPathSettings",
@@ -740,20 +742,21 @@
       "UPCGExCopyToPointsSettings",
       "UPCGExMergePointsSettings"
     ],
-    "usage_count": 17,
-    "user_facing_count": 12,
+    "usage_count": 18,
+    "user_facing_count": 13,
     "user_facing_origins": [
       "UPCGExCopyClustersToPointsSettings",
       "UPCGExPathfindingPlotEdgesSettings",
       "UPCGExBoundsPathIntersectionSettings",
       "UPCGExCopyToPathsSettings",
       "UPCGExPathInsertSettings",
+      "UPCGExPathStitchSettings",
       "UPCGExSampleNearestBoundsSettings",
       "UPCGExBestMatchAxisSettings",
       "UPCGExCopyToPointsSettings",
       "UPCGExMergePointsSettings"
     ],
-    "user_facing_origin_count": 9,
+    "user_facing_origin_count": 10,
     "is_shared": true,
     "document_with": null
   },
@@ -939,6 +942,7 @@
       "UPCGExSampleNearestPathSettings",
       "UPCGExSampleNearestPointSettings",
       "UPCGExSampleNearestSplineSettings",
+      "FPCGExVolumeFilterConfig",
       "FPCGExRemapDetails"
     ],
     "origin_count": 7,
@@ -951,7 +955,7 @@
       "UPCGExSampleNearestPointSettings",
       "UPCGExSampleNearestSplineSettings"
     ],
-    "usage_count": 8,
+    "usage_count": 9,
     "user_facing_count": 2,
     "user_facing_origins": [
       "UPCGExClipper2OffsetSettings",
@@ -1130,9 +1134,10 @@
       "UPCGExBuildVoronoiGraphSettings",
       "UPCGExBuildVoronoiGraph2DSettings",
       "UPCGExRefineEdgesSettings",
-      "UPCGExConnectPointsSettings"
+      "UPCGExConnectPointsSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "origin_count": 19,
+    "origin_count": 20,
     "origins": [
       "UPCGExCutEdgesSettings",
       "UPCGExPathToClustersSettings",
@@ -1152,10 +1157,11 @@
       "UPCGExBuildVoronoiGraphSettings",
       "UPCGExBuildVoronoiGraph2DSettings",
       "UPCGExRefineEdgesSettings",
-      "UPCGExConnectPointsSettings"
+      "UPCGExConnectPointsSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "usage_count": 19,
-    "user_facing_count": 17,
+    "usage_count": 20,
+    "user_facing_count": 18,
     "user_facing_origins": [
       "UPCGExCutEdgesSettings",
       "UPCGExPathToClustersSettings",
@@ -1173,9 +1179,10 @@
       "UPCGExBuildDualGraphSettings",
       "UPCGExBuildVoronoiGraphSettings",
       "UPCGExBuildVoronoiGraph2DSettings",
-      "UPCGExRefineEdgesSettings"
+      "UPCGExRefineEdgesSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "user_facing_origin_count": 17,
+    "user_facing_origin_count": 18,
     "is_shared": true,
     "document_with": null
   },
@@ -1306,20 +1313,23 @@
   },
   "FPCGExGeoMeshImportDetails": {
     "used_by": [
-      "UPCGExMeshToClustersSettings"
+      "UPCGExMeshToClustersSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "origin_count": 1,
+    "origin_count": 2,
     "origins": [
-      "UPCGExMeshToClustersSettings"
+      "UPCGExMeshToClustersSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "usage_count": 1,
-    "user_facing_count": 1,
+    "usage_count": 2,
+    "user_facing_count": 2,
     "user_facing_origins": [
-      "UPCGExMeshToClustersSettings"
+      "UPCGExMeshToClustersSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "user_facing_origin_count": 1,
-    "is_shared": false,
-    "document_with": "UPCGExMeshToClustersSettings"
+    "user_facing_origin_count": 2,
+    "is_shared": true,
+    "document_with": null
   },
   "FPCGExApplySamplingDetails": {
     "used_by": [
@@ -1680,6 +1690,39 @@
     "is_shared": true,
     "document_with": null
   },
+  "FPCGExNodeSelectionDetails": {
+    "used_by": [
+      "UPCGExBFSDepthSettings",
+      "UPCGExPathfindingEdgesSettings",
+      "UPCGExFindContoursSettings",
+      "UPCGExFindContoursBoundedSettings",
+      "UPCGExPathfindingGrowPathsSettings",
+      "UPCGExPathfindingPlotEdgesSettings",
+      "FPCGExFloodFillSeedPickingDetails"
+    ],
+    "origin_count": 6,
+    "origins": [
+      "UPCGExBFSDepthSettings",
+      "UPCGExPathfindingEdgesSettings",
+      "UPCGExFindContoursSettings",
+      "UPCGExFindContoursBoundedSettings",
+      "UPCGExPathfindingGrowPathsSettings",
+      "UPCGExPathfindingPlotEdgesSettings"
+    ],
+    "usage_count": 7,
+    "user_facing_count": 6,
+    "user_facing_origins": [
+      "UPCGExBFSDepthSettings",
+      "UPCGExPathfindingEdgesSettings",
+      "UPCGExFindContoursSettings",
+      "UPCGExFindContoursBoundedSettings",
+      "UPCGExPathfindingGrowPathsSettings",
+      "UPCGExPathfindingPlotEdgesSettings"
+    ],
+    "user_facing_origin_count": 6,
+    "is_shared": true,
+    "document_with": null
+  },
   "FPCGExFloodFillSeedPickingDetails": {
     "used_by": [
       "UPCGExClusterDiffusionSettings"
@@ -2013,36 +2056,6 @@
     "user_facing_origin_count": 1,
     "is_shared": false,
     "document_with": "UPCGExNoiseFilterProviderSettings"
-  },
-  "FPCGExNodeSelectionDetails": {
-    "used_by": [
-      "UPCGExPathfindingEdgesSettings",
-      "UPCGExFindContoursSettings",
-      "UPCGExFindContoursBoundedSettings",
-      "UPCGExPathfindingGrowPathsSettings",
-      "UPCGExPathfindingPlotEdgesSettings",
-      "FPCGExFloodFillSeedPickingDetails"
-    ],
-    "origin_count": 5,
-    "origins": [
-      "UPCGExPathfindingEdgesSettings",
-      "UPCGExFindContoursSettings",
-      "UPCGExFindContoursBoundedSettings",
-      "UPCGExPathfindingGrowPathsSettings",
-      "UPCGExPathfindingPlotEdgesSettings"
-    ],
-    "usage_count": 6,
-    "user_facing_count": 5,
-    "user_facing_origins": [
-      "UPCGExPathfindingEdgesSettings",
-      "UPCGExFindContoursSettings",
-      "UPCGExFindContoursBoundedSettings",
-      "UPCGExPathfindingGrowPathsSettings",
-      "UPCGExPathfindingPlotEdgesSettings"
-    ],
-    "user_facing_origin_count": 5,
-    "is_shared": true,
-    "document_with": null
   },
   "FPCGExPathStatistics": {
     "used_by": [
@@ -3738,6 +3751,23 @@
     "is_shared": false,
     "document_with": "UPCGExPickerFilterProviderSettings"
   },
+  "FPCGExPrimitiveFilterConfig": {
+    "used_by": [
+      "UPCGExPrimitiveFilterProviderSettings"
+    ],
+    "origin_count": 1,
+    "origins": [
+      "UPCGExPrimitiveFilterProviderSettings"
+    ],
+    "usage_count": 1,
+    "user_facing_count": 1,
+    "user_facing_origins": [
+      "UPCGExPrimitiveFilterProviderSettings"
+    ],
+    "user_facing_origin_count": 1,
+    "is_shared": false,
+    "document_with": "UPCGExPrimitiveFilterProviderSettings"
+  },
   "FPCGExRandomFilterConfig": {
     "used_by": [
       "UPCGExRandomFilterProviderSettings"
@@ -3873,6 +3903,23 @@
     "user_facing_origin_count": 1,
     "is_shared": false,
     "document_with": "UPCGExValueHashFilterProviderSettings"
+  },
+  "FPCGExVolumeFilterConfig": {
+    "used_by": [
+      "UPCGExVolumeFilterProviderSettings"
+    ],
+    "origin_count": 1,
+    "origins": [
+      "UPCGExVolumeFilterProviderSettings"
+    ],
+    "usage_count": 1,
+    "user_facing_count": 1,
+    "user_facing_origins": [
+      "UPCGExVolumeFilterProviderSettings"
+    ],
+    "user_facing_origin_count": 1,
+    "is_shared": false,
+    "document_with": "UPCGExVolumeFilterProviderSettings"
   },
   "FPCGExWithinRangeFilterConfig": {
     "used_by": [
@@ -4809,6 +4856,19 @@
   "FPCGExAssetStagingData": {
     "used_by": [
       "FPCGExAssetCollectionEntry"
+    ],
+    "origin_count": 0,
+    "origins": [],
+    "usage_count": 1,
+    "user_facing_count": 0,
+    "user_facing_origins": [],
+    "user_facing_origin_count": 0,
+    "is_shared": false,
+    "document_with": null
+  },
+  "FPCGExInputShorthandNameName": {
+    "used_by": [
+      "FPCGExAssetDistributionDetails"
     ],
     "origin_count": 0,
     "origins": [],

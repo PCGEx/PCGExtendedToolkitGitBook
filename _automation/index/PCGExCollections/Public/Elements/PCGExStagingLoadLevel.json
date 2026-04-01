@@ -122,7 +122,7 @@
       "display_name": "Staging : Spawn Level",
       "description": "Spawns level instances from staged points.",
       "base_class": "UPCGExPointsProcessorSettings",
-      "uclass_meta": "MinimalAPI, BlueprintType, ClassGroup = (Procedural), Category=\"PCGEx|Misc\",\n\tmeta=(Keywords = \"spawn level instance staged world\", PCGExNodeLibraryDoc=\"staging/staging-load-level\")",
+      "uclass_meta": "MinimalAPI, BlueprintType, ClassGroup = (Procedural), Category=\"PCGEx|Misc\",\n\tmeta=(Keywords = \"spawn level instance staged world\", PCGExNodeLibraryDoc=\"staging/staging-spawn-level\")",
       "uproperties": [
         {
           "name": "LevelNameSuffix",

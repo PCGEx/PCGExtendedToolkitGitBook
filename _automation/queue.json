@@ -2,16 +2,26 @@
   "pending": [],
   "in_progress": null,
   "completed": [
-    "UPCGExDecompositionInstancedFactory",
-    "UPCGExDecompBSPOccupancy",
-    "UPCGExDecompConvexBSP",
-    "UPCGExDecompGridPartition",
-    "UPCGExDecompMaxBoxes",
-    "UPCGExDecompMaxBoxesExt",
-    "UPCGExDecompSpectral",
-    "UPCGExDecompThreshold",
-    "UPCGExClusterDecompositionSettings",
-    "UPCGExStagedTypeFilterSettings"
+    "UPCGExLevelCollection",
+    "UPCGExStagedTypeFilterSettings",
+    "UPCGExDefaultLevelDataExporter",
+    "UPCGExLevelDataExporter",
+    "UPCGExPathStitchSettings",
+    "UPCGExDataMatchFilterProviderSettings",
+    "UPCGExPolyPathFilterFactory",
+    "UPCGExClusterToZoneGraphSettings",
+    "UPCGExPCGDataAssetCollection",
+    "UPCGExStagingSpawnActorsSettings",
+    "UPCGExActorContentFilter",
+    "UPCGExBoundsEvaluator",
+    "UPCGExBFSDepthSettings",
+    "UPCGExDynamicMeshToClustersSettings",
+    "UPCGExPrimitiveFilterProviderSettings",
+    "UPCGExVolumeFilterProviderSettings",
+    "UPCGExCullOnEmptySettings",
+    "FPCGExGeoMeshImportDetails"
   ],
-  "skipped": []
+  "skipped": [
+    "PCGExPCGDataAssetCollection"
+  ]
 }

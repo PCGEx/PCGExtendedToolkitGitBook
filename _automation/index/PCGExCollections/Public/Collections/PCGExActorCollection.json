@@ -35,55 +35,29 @@
           "advanced": false
         },
         {
-          "name": "bOnlyCollidingComponents",
-          "display_name": "bOnlyCollidingComponents",
-          "type": "bool",
-          "default": "false",
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "bIncludeFromChildActors",
-          "display_name": "bIncludeFromChildActors",
-          "type": "bool",
-          "default": "true",
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "bHasPCGComponent",
-          "display_name": "bHasPCGComponent",
-          "type": "bool",
-          "default": "false",
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": null,
-          "edit_condition_hides": false,
-          "category": "Settings|PCG",
-          "advanced": false
-        },
-        {
-          "name": "CachedPCGGraph",
-          "display_name": "CachedPCGGraph",
-          "type": "TSoftObjectPtr<UPCGGraphInterface>",
+          "name": "DeltaSourceLevel",
+          "display_name": "DeltaSourceLevel",
+          "type": "TSoftObjectPtr<UWorld>",
           "default": null,
           "overridable": false,
           "instanced": false,
           "show_only_inner": false,
-          "edit_condition": null,
-          "edit_condition_hides": false,
-          "category": "Settings|PCG",
+          "edit_condition": "!bIsSubCollection",
+          "edit_condition_hides": true,
+          "category": "Settings|Delta",
+          "advanced": false
+        },
+        {
+          "name": "DeltaSourceActorName",
+          "display_name": "DeltaSourceActorName",
+          "type": "FName",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "!bIsSubCollection ",
+          "edit_condition_hides": true,
+          "category": "Settings|Delta",
           "advanced": false
         }
       ],
@@ -99,6 +73,19 @@
       "base_class": "UPCGExAssetCollection",
       "uclass_meta": "BlueprintType, DisplayName=\"[PCGEx] Collection | Actor\"",
       "uproperties": [
+        {
+          "name": "BoundsEvaluator",
+          "display_name": "BoundsEvaluator",
+          "type": "TObjectPtr<UPCGExBoundsEvaluator>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
         {
           "name": "Entries",
           "display_name": "Entries",
@@ -287,6 +274,19 @@
           "edit_condition": null,
           "edit_condition_hides": false,
           "category": "Properties",
+          "advanced": false
+        },
+        {
+          "name": "BoundsEvaluator",
+          "display_name": "BoundsEvaluator",
+          "type": "TObjectPtr<UPCGExBoundsEvaluator>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
           "advanced": false
         },
         {

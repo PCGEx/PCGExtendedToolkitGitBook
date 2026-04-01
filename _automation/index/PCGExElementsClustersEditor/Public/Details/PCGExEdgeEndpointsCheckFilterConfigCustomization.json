@@ -1,0 +1,15 @@
+{
+  "path": "PCGExElementsClustersEditor/Public/Details/PCGExEdgeEndpointsCheckFilterConfigCustomization.h",
+  "module": "PCGExElementsClustersEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExEdgeEndpointsCheckFilterConfigCustomization",
+      "base_class": "IPropertyTypeCustomization"
+    }
+  ],
+  "namespaces": {}
+}

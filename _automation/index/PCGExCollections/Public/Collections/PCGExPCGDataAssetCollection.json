@@ -74,32 +74,6 @@
           "edit_condition_hides": true,
           "category": null,
           "advanced": false
-        },
-        {
-          "name": "bOverrideWeights",
-          "display_name": "bOverrideWeights",
-          "type": "bool",
-          "default": "false",
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "Source==EPCGExDataAssetEntrySource::DataAsset && !bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": null,
-          "advanced": false
-        },
-        {
-          "name": "PointWeights",
-          "display_name": " └─ Weights",
-          "type": "TArray<int32>",
-          "default": null,
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "Source==EPCGExDataAssetEntrySource::DataAsset && !bIsSubCollection && bOverrideWeights",
-          "edit_condition_hides": true,
-          "category": null,
-          "advanced": false
         }
       ],
       "is_config": false,

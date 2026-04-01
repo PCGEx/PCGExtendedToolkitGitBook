@@ -9,49 +9,35 @@ Stitch paths together by their endpoints.
 
 ## Overview
 
-This node connects separate paths by linking their endpoints that are within a specified tolerance distance. Paths can be connected with a new segment or fused at their meeting points, creating longer continuous paths from separate segments.
+Path : Stitch finds paths whose endpoints are close enough and joins them into longer paths. Endpoints within the tolerance distance are connected or fused, chaining separate path segments into continuous sequences. When multiple stitching candidates exist, sorting rules control which paths are joined first.
 
 ## How It Works
 
-1. **Identify Endpoints**: Find start and end points of all input paths.
-2. **Find Candidates**: Search for endpoint pairs within the tolerance distance.
-3. **Check Alignment**: Optionally verify paths are aligned within an angular threshold.
-4. **Apply Stitching**: Connect or fuse endpoints based on the selected method.
-5. **Merge Paths**: Combine stitched paths into continuous paths.
+1. **Compute Endpoints**: For each path, identifies the start segment (first two points) and end segment (last two points), building bounding volumes around each endpoint
+2. **Sort & Prioritize**: Applies optional sorting rules to control the order in which stitching candidates are evaluated
+3. **Match Endpoints**: Uses an octree to find endpoint pairs within the tolerance distance. Optionally enforces start-to-end matching and angular alignment.
+4. **Build Chains**: Links matched paths into chains. Detects closed loops when a chain connects back to its starting path.
+5. **Merge**: Combines chained paths into single output paths, respecting the chosen method (Connect preserves all points, Fuse removes the duplicate endpoint)
 
 #### Usage Notes
 
-- **Start/End Matching**: Enable "Only Match Start And Ends" to ensure paths connect in a logical chain (end of one path to start of another). When disabled, any endpoint pair within tolerance can connect.
-- **Alignment Check**: Use alignment requirements to prevent stitching paths that meet at sharp angles.
-- **Connect vs Fuse**: Connect preserves all points and adds a linking segment. Fuse reduces point count by merging overlapping endpoints.
-- **Line Intersection**: When fusing, "Line Intersection" places the merged point at the geometric intersection of the two path directions.
+- **Closed Loop Detection**: If stitching creates a circular chain, the output path is automatically marked as a closed loop
+- **Sorting Impact**: Sorting rules determine which paths get stitched first when multiple candidates are within tolerance. Without sorting, order is arbitrary.
+- **Alignment Filter**: When enabled, paths must point in compatible directions at their endpoints to be stitched — prevents stitching paths that meet at sharp angles
 
 ## Behavior
 
 ```
-Two separate paths with nearby endpoints:
-
-Before:     ●───●───●───○    ○───●───●───●
-                        ↑    ↑
-                 (endpoints within tolerance)
-
-After Connect:
-            ●───●───●───●────●───●───●───●
-                          ↑
-                  (new connecting segment)
-
-After Fuse (Keep Start):
-            ●───●───●─────●──────●───●───●
-                          ↑
-                 (endpoints merged)
+Connect:  ---A---x x---B---  →  ---A---x---x---B---  (all points preserved)
+Fuse:     ---A---x x---B---  →  ---A---x---B---      (one endpoint removed)
 ```
 
 ## Inputs
 
 | Pin | Type | Description |
 |-----|------|-------------|
-| **In** | Points | Paths to stitch together |
-| **Labels** | Points | Optional labeling data |
+| **In** | Points | Paths to stitch |
+| **Sorting Rules** | Factories | Optional sorting rules to prioritize stitching order |
 
 ## Settings
 
@@ -60,26 +46,26 @@ After Fuse (Keep Start):
 <details>
 <summary><strong>Method</strong> <code>EPCGExStitchMethod</code></summary>
 
-How paths are connected at their endpoints.
+How matching endpoints are joined.
 
 | Option | Description |
 |--------|-------------|
-| **Connect** | Add a new segment between endpoints, preserving all original points. |
-| **Fuse** | Merge endpoint pairs into a single point, reducing total point count. |
+| **Connect** | Adds a segment between the two endpoints, preserving all input points |
+| **Fuse** | Merges the two endpoints into one, removing the duplicate |
 
 Default: `Connect`
 
 </details>
 
 <details>
-<summary><strong>Fuse Method</strong> <code>EPCGExStitchFuseMethod</code></summary>
+<summary><strong>Method (Fuse)</strong> <code>EPCGExStitchFuseMethod</code></summary>
 
-When fusing, which endpoint to keep.
+When using Fuse, which endpoint is kept.
 
 | Option | Description |
 |--------|-------------|
-| **Keep Start** | Keep the start point of the connection. |
-| **Keep End** | Keep the end point of the connection. |
+| **Keep Start** | Keep the start point of the connection |
+| **Keep End** | Keep the end point of the connection |
 
 Default: `Keep Start`
 
@@ -90,13 +76,13 @@ Default: `Keep Start`
 <details>
 <summary><strong>Operation</strong> <code>EPCGExStitchFuseOperation</code></summary>
 
-How to compute the fused point's position.
+When using Fuse, how the kept point's position is determined.
 
 | Option | Description |
 |--------|-------------|
-| **None** | Keep the chosen point's position unchanged. |
-| **Average** | Place at the average position of both endpoints. |
-| **Line Intersection** | Place at the intersection of the two path direction lines. |
+| **None** | Keep the chosen point's position as-is |
+| **Average** | Position the kept point at the average of both endpoints |
+| **Line Intersection** | Position the kept point at the intersection of the two endpoint segments |
 
 Default: `None`
 
@@ -104,14 +90,10 @@ Default: `None`
 
 </details>
 
----
-
-### Matching Settings
-
 <details>
-<summary><strong>Only Match Start And Ends</strong> <code>bool</code></summary>
+<summary><strong>Only Match Start and Ends</strong> <code>bool</code></summary>
 
-When enabled, stitching only occurs between the end of one path and the start of another. When disabled, any pair of endpoints within tolerance can be stitched.
+If enabled, stitching only occurs between one path's end point and another path's start point. Otherwise, any endpoint pair within tolerance can be stitched.
 
 Default: `false`
 
@@ -120,38 +102,28 @@ Default: `false`
 </details>
 
 <details>
-<summary><strong>Requires Alignment</strong> <code>bool</code></summary>
+<summary><strong>Requires Alignment</strong> <code>FPCGExStaticDotComparisonDetails</code></summary>
 
-Enable to require paths to be aligned within an angular threshold before stitching.
+When enabled, paths must be aligned within an angular threshold at their endpoints before stitching. This prevents stitching paths that meet at incompatible angles.
 
-Default: `false`
+Contains:
+- **Domain**: Scalar or Degrees for the comparison value
+- **Comparison**: The comparison operator (e.g., Equal or Greater)
+- **Unsigned Comparison**: If enabled, ignores direction — measures alignment regardless of which way paths point
+- **Scalar / Degrees**: The threshold value
 
-⚡ PCG Overridable
-
-</details>
-
-<details>
-<summary><strong>Alignment Details</strong> <code>FPCGExStaticDotComparisonDetails</code></summary>
-
-Angular alignment requirements for stitching.
-
-| Property | Description |
-|----------|-------------|
-| **Domain** | Compare as scalar dot product or degrees. |
-| **Comparison** | Comparison operator (≥, ≤, etc.). |
-| **Unsigned Comparison** | Ignore direction sign (allows opposite-facing paths). |
-| **Degrees/Scalar** | Threshold value. |
-
-📋 *Visible when Requires Alignment = true*
+Default: Disabled
 
 ⚡ PCG Overridable
+
+📋 *Visible when Requires Alignment is enabled*
 
 </details>
 
 <details>
 <summary><strong>Tolerance</strong> <code>double</code></summary>
 
-Maximum distance between endpoints for stitching to occur.
+Maximum distance between endpoints for stitching to occur. Endpoint pairs farther apart than this are not considered.
 
 Default: `10`
 
@@ -159,19 +131,15 @@ Default: `10`
 
 </details>
 
----
-
-### Processing
-
 <details>
 <summary><strong>Sort Direction</strong> <code>EPCGExSortDirection</code></summary>
 
-Order in which paths are processed for stitching. Can affect which paths connect first when multiple candidates exist.
+Controls the order in which paths are evaluated for stitching when sorting rules are provided.
 
 | Option | Description |
 |--------|-------------|
-| **Ascending** | Process in ascending order. |
-| **Descending** | Process in descending order. |
+| **Ascending** | Lower sort values are processed first |
+| **Descending** | Higher sort values are processed first |
 
 Default: `Ascending`
 
@@ -182,17 +150,27 @@ Default: `Ascending`
 <details>
 <summary><strong>Carry Over Settings</strong> <code>FPCGExCarryOverDetails</code></summary>
 
-Controls which attributes and tags are preserved when merging paths.
+Controls which attributes and tags are carried over when paths are merged during stitching.
 
-//→ See TODO FPCGExCarryOverDetails
+Default: Default carry-over behavior
+
+⚡ PCG Overridable
+
+→ See [Carry Over Details](../../node-library/common-settings/data-utils/carry-over-details.md) for details.
 
 </details>
 
 ### Inherited Settings
 
-This node inherits path processing settings from its base class.
+This node inherits common settings from its base class.
 
-→ See [Path Processor Settings](../Core/PCGExPathProcessor.md) for: Path handling options.
+→ See [Path Processor Settings](../../node-library/paths/common-settings/path-processor-settings.md) for shared processing options.
+
+## Outputs
+
+| Pin | Type | Description |
+|-----|------|-------------|
+| **Out** | Points | Stitched paths |
 
 ---
 
@@ -201,9 +179,9 @@ This node inherits path processing settings from its base class.
 
 
 <!-- VERIFICATION REPORT
-Node-Specific Properties: 9 documented (Method, FuseMethod, MergeOperation, bOnlyMatchStartAndEnds, bDoRequireAlignment, DotComparisonDetails, Tolerance, SortDirection, CarryOverDetails)
+Node-Specific Properties: 8 documented (Method, FuseMethod, MergeOperation, bOnlyMatchStartAndEnds, bDoRequireAlignment, DotComparisonDetails, Tolerance, SortDirection, CarryOverDetails)
 Inherited Properties: Referenced to UPCGExPathProcessorSettings
-Inputs: Points, Labels
-Outputs: Points (inherited)
-Nested Types: EPCGExStitchMethod, EPCGExStitchFuseMethod, EPCGExStitchFuseOperation, FPCGExStaticDotComparisonDetails, EPCGExSortDirection, FPCGExCarryOverDetails
+Inputs: In (Points), Sorting Rules (Factories)
+Outputs: Out (Points)
+Nested Types: EPCGExStitchMethod, EPCGExStitchFuseMethod, EPCGExStitchFuseOperation, FPCGExStaticDotComparisonDetails, EPCGExSortDirection documented inline
 -->

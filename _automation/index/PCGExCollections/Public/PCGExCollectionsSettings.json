@@ -24,6 +24,45 @@
           "edit_condition_hides": false,
           "category": "Collections",
           "advanced": false
+        },
+        {
+          "name": "DefaultLevelExporterClass",
+          "display_name": "DefaultLevelExporterClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
+          "advanced": false
+        },
+        {
+          "name": "DefaultContentFilterClass",
+          "display_name": "DefaultContentFilterClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
+          "advanced": false
+        },
+        {
+          "name": "DefaultBoundsEvaluatorClass",
+          "display_name": "DefaultBoundsEvaluatorClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
+          "advanced": false
         }
       ],
       "classification": {
@@ -57,6 +96,45 @@
           "edit_condition": null,
           "edit_condition_hides": false,
           "category": "Collections",
+          "advanced": false
+        },
+        {
+          "name": "DefaultLevelExporterClass",
+          "display_name": "DefaultLevelExporterClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
+          "advanced": false
+        },
+        {
+          "name": "DefaultContentFilterClass",
+          "display_name": "DefaultContentFilterClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
+          "advanced": false
+        },
+        {
+          "name": "DefaultBoundsEvaluatorClass",
+          "display_name": "DefaultBoundsEvaluatorClass",
+          "type": "FSoftClassPath",
+          "default": null,
+          "overridable": false,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Defaults",
           "advanced": false
         }
       ]

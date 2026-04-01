@@ -1,0 +1,15 @@
+{
+  "path": "PCGExElementsClustersEditor/Public/PCGExElementsClustersEditor.h",
+  "module": "PCGExElementsClustersEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExElementsClustersEditorModule",
+      "base_class": "IPCGExEditorModuleInterface"
+    }
+  ],
+  "namespaces": {}
+}

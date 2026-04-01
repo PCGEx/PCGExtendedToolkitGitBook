@@ -137,28 +137,15 @@
           "advanced": false
         },
         {
-          "name": "CategoryInput",
-          "display_name": "CategoryInput",
-          "type": "EPCGExInputValueType",
-          "default": "EPCGExInputValueType::Constant",
+          "name": "Category",
+          "display_name": "Category",
+          "type": "FPCGExInputShorthandNameName",
+          "default": "FPCGExInputShorthandNameName(FName(\"Category\"), FName(\"MyCategory\"), false)",
           "overridable": true,
           "instanced": false,
           "show_only_inner": false,
           "edit_condition": "bUseCategories",
-          "edit_condition_hides": true,
-          "category": "Settings|Category",
-          "advanced": false
-        },
-        {
-          "name": "Category",
-          "display_name": "Category",
-          "type": "FName",
-          "default": "FName(\"Category\")",
-          "overridable": true,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "bUseCategories && CategoryInput == EPCGExInputValueType::Constant",
-          "edit_condition_hides": true,
+          "edit_condition_hides": false,
           "category": "Settings|Category",
           "advanced": false
         },

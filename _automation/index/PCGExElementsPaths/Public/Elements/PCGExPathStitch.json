@@ -48,6 +48,38 @@
         }
       ],
       "used_by": []
+    },
+    {
+      "name": "EPCGExStitchAlignmentMode",
+      "values": [
+        {
+          "name": "Segments",
+          "display_name": "Segments"
+        },
+        {
+          "name": "Bridge",
+          "display_name": "Bridge"
+        },
+        {
+          "name": "Combined",
+          "display_name": "Combined"
+        }
+      ],
+      "used_by": []
+    },
+    {
+      "name": "EPCGExStitchBridgeScoring",
+      "values": [
+        {
+          "name": "Minimum",
+          "display_name": "Minimum"
+        },
+        {
+          "name": "Average",
+          "display_name": "Average"
+        }
+      ],
+      "used_by": []
     }
   ],
   "structs": [],
@@ -151,6 +183,45 @@
           "advanced": false
         },
         {
+          "name": "AlignmentMode",
+          "display_name": " ├─ Mode",
+          "type": "EPCGExStitchAlignmentMode",
+          "default": "EPCGExStitchAlignmentMode::Combined",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "BridgeScoring",
+          "display_name": " ├─ Bridge Scoring",
+          "type": "EPCGExStitchBridgeScoring",
+          "default": "EPCGExStitchBridgeScoring::Minimum",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment && AlignmentMode != EPCGExStitchAlignmentMode::Segments",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "bStrictAlignment",
+          "display_name": " └─ Strict",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
           "name": "Tolerance",
           "display_name": "Tolerance",
           "type": "double",
@@ -168,6 +239,19 @@
           "display_name": "SortDirection",
           "type": "EPCGExSortDirection",
           "default": "EPCGExSortDirection::Ascending",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "MatchingDetails",
+          "display_name": "MatchingDetails",
+          "type": "FPCGExMatchingDetails",
+          "default": "FPCGExMatchingDetails(EPCGExMatchingDetailsUsage::Default)",
           "overridable": true,
           "instanced": false,
           "show_only_inner": false,
@@ -492,6 +576,45 @@
           "advanced": false
         },
         {
+          "name": "AlignmentMode",
+          "display_name": " ├─ Mode",
+          "type": "EPCGExStitchAlignmentMode",
+          "default": "EPCGExStitchAlignmentMode::Combined",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "BridgeScoring",
+          "display_name": " ├─ Bridge Scoring",
+          "type": "EPCGExStitchBridgeScoring",
+          "default": "EPCGExStitchBridgeScoring::Minimum",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment && AlignmentMode != EPCGExStitchAlignmentMode::Segments",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "bStrictAlignment",
+          "display_name": " └─ Strict",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": "bDoRequireAlignment",
+          "edit_condition_hides": true,
+          "category": null,
+          "advanced": false
+        },
+        {
           "name": "Tolerance",
           "display_name": "Tolerance",
           "type": "double",
@@ -509,6 +632,19 @@
           "display_name": "SortDirection",
           "type": "EPCGExSortDirection",
           "default": "EPCGExSortDirection::Ascending",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": null,
+          "advanced": false
+        },
+        {
+          "name": "MatchingDetails",
+          "display_name": "MatchingDetails",
+          "type": "FPCGExMatchingDetails",
+          "default": "FPCGExMatchingDetails(EPCGExMatchingDetailsUsage::Default)",
           "overridable": true,
           "instanced": false,
           "show_only_inner": false,

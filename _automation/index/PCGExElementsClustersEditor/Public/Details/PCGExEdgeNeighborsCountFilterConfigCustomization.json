@@ -1,0 +1,15 @@
+{
+  "path": "PCGExElementsClustersEditor/Public/Details/PCGExEdgeNeighborsCountFilterConfigCustomization.h",
+  "module": "PCGExElementsClustersEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExEdgeNeighborsCountFilterConfigCustomization",
+      "base_class": "IPropertyTypeCustomization"
+    }
+  ],
+  "namespaces": {}
+}

@@ -1,0 +1,15 @@
+{
+  "path": "PCGExElementsClustersEditor/Public/Details/PCGExEdgeEndpointsCompareNumFilterConfigCustomization.h",
+  "module": "PCGExElementsClustersEditor",
+  "type": "header",
+  "enums": [],
+  "structs": [],
+  "classes": [],
+  "operations": [
+    {
+      "name": "FPCGExEdgeEndpointsCompareNumFilterConfigCustomization",
+      "base_class": "IPropertyTypeCustomization"
+    }
+  ],
+  "namespaces": {}
+}

@@ -150,6 +150,19 @@
           "edit_condition_hides": false,
           "category": "Settings|Constrast",
           "advanced": false
+        },
+        {
+          "name": "Scale",
+          "display_name": "Scale",
+          "type": "double",
+          "default": "1.0",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Settings|Weighting",
+          "advanced": false
         }
       ],
       "is_config": true,

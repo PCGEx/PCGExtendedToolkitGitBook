@@ -22,71 +22,6 @@
           "advanced": false
         },
         {
-          "name": "BoundsIncludeTags",
-          "display_name": "BoundsIncludeTags",
-          "type": "TArray<FName>",
-          "default": null,
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "BoundsExcludeTags",
-          "display_name": "BoundsExcludeTags",
-          "type": "TArray<FName>",
-          "default": null,
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "BoundsIncludeClasses",
-          "display_name": "BoundsIncludeClasses",
-          "type": "TArray<TSoftClassPtr<AActor>>",
-          "default": null,
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "BoundsExcludeClasses",
-          "display_name": "BoundsExcludeClasses",
-          "type": "TArray<TSoftClassPtr<AActor>>",
-          "default": null,
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
-          "name": "bOnlyCollidingComponents",
-          "display_name": "bOnlyCollidingComponents",
-          "type": "bool",
-          "default": "false",
-          "overridable": false,
-          "instanced": false,
-          "show_only_inner": false,
-          "edit_condition": "!bIsSubCollection",
-          "edit_condition_hides": true,
-          "category": "Settings|Bounds",
-          "advanced": false
-        },
-        {
           "name": "SubCollection",
           "display_name": "SubCollection",
           "type": "TObjectPtr<UPCGExLevelCollection>",
@@ -112,6 +47,32 @@
       "base_class": "UPCGExAssetCollection",
       "uclass_meta": "BlueprintType, DisplayName=\"[PCGEx] Collection | Level\"",
       "uproperties": [
+        {
+          "name": "ContentFilter",
+          "display_name": "ContentFilter",
+          "type": "TObjectPtr<UPCGExActorContentFilter>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "BoundsEvaluator",
+          "display_name": "BoundsEvaluator",
+          "type": "TObjectPtr<UPCGExBoundsEvaluator>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
         {
           "name": "Entries",
           "display_name": "Entries",
@@ -300,6 +261,32 @@
           "edit_condition": null,
           "edit_condition_hides": false,
           "category": "Properties",
+          "advanced": false
+        },
+        {
+          "name": "ContentFilter",
+          "display_name": "ContentFilter",
+          "type": "TObjectPtr<UPCGExActorContentFilter>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
+          "advanced": false
+        },
+        {
+          "name": "BoundsEvaluator",
+          "display_name": "BoundsEvaluator",
+          "type": "TObjectPtr<UPCGExBoundsEvaluator>",
+          "default": null,
+          "overridable": false,
+          "instanced": true,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Bounds",
           "advanced": false
         },
         {

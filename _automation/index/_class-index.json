@@ -185,6 +185,30 @@
     "base_class": "UPCGExPointsProcessorSettings",
     "display_name": "Staging : Type Filter"
   },
+  "UPCGExActorContentFilter": {
+    "file": "PCGExCollections/Public/Helpers/PCGExActorContentFilter.h",
+    "type": "unknown",
+    "base_class": "UObject",
+    "display_name": "UPCGExActorContentFilter"
+  },
+  "UPCGExDefaultActorContentFilter": {
+    "file": "PCGExCollections/Public/Helpers/PCGExActorContentFilter.h",
+    "type": "unknown",
+    "base_class": "UPCGExActorContentFilter",
+    "display_name": "UPCGExDefaultActorContentFilter"
+  },
+  "UPCGExBoundsEvaluator": {
+    "file": "PCGExCollections/Public/Helpers/PCGExBoundsEvaluator.h",
+    "type": "unknown",
+    "base_class": "UObject",
+    "display_name": "UPCGExBoundsEvaluator"
+  },
+  "UPCGExDefaultBoundsEvaluator": {
+    "file": "PCGExCollections/Public/Helpers/PCGExBoundsEvaluator.h",
+    "type": "unknown",
+    "base_class": "UPCGExBoundsEvaluator",
+    "display_name": "UPCGExDefaultBoundsEvaluator"
+  },
   "UPCGExDefaultLevelDataExporter": {
     "file": "PCGExCollections/Public/Helpers/PCGExDefaultLevelDataExporter.h",
     "type": "unknown",
@@ -1060,6 +1084,12 @@
     "type": "provider",
     "base_class": "UPCGExFactoryProviderSettings",
     "display_name": "Fill Controls Definition"
+  },
+  "UPCGExBFSDepthSettings": {
+    "file": "PCGExElementsFloodFill/Public/Elements/PCGExBFSDepth.h",
+    "type": "node_settings",
+    "base_class": "UPCGExClustersProcessorSettings",
+    "display_name": "Cluster : BFS Depth"
   },
   "UPCGExClusterDiffusionSettings": {
     "file": "PCGExElementsFloodFill/Public/Elements/PCGExFloodFillClusters.h",
@@ -2411,6 +2441,12 @@
     "base_class": "UPCGExClipper2ProcessorSettings",
     "display_name": "Clipper2 : Triangulate"
   },
+  "UPCGExDynamicMeshToClustersSettings": {
+    "file": "PCGExElementsTopology/Public/Elements/PCGExDynamicMeshToClusters.h",
+    "type": "node_settings",
+    "base_class": "UPCGExSettings",
+    "display_name": "Dynamic Mesh to Clusters"
+  },
   "UPCGExSpawnDynamicMeshSettings": {
     "file": "PCGExElementsTopology/Public/Elements/PCGExSpawnDynamicMesh.h",
     "type": "node_settings",
@@ -2807,6 +2843,18 @@
     "base_class": "UPCGExPointFilterFactoryData",
     "display_name": "UPCGExPolyPathFilterFactory"
   },
+  "UPCGExPrimitiveFilterFactory": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExPrimitiveFilter.h",
+    "type": "factory_data",
+    "base_class": "UPCGExPointFilterFactoryData",
+    "display_name": "UPCGExPrimitiveFilterFactory"
+  },
+  "UPCGExPrimitiveFilterProviderSettings": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExPrimitiveFilter.h",
+    "type": "provider",
+    "base_class": "UPCGExFilterProviderSettings",
+    "display_name": "Filter : Primitive Overlap"
+  },
   "UPCGExRandomFilterFactory": {
     "file": "PCGExFilters/Public/Filters/Points/PCGExRandomFilter.h",
     "type": "factory_data",
@@ -2903,6 +2951,18 @@
     "base_class": "UPCGExFilterProviderSettings",
     "display_name": "Filter : Contains (Hash)"
   },
+  "UPCGExVolumeFilterFactory": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
+    "type": "factory_data",
+    "base_class": "UPCGExPointFilterFactoryData",
+    "display_name": "UPCGExVolumeFilterFactory"
+  },
+  "UPCGExVolumeFilterProviderSettings": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
+    "type": "provider",
+    "base_class": "UPCGExFilterProviderSettings",
+    "display_name": "Filter : Inclusion (Volume)"
+  },
   "UPCGExWithinRangeFilterFactory": {
     "file": "PCGExFilters/Public/Filters/Points/PCGExWithinRangeFilter.h",
     "type": "factory_data",
@@ -2998,6 +3058,12 @@
     "type": "node_settings",
     "base_class": "UPCGExPointsProcessorSettings",
     "display_name": "Cherry Pick Points"
+  },
+  "UPCGExCullOnEmptySettings": {
+    "file": "PCGExFoundations/Public/Elements/Filtering/PCGExCullOnEmpty.h",
+    "type": "node_settings",
+    "base_class": "UPCGExSettings",
+    "display_name": "Cull On Empty"
   },
   "UPCGExDiscardByPointCountSettings": {
     "file": "PCGExFoundations/Public/Elements/Filtering/PCGExDiscardByPointCount.h",

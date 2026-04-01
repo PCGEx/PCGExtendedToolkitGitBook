@@ -103,7 +103,7 @@
   {
     "name": "FPCGExGraphBuilderDetails",
     "file": "PCGExGraphs/Public/Graphs/PCGExGraphDetails.h",
-    "origin_count": 19,
+    "origin_count": 20,
     "origins": [
       "UPCGExCutEdgesSettings",
       "UPCGExPathToClustersSettings",
@@ -123,10 +123,11 @@
       "UPCGExBuildVoronoiGraphSettings",
       "UPCGExBuildVoronoiGraph2DSettings",
       "UPCGExRefineEdgesSettings",
-      "UPCGExConnectPointsSettings"
+      "UPCGExConnectPointsSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "usage_count": 19,
-    "user_facing_count": 17,
+    "usage_count": 20,
+    "user_facing_count": 18,
     "user_facing_origins": [
       "UPCGExCutEdgesSettings",
       "UPCGExPathToClustersSettings",
@@ -144,9 +145,10 @@
       "UPCGExBuildDualGraphSettings",
       "UPCGExBuildVoronoiGraphSettings",
       "UPCGExBuildVoronoiGraph2DSettings",
-      "UPCGExRefineEdgesSettings"
+      "UPCGExRefineEdgesSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
-    "user_facing_origin_count": 17
+    "user_facing_origin_count": 18
   },
   {
     "name": "FPCGExBlendingDetails",
@@ -231,7 +233,7 @@
   {
     "name": "FPCGExMatchingDetails",
     "file": "PCGExMatching/Public/Details/PCGExMatchingDetails.h",
-    "origin_count": 13,
+    "origin_count": 14,
     "origins": [
       "UPCGExClipper2ProcessorSettings",
       "UPCGExCopyClustersToPointsSettings",
@@ -239,6 +241,7 @@
       "UPCGExBoundsPathIntersectionSettings",
       "UPCGExCopyToPathsSettings",
       "UPCGExPathInsertSettings",
+      "UPCGExPathStitchSettings",
       "UPCGExSampleInsidePathSettings",
       "UPCGExSampleNearestBoundsSettings",
       "UPCGExSampleNearestPathSettings",
@@ -247,20 +250,21 @@
       "UPCGExCopyToPointsSettings",
       "UPCGExMergePointsSettings"
     ],
-    "usage_count": 17,
-    "user_facing_count": 12,
+    "usage_count": 18,
+    "user_facing_count": 13,
     "user_facing_origins": [
       "UPCGExCopyClustersToPointsSettings",
       "UPCGExPathfindingPlotEdgesSettings",
       "UPCGExBoundsPathIntersectionSettings",
       "UPCGExCopyToPathsSettings",
       "UPCGExPathInsertSettings",
+      "UPCGExPathStitchSettings",
       "UPCGExSampleNearestBoundsSettings",
       "UPCGExBestMatchAxisSettings",
       "UPCGExCopyToPointsSettings",
       "UPCGExMergePointsSettings"
     ],
-    "user_facing_origin_count": 9
+    "user_facing_origin_count": 10
   },
   {
     "name": "FPCGExAttributeToTagDetails",
@@ -326,24 +330,26 @@
   {
     "name": "FPCGExNodeSelectionDetails",
     "file": "PCGExCore/Public/Clusters/PCGExClusterCommon.h",
-    "origin_count": 5,
+    "origin_count": 6,
     "origins": [
+      "UPCGExBFSDepthSettings",
       "UPCGExPathfindingEdgesSettings",
       "UPCGExFindContoursSettings",
       "UPCGExFindContoursBoundedSettings",
       "UPCGExPathfindingGrowPathsSettings",
       "UPCGExPathfindingPlotEdgesSettings"
     ],
-    "usage_count": 6,
-    "user_facing_count": 5,
+    "usage_count": 7,
+    "user_facing_count": 6,
     "user_facing_origins": [
+      "UPCGExBFSDepthSettings",
       "UPCGExPathfindingEdgesSettings",
       "UPCGExFindContoursSettings",
       "UPCGExFindContoursBoundedSettings",
       "UPCGExPathfindingGrowPathsSettings",
       "UPCGExPathfindingPlotEdgesSettings"
     ],
-    "user_facing_origin_count": 5
+    "user_facing_origin_count": 6
   },
   {
     "name": "FPCGExCellArtifactsDetails",
@@ -770,6 +776,22 @@
     "user_facing_origins": [
       "UPCGExPathToClustersSettings",
       "UPCGExFuseClustersSettings"
+    ],
+    "user_facing_origin_count": 2
+  },
+  {
+    "name": "FPCGExGeoMeshImportDetails",
+    "file": "PCGExCore/Public/Data/External/PCGExMeshImportDetails.h",
+    "origin_count": 2,
+    "origins": [
+      "UPCGExMeshToClustersSettings",
+      "UPCGExDynamicMeshToClustersSettings"
+    ],
+    "usage_count": 2,
+    "user_facing_count": 2,
+    "user_facing_origins": [
+      "UPCGExMeshToClustersSettings",
+      "UPCGExDynamicMeshToClustersSettings"
     ],
     "user_facing_origin_count": 2
   },

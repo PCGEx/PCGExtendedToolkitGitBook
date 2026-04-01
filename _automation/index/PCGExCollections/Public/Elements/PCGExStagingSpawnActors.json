@@ -52,6 +52,32 @@
           "advanced": false
         },
         {
+          "name": "bApplyInstanceTags",
+          "display_name": "bApplyInstanceTags",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Settings|Tagging",
+          "advanced": false
+        },
+        {
+          "name": "bApplyPropertyDeltas",
+          "display_name": "bApplyPropertyDeltas",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Settings|Properties",
+          "advanced": false
+        },
+        {
           "name": "bTriggerPCGGeneration",
           "display_name": "bTriggerPCGGeneration",
           "type": "bool",
@@ -372,6 +398,32 @@
           "edit_condition": null,
           "edit_condition_hides": false,
           "category": "Settings|Tagging",
+          "advanced": false
+        },
+        {
+          "name": "bApplyInstanceTags",
+          "display_name": "bApplyInstanceTags",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Settings|Tagging",
+          "advanced": false
+        },
+        {
+          "name": "bApplyPropertyDeltas",
+          "display_name": "bApplyPropertyDeltas",
+          "type": "bool",
+          "default": "false",
+          "overridable": true,
+          "instanced": false,
+          "show_only_inner": false,
+          "edit_condition": null,
+          "edit_condition_hides": false,
+          "category": "Settings|Properties",
           "advanced": false
         },
         {

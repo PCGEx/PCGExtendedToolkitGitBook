@@ -1,6 +1,6 @@
 ---
-icon: crosshairs
-description: 'Staging : Spawn Actors - Spawn actors from staged collection entries'
+icon: cog
+description: 'Staging : Spawn Actors - Spawns actors from staged collection entries.'
 ---
 
 # Staging : Spawn Actors
@@ -9,31 +9,34 @@ Spawns actors from staged collection entries.
 
 ## Overview
 
-This node spawns actor instances at the transform of each staged point. Points must carry collection mapping data from an upstream Staging node — each valid point resolves to an actor class from an Actor Collection and spawns it at the point's location. Spawned actors are tracked as PCG managed resources and automatically cleaned up on regeneration.
+Staging : Spawn Actors reads a collection map produced by upstream staging nodes, resolves each point's entry to an actor class, and spawns that actor at the point's transform. Spawned actors can receive collection entry tags, per-instance tags, property overrides, and PCG generation triggers. Each spawned actor reference is written back to the output points for downstream use.
 
 ## How It Works
 
-1. **Collection Mapping**: Reads the collection map from the Labels input pin, which provides the mapping between point hashes and actor collection entries.
-2. **Point Resolution**: Each input point is checked against optional filters. Passing points have their staged entry hash resolved to an actor collection entry. Only entries of type Actor are accepted.
-3. **Class Loading**: All unique actor classes across resolved entries are batch-loaded asynchronously before any spawning begins.
-4. **Actor Spawning**: On the main thread, each resolved point spawns its actor at the point's transform. Optionally, collection entry tags are applied to the spawned actor.
-5. **PCG Generation**: If enabled, spawned actors with PCG components can have their generation triggered automatically based on configurable rules per trigger type.
-6. **Output Reference**: Each spawned actor's soft object path is written to a configurable attribute on the output points.
+1. **Read Collection Map**: Loads the collection map from the input pin, which maps entry hashes on each point to actor collection entries
+2. **Resolve Entries**: For each input point that passes filters, looks up the entry hash and resolves it to an `FPCGExActorCollectionEntry`. Non-actor entries are skipped.
+3. **Batch-Load Classes**: Collects all unique actor class paths and loads them asynchronously via streaming before any spawning begins
+4. **Spawn Actors**: On the main thread, spawns each resolved actor at the point's transform. When property deltas are enabled, actors are spawned deferred so properties are set before construction completes.
+5. **Apply Tags & Properties**: Optionally applies collection entry tags, per-instance tags from the `InstanceTags` attribute, and serialized property deltas
+6. **Trigger PCG Generation**: If enabled, finds PCG components on spawned actors and triggers generation according to the configured trigger actions
+7. **Write References**: Writes a soft object path to each spawned actor into the configured output attribute
+8. **Register Managed Resources**: Registers all spawned actors with PCG's managed resource system for automatic cleanup. CRC-based reuse skips spawning entirely when inputs haven't changed.
 
 #### Usage Notes
 
-- **Actor Collections Only**: This node only works with Actor Collection entries. Non-actor collection entries are skipped with a warning (suppressible).
-- **CRC Reuse**: If the inputs haven't changed between executions (same CRC), previously spawned actors are reused without re-spawning, and actor references are written from the existing managed resource.
-- **Transform Consumption**: Transforms are used as-is from upstream staging nodes — fitting and placement adjustments are the responsibility of upstream nodes.
-- **PCG Generation Watcher**: When triggering PCG generation on spawned actors, the node watches for completion. Each trigger type (GenerateOnLoad, GenerateOnDemand, GenerateAtRuntime) can be handled independently.
+- **Main Thread Only**: Actor spawning requires the main thread. This node cannot be parallelized.
+- **Upstream Transforms**: Transforms are consumed as-is from upstream staging nodes — fitting and placement are their responsibility, not this node's.
+- **CRC Reuse**: When inputs and settings haven't changed between executions, previously spawned actors are reused without respawning.
+- **Deferred Construction**: When Apply Property Deltas is enabled, actors are spawned deferred. Properties are applied before construction finishes, which is important for actors whose construction scripts depend on those values.
+- **Editor Folders**: In the editor, spawned actors are organized under a `<OwnerName>_Generated` folder for tidiness.
 
 ## Inputs
 
 | Pin | Type | Description |
 |-----|------|-------------|
-| **Labels** | Param | Collection map data from upstream Staging nodes |
-| **In** | Points | Staged points with collection entry hashes |
-| **Point Filters** | Factories (Filters) | Optional filters controlling which points spawn an actor |
+| **In** | Points | Input points with staged entry hashes from upstream staging nodes |
+| **Collection Map** | Params | Collection map data from staging nodes (required) |
+| **Point Filters** | Factories | Optional point filters controlling which points spawn an actor |
 
 ## Settings
 
@@ -55,7 +58,7 @@ Default: `AlwaysSpawn`
 <details>
 <summary><strong>Apply Entry Tags</strong> <code>bool</code></summary>
 
-If enabled, apply collection entry tags to spawned actors.
+If enabled, applies tags from the resolved collection entry to each spawned actor.
 
 Default: `false`
 
@@ -70,7 +73,29 @@ Attribute forwarding from input points to output points.
 
 ⚡ PCG Overridable
 
-→ See [Forward Details](../../PCGExCore/_structs/Data/Utils/PCGExDataForwardDetails/FPCGExForwardDetails.md) for details.
+</details>
+
+<details>
+<summary><strong>Apply Instance Tags</strong> <code>bool</code></summary>
+
+If enabled, reads a comma-separated `InstanceTags` string attribute from each point and applies those tags to the spawned actor.
+
+Default: `false`
+
+⚡ PCG Overridable
+
+</details>
+
+### Properties
+
+<details>
+<summary><strong>Apply Property Deltas</strong> <code>bool</code></summary>
+
+If enabled, applies per-instance property deltas stored on actor collection entries. Actors with deltas are spawned deferred so properties are set before construction completes.
+
+Default: `false`
+
+⚡ PCG Overridable
 
 </details>
 
@@ -79,7 +104,7 @@ Attribute forwarding from input points to output points.
 <details>
 <summary><strong>Trigger PCG Generation</strong> <code>bool</code></summary>
 
-If enabled, trigger PCG generation on spawned actors that have PCG components.
+If enabled, triggers PCG generation on spawned actors that have PCG components. The trigger actions below control how each component's generation trigger condition is handled.
 
 Default: `false`
 
@@ -90,59 +115,59 @@ Default: `false`
 <details>
 <summary><strong>Grab GenerateOnLoad</strong> <code>EPCGExGenerationTriggerAction</code></summary>
 
-How to deal with found components that have the trigger condition GenerateOnLoad.
+How to handle PCG components that have the `GenerateOnLoad` trigger condition.
 
 | Option | Description |
 |--------|-------------|
-| **Ignore** | Skip these components entirely |
-| **As-is** | Leave the component's current state unchanged |
+| **Ignore** | Skip these components |
+| **As-is** | Leave the component's existing trigger unchanged |
 | **Generate** | Trigger generation |
-| **ForceGenerate** | Force generation even if already generated |
+| **ForceGenerate** | Force trigger generation |
 
 Default: `Generate`
 
-📋 *Visible when Trigger PCG Generation = true*
-
 ⚡ PCG Overridable
+
+📋 *Visible when Trigger PCG Generation is enabled*
 
 </details>
 
 <details>
 <summary><strong>Grab GenerateOnDemand</strong> <code>EPCGExGenerationTriggerAction</code></summary>
 
-How to deal with found components that have the trigger condition GenerateOnDemand.
+How to handle PCG components that have the `GenerateOnDemand` trigger condition.
 
 | Option | Description |
 |--------|-------------|
-| **Ignore** | Skip these components entirely |
-| **As-is** | Leave the component's current state unchanged |
+| **Ignore** | Skip these components |
+| **As-is** | Leave the component's existing trigger unchanged |
 | **Generate** | Trigger generation |
-| **ForceGenerate** | Force generation even if already generated |
+| **ForceGenerate** | Force trigger generation |
 
 Default: `Generate`
 
-📋 *Visible when Trigger PCG Generation = true*
-
 ⚡ PCG Overridable
+
+📋 *Visible when Trigger PCG Generation is enabled*
 
 </details>
 
 <details>
 <summary><strong>Grab GenerateAtRuntime</strong> <code>EPCGExRuntimeGenerationTriggerAction</code></summary>
 
-How to deal with found components that have the trigger condition GenerateAtRuntime.
+How to handle PCG components that have the `GenerateAtRuntime` trigger condition.
 
 | Option | Description |
 |--------|-------------|
-| **Ignore** | Skip these components entirely |
-| **As-is** | Leave the component's current state unchanged |
-| **Refresh** | Refresh the component |
+| **Ignore** | Skip these components |
+| **As-is** | Leave the component's existing trigger unchanged |
+| **Refresh** | Refresh generation at runtime |
 
 Default: `As-is`
 
-📋 *Visible when Trigger PCG Generation = true*
-
 ⚡ PCG Overridable
+
+📋 *Visible when Trigger PCG Generation is enabled*
 
 </details>
 
@@ -151,7 +176,7 @@ Default: `As-is`
 <details>
 <summary><strong>Actor Reference Attribute</strong> <code>FName</code></summary>
 
-Name of the attribute to write the spawned actor's soft object path to on each output point.
+Name of the attribute to write the spawned actor's soft object path to. Each point that successfully spawns an actor gets this attribute populated.
 
 Default: `"ActorReference"`
 
@@ -164,7 +189,7 @@ Default: `"ActorReference"`
 <details>
 <summary><strong>Quiet Invalid Entry Warnings</strong> <code>bool</code></summary>
 
-Suppress warnings for invalid collection entries (non-actor types, failed loads, failed spawns).
+Suppresses warnings for invalid collection entries (missing actor classes, non-actor entries, failed spawns).
 
 Default: `false`
 
@@ -174,23 +199,24 @@ Default: `false`
 
 This node inherits common settings from its base class.
 
-> See [Points Processor Settings](../../PCGExCore/Core/PCGExSettings.md) for inherited options.
+→ See [Points Processor Settings](../../node-library/common-settings/points-processor-settings.md) for shared point processing options.
 
 ## Outputs
 
 | Pin | Type | Description |
 |-----|------|-------------|
-| **Out** | Points | Input points with actor reference attributes written for spawned actors |
+| **Out** | Points | Input points with the actor reference attribute written for successfully spawned actors |
 
 ---
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExStagingSpawnActors.h)
 
+
+
 <!-- VERIFICATION REPORT
-Node-Specific Properties: 9 documented (CollisionHandling, bApplyEntryTags, TargetsForwarding, bTriggerPCGGeneration, GenerateOnLoadAction, GenerateOnDemandAction, GenerateAtRuntimeAction, ActorReferenceAttribute, bQuietInvalidEntryWarnings)
+Node-Specific Properties: 11 documented (CollisionHandling, bApplyEntryTags, TargetsForwarding, bApplyInstanceTags, bApplyPropertyDeltas, bTriggerPCGGeneration, GenerateOnLoadAction, GenerateOnDemandAction, GenerateAtRuntimeAction, ActorReferenceAttribute, bQuietInvalidEntryWarnings)
 Inherited Properties: Referenced to UPCGExPointsProcessorSettings
-Shared Struct References: FPCGExForwardDetails
-Inputs: Labels (param), In (points), Point Filters (factory)
-Outputs: Out (points)
-Nested Types: EPCGExGenerationTriggerAction, EPCGExRuntimeGenerationTriggerAction
+Inputs: In (Points), Collection Map (Params), Point Filters (Factories)
+Outputs: Out (Points)
+Nested Types: EPCGExGenerationTriggerAction, EPCGExRuntimeGenerationTriggerAction documented inline
 -->

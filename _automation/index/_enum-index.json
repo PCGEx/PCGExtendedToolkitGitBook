@@ -41,7 +41,7 @@
   },
   "EPCGExSurfaceSource": {
     "file": "PCGExBlending/Public/Sampling/PCGExSamplingCommon.h",
-    "value_count": 2
+    "value_count": 3
   },
   "EPCGExSampleMethod": {
     "file": "PCGExBlending/Public/Sampling/PCGExSamplingCommon.h",
@@ -791,6 +791,14 @@
     "file": "PCGExElementsPaths/Public/Elements/PCGExPathStitch.h",
     "value_count": 3
   },
+  "EPCGExStitchAlignmentMode": {
+    "file": "PCGExElementsPaths/Public/Elements/PCGExPathStitch.h",
+    "value_count": 3
+  },
+  "EPCGExStitchBridgeScoring": {
+    "file": "PCGExElementsPaths/Public/Elements/PCGExPathStitch.h",
+    "value_count": 2
+  },
   "EPCGExPointReverseMethod": {
     "file": "PCGExElementsPaths/Public/Elements/PCGExReversePointOrder.h",
     "value_count": 3
@@ -1085,6 +1093,18 @@
   },
   "EPCGExValueHashSetInclusionMode": {
     "file": "PCGExFilters/Public/Filters/Points/PCGExValueHashFilter.h",
+    "value_count": 2
+  },
+  "EPCGExVolumeCheckType": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
+    "value_count": 4
+  },
+  "EPCGExVolumeRadiusSource": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
+    "value_count": 4
+  },
+  "EPCGExVolumePenetrationMode": {
+    "file": "PCGExFilters/Public/Filters/Points/PCGExVolumeFilter.h",
     "value_count": 2
   },
   "EPCGExRangeSource": {
