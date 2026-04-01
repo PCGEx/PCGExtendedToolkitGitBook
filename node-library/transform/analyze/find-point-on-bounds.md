@@ -1,10 +1,9 @@
 ---
+description: Find the closest point on the dataset bounds.
 icon: circle
 ---
 
 # Find Point on Bounds
-
-Find the closest point on the dataset bounds.
 
 ### Overview
 
@@ -201,5 +200,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/Bounds/PCGExFindPointOnBounds.h)
-
-

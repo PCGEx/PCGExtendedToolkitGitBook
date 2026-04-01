@@ -1,10 +1,9 @@
 ---
+description: Probabilistic matching based on random chance.
 icon: circle-dashed
 ---
 
 # Match : Random
-
-Probabilistic matching based on random chance.
 
 ### Overview
 
@@ -200,5 +199,3 @@ This match rule inherits common settings from the base match rule configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExMatching-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExMatching/Public/Matching/PCGExMatchRandom.h)
-
-

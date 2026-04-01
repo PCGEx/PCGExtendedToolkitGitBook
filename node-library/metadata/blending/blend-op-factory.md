@@ -1,10 +1,11 @@
 ---
+description: >-
+  Base factory class for creating blend operations that define how attributes
+  are blended between data sources.
 icon: code
 ---
 
 # Blend Op Factory
-
-Base factory class for creating blend operations that define how attributes are blended between data sources.
 
 ### Overview
 

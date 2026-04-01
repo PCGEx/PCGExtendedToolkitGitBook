@@ -1,10 +1,9 @@
 ---
+description: Configures statistics tracking for pathfinding operations.
 icon: sliders-simple
 ---
 
 # Path Statistics
-
-Configures statistics tracking for pathfinding operations.
 
 ### Overview
 
@@ -96,5 +95,3 @@ Default: `EdgeUseCount`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Core/PCGExPathfinding.h)
-
-

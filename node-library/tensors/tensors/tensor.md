@@ -1,10 +1,9 @@
 ---
+description: Base factory for tensor field definitions.
 icon: arrow-down-from-arc
 ---
 
 # Tensor
-
-Base factory for tensor field definitions.
 
 ### Overview
 

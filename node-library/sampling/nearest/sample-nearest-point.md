@@ -1,10 +1,9 @@
 ---
+description: Sample nearest target points.
 icon: circle
 ---
 
 # Sample : Nearest Point
-
-Sample nearest target points.
 
 ### Overview
 

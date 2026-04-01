@@ -1,10 +1,11 @@
 ---
+description: >-
+  Smoothing method that gathers neighbors within a sliding window of sequential
+  points along the path.
 icon: function
 ---
 
 # Moving Average Smoothing
-
-Smoothing method that gathers neighbors within a sliding window of sequential points along the path.
 
 ### Overview
 
@@ -66,5 +67,3 @@ Default: `Ignore`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/Smoothing/PCGExMovingAverageSmoothing.h)
-
-

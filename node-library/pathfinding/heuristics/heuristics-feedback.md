@@ -1,10 +1,9 @@
 ---
+description: Heuristics based on visited score feedback.
 icon: circle-dashed
 ---
 
 # Heuristics : Feedback
-
-Heuristics based on visited score feedback.
 
 ### Overview
 
@@ -166,5 +165,3 @@ This heuristic inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExHeuristics-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExHeuristics/Public/Heuristics/PCGExHeuristicFeedback.h)
-
-

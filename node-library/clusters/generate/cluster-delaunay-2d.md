@@ -1,10 +1,9 @@
 ---
+description: Create a 2D delaunay triangulation for each input dataset.
 icon: share-nodes
 ---
 
 # Cluster : Delaunay 2D
-
-Create a 2D delaunay triangulation for each input dataset.
 
 ### Overview
 
@@ -226,5 +225,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersDiagrams/Public/Elements/PCGExBuildDelaunayGraph2D.h)
-
-

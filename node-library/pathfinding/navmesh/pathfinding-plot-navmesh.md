@@ -1,10 +1,9 @@
 ---
+description: Extract a single path from navmesh, going through each seed point in order.
 icon: circle
 ---
 
 # Pathfinding : Plot Navmesh
-
-Extract a single path from navmesh, going through each seed point in order.
 
 ### Overview
 
@@ -188,5 +187,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfindingNavmesh-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfindingNavmesh/Public/Elements/PCGExPathfindingPlotNavmesh.h)
-
-

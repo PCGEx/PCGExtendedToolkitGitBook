@@ -1,10 +1,11 @@
 ---
+description: >-
+  Performs Constrained Delaunay Triangulation on closed paths and outputs a
+  Dynamic Mesh.
 icon: circle
 ---
 
 # Clipper2 : Triangulate
-
-Performs Constrained Delaunay Triangulation on closed paths and outputs a Dynamic Mesh.
 
 ### Overview
 

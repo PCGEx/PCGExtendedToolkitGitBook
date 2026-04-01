@@ -1,10 +1,9 @@
 ---
+description: A tensor that represents a vector/flow field along a path.
 icon: circle-dashed
 ---
 
 # Tensor : Path Flow
-
-A tensor that represents a vector/flow field along a path.
 
 ### Overview
 
@@ -128,5 +127,3 @@ This node inherits from the tensor spline factory provider base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Tensors/PCGExTensorPathFlow.h)
-
-

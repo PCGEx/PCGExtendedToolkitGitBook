@@ -1,10 +1,9 @@
 ---
+description: Samples the field using Runge-Kutta 4 method.
 icon: function
 ---
 
 # Tensor Sampler (RK4)
-
-Samples the field using Runge-Kutta 4 method.
 
 ### Overview
 
@@ -110,5 +109,3 @@ Range: `1` to `16`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Samplers/PCGExTensorSamplerRK4.h)
-
-

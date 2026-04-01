@@ -1,10 +1,9 @@
 ---
+description: Sample the points inside the paths.
 icon: circle
 ---
 
 # Sample : Inside Path
-
-Sample the points inside the paths.
 
 ### Overview
 
@@ -46,12 +45,12 @@ Path receives blended data → written to @Data domain
 
 ### Inputs
 
-| Pin               | Type   | Description                                |
-| ----------------- | ------ | ------------------------------------------ |
+| Pin               | Type   | Description                                  |
+| ----------------- | ------ | -------------------------------------------- |
 | **Paths**         | Points | Source paths that define containment regions |
-| **Targets**       | Points | Target points to sample from               |
-| **Sorting Rules** | Params | Optional sorting for Best Candidate method |
-| **Blending**      | Params | Optional blending operation factories      |
+| **Targets**       | Points | Target points to sample from                 |
+| **Sorting Rules** | Params | Optional sorting for Best Candidate method   |
+| **Blending**      | Params | Optional blending operation factories        |
 
 ### Settings
 
@@ -101,12 +100,12 @@ Default: `All`
 
 How to select which target points to sample.
 
-| Option              | Description                                |
-| ------------------- | ------------------------------------------ |
-| **Within Range**    | Sample all target points within range      |
-| **Closest Target**  | Sample only the closest target point       |
-| **Farthest Target** | Sample only the farthest target point      |
-| **Best Candidate**  | Sample based on sorting criteria           |
+| Option              | Description                           |
+| ------------------- | ------------------------------------- |
+| **Within Range**    | Sample all target points within range |
+| **Closest Target**  | Sample only the closest target point  |
+| **Farthest Target** | Sample only the farthest target point |
+| **Best Candidate**  | Sample based on sorting criteria      |
 
 Default: `Within Range`
 
@@ -237,11 +236,11 @@ Curve controlling weight falloff based on distance.
 
 Which paths to output.
 
-| Option           | Description                                          |
-| ---------------- | ---------------------------------------------------- |
-| **All**          | Output all paths                                     |
-| **Success Only** | Output only paths that sampled at least one point    |
-| **Split**        | Split into success and discarded pins                |
+| Option           | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| **All**          | Output all paths                                  |
+| **Success Only** | Output only paths that sampled at least one point |
+| **Split**        | Split into success and discarded pins             |
 
 Default: `All`
 
@@ -331,13 +330,11 @@ Default: `true`
 
 ### Outputs
 
-| Pin            | Type   | Description                                       |
-| -------------- | ------ | ------------------------------------------------- |
-| **Paths**      | Points | Paths with sampled data on `@Data` domain         |
-| **Discarded**  | Points | Paths that failed sampling (if Split output mode) |
+| Pin           | Type   | Description                                       |
+| ------------- | ------ | ------------------------------------------------- |
+| **Paths**     | Points | Paths with sampled data on `@Data` domain         |
+| **Discarded** | Points | Paths that failed sampling (if Split output mode) |
 
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExSampleInsidePath.h)
-
-

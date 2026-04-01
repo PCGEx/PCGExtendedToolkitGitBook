@@ -1,10 +1,9 @@
 ---
+description: Curated collection of PCG Data Asset references with optional level export.
 icon: book
 ---
 
 # PCG Data Asset Collection
-
-Curated collection of PCG Data Asset references with optional level export.
 
 ### Overview
 

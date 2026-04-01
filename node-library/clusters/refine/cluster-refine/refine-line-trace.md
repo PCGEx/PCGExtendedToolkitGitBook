@@ -1,10 +1,9 @@
 ---
+description: Removes edges based on line trace collision with world geometry.
 icon: function
 ---
 
 # Refine : Line Trace
-
-Removes edges based on line trace collision with world geometry.
 
 ### Overview
 
@@ -119,5 +118,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersRefine/Public/Refinements/PCGExEdgeRefineLineTrace.h)
-
-

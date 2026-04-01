@@ -1,10 +1,9 @@
 ---
+description: Abstract base class for level-to-PCGDataAsset conversion.
 icon: arrow-down-from-arc
 ---
 
 # Level Data Exporter
-
-Abstract base class for level-to-PCGDataAsset conversion.
 
 ### Overview
 

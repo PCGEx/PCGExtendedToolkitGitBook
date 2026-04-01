@@ -1,4 +1,5 @@
 ---
+hidden: true
 icon: grid-round-2-plus
 ---
 

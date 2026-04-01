@@ -1,10 +1,9 @@
 ---
+description: Creates a single Fill Control node, to be used with flood fill nodes.
 icon: arrow-down-from-arc
 ---
 
 # Fill Control
-
-Creates a single Fill Control node, to be used with flood fill nodes.
 
 ### Overview
 

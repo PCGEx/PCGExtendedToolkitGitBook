@@ -1,10 +1,9 @@
 ---
+description: Ellipsoidal distance metric for directional connectivity.
 icon: circle-dashed
 ---
 
 # G-Probe : Global Anisotropic
-
-Ellipsoidal distance metric for directional connectivity.
 
 ### Overview
 

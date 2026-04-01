@@ -1,10 +1,9 @@
 ---
+description: Sample cluster vtx' neighbors values.
 icon: circle-nodes
 ---
 
 # Cluster : Sample Neighbors
-
-Sample cluster vtx' neighbors values.
 
 ### Overview
 
@@ -51,10 +50,10 @@ neighbors and blends values.
 
 Connect these sub-nodes to the Samplers pin:
 
-| Sampler                      | Description                                                |
-| ---------------------------- | ---------------------------------------------------------- |
-| **Sampler : Vtx Blend**      | Use blend operations for complex attribute blending        |
-| **Sampler : Test Neighbors** | Test neighbors against filters and output statistics       |
+| Sampler                      | Description                                          |
+| ---------------------------- | ---------------------------------------------------- |
+| **Sampler : Vtx Blend**      | Use blend operations for complex attribute blending  |
+| **Sampler : Test Neighbors** | Test neighbors against filters and output statistics |
 
 #### Inherited Settings
 
@@ -72,5 +71,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/PCGExSampleNeighbors.h)
-
-

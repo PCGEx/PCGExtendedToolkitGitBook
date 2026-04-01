@@ -1,10 +1,11 @@
 ---
+description: >-
+  Ignore candidates whose attribute value isn't within the given tolerance of a
+  running average.
 icon: circle-dashed
 ---
 
 # FC : Running Average
-
-Ignore candidates whose attribute value isn't within the given tolerance of a running average.
 
 ### Overview
 
@@ -150,5 +151,3 @@ Note: The Steps setting is not available for this control.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlRunningAverage.h)
-
-

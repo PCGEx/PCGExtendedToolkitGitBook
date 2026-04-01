@@ -1,10 +1,9 @@
 ---
+description: Density-based connectivity/reachability (DBSCAN-style).
 icon: circle-dashed
 ---
 
 # G-Probe : DBSCAN
-
-Density-based connectivity/reachability (DBSCAN-style).
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Convert an asset collection to grammar-friendly module infos.
 icon: circle
 ---
 
 # Collection to Module Infos
-
-Convert an asset collection to grammar-friendly module infos.
 
 ### Overview
 
@@ -163,5 +162,3 @@ Default: `Category`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExCollectionToModuleInfos.h)
-
-

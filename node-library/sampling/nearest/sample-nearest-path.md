@@ -1,10 +1,9 @@
 ---
+description: Sample the nearest path(s).
 icon: circle
 ---
 
 # Sample : Nearest Path
-
-Sample the nearest path(s).
 
 ### Overview
 

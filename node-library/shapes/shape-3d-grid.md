@@ -1,10 +1,9 @@
 ---
+description: Create points in a 3D grid shape.
 icon: circle-dashed
 ---
 
 # Shape : 3D Grid
-
-Create points in a 3D grid shape.
 
 ### Overview
 
@@ -262,5 +261,3 @@ Default: `500`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsShapes-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsShapes/Public/Shapes/PCGExShapeGrid.h)
-
-

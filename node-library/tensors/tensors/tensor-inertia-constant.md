@@ -1,10 +1,9 @@
 ---
+description: A tensor constant that uses the seed transform.
 icon: circle-dashed
 ---
 
 # Tensor : Inertia (Constant)
-
-A tensor constant that uses the seed transform.
 
 ### Overview
 
@@ -127,5 +126,3 @@ This node inherits from the tensor factory provider base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Tensors/PCGExTensorInertiaConstant.h)
-
-

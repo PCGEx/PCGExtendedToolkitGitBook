@@ -1,10 +1,11 @@
 ---
+description: >-
+  Simple smoothing relaxation that moves each vertex toward the centroid of its
+  connected neighbors.
 icon: function
 ---
 
 # Laplacian (Poisson)
-
-Simple smoothing relaxation that moves each vertex toward the centroid of its connected neighbors.
 
 ### Overview
 
@@ -52,5 +53,3 @@ This operation inherits common relaxation settings from its base class, includin
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Relaxations/PCGExLaplacianRelax.h)
-
-

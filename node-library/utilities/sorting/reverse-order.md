@@ -1,10 +1,9 @@
 ---
+description: Simply reverse the order of points or change winding of paths.
 icon: circle
 ---
 
 # Reverse Order
-
-Simply reverse the order of points or change winding of paths.
 
 ### Overview
 
@@ -195,5 +194,3 @@ Default: `NotReversed`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/PCGExReversePointOrder.h)
-
-

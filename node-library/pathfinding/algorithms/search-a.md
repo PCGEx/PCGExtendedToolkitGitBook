@@ -1,10 +1,9 @@
 ---
+description: A* search algorithm for finding optimal paths through cluster graphs.
 icon: function
 ---
 
 # Search : A\*
-
-A\* search algorithm for finding optimal paths through cluster graphs.
 
 ### Overview
 
@@ -59,5 +58,3 @@ This algorithm has no additional settings beyond those inherited from the base s
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Search/PCGExSearchAStar.h)
-
-

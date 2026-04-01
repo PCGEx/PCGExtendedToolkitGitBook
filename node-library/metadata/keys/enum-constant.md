@@ -1,10 +1,9 @@
 ---
+description: Converts enum values into PCG constants.
 icon: circle
 ---
 
 # Enum Constant
-
-Converts enum values into PCG constants.
 
 ### Overview
 
@@ -281,5 +280,3 @@ _Output pin names vary based on OutputMode and selected enum values_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Constants/PCGExConstantEnum.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Creates a single Blend Operation node to be used with Blend Op pins.
 icon: circle-dashed
 ---
 
 # BlendOp
-
-Creates a single Blend Operation node to be used with Blend Op pins.
 
 ### Overview
 

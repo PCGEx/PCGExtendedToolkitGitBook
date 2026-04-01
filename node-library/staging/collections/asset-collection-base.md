@@ -1,10 +1,9 @@
 ---
+description: Foundation for all asset collection types.
 icon: gear-complex
 ---
 
 # Asset Collection Base
-
-Foundation for all asset collection types.
 
 ### Overview
 
@@ -170,5 +169,3 @@ Default: Auto-generated from schema
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Core/PCGExAssetCollection.h)
-
-

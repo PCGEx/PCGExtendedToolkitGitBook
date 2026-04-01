@@ -1,11 +1,9 @@
 ---
-description: 'Probe : Bitmasks'
+description: Probe using bitmask references and collections.
 icon: circle-dashed
 ---
 
 # Probe : Bitmasks
-
-Probe using bitmask references and collections.
 
 ### Overview
 
@@ -171,5 +169,3 @@ Default: `0`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsProbing-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsProbing/Public/Probes/PCGExProbeBitmasks.h)
-
-

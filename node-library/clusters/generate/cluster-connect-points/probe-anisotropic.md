@@ -1,10 +1,9 @@
 ---
+description: Probe in 16 directions over the X/Y axis.
 icon: circle-dashed
 ---
 
 # Probe : Anisotropic
-
-Probe in 16 directions over the X/Y axis.
 
 ### Overview
 
@@ -137,5 +136,3 @@ Default: `0`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsProbing-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsProbing/Public/Probes/PCGExProbeAnisotropic.h)
-
-

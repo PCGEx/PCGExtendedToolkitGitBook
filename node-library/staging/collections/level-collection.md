@@ -1,10 +1,9 @@
 ---
+description: Curated collection of Level (UWorld) references.
 icon: book
 ---
 
 # Level Collection
-
-Curated collection of Level (UWorld) references.
 
 ### Overview
 

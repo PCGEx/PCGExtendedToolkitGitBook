@@ -1,10 +1,9 @@
 ---
+description: Create a path surface topology.
 icon: circle
 ---
 
 # Topology : Path Surface
-
-Create a path surface topology.
 
 ### Overview
 
@@ -196,5 +195,3 @@ This node inherits path processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTopology-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTopology/Public/Elements/PCGExTopologyPathSurface.h)
-
-

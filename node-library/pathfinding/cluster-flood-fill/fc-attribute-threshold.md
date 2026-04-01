@@ -1,10 +1,9 @@
 ---
+description: Stop diffusion when vertex/edge attribute crosses a threshold.
 icon: circle-dashed
 ---
 
 # FC : Attribute Threshold
-
-Stop diffusion when vertex/edge attribute crosses a threshold.
 
 ### Overview
 
@@ -137,5 +136,3 @@ Default: `StrictlySmaller`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlAttributeThreshold.h)
-
-

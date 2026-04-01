@@ -1,10 +1,9 @@
 ---
+description: Load and spawn PCGDataAsset contents from staged points.
 icon: circle
 ---
 
 # Staging : Load PCGData
-
-Load and spawn PCGDataAsset contents from staged points.
 
 ### Overview
 
@@ -180,5 +179,3 @@ This node inherits point filtering capabilities from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExStagingLoadPCGData.h)
-
-

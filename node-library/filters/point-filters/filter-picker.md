@@ -1,10 +1,9 @@
 ---
+description: Checks if the point or collection index is picked using connected pickers.
 icon: circle-dashed
 ---
 
 # Filter : Picker
-
-Checks if the point or collection index is picked using connected pickers.
 
 ### Overview
 
@@ -85,5 +84,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExPickerFilter.h)
-
-

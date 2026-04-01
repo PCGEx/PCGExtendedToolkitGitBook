@@ -1,10 +1,9 @@
 ---
+description: Creates hierarchical hub-and-spoke network topology.
 icon: circle-dashed
 ---
 
 # G-Probe : Hub & Spoke
-
-Creates hierarchical hub-and-spoke network topology.
 
 ### Overview
 

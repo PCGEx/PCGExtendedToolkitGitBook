@@ -1,10 +1,9 @@
 ---
+description: Partition clusters by binning a numeric attribute.
 icon: function
 ---
 
 # Decomp : Threshold
-
-Partition clusters by binning a numeric attribute.
 
 ### Overview
 

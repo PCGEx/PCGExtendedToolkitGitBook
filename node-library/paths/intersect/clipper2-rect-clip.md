@@ -1,10 +1,9 @@
 ---
+description: Fast rectangle clipping using optimized Clipper2 algorithm.
 icon: circle
 ---
 
 # Clipper2 : Rect Clip
-
-Fast rectangle clipping using optimized Clipper2 algorithm.
 
 ### Overview
 
@@ -185,5 +184,3 @@ This node inherits common Clipper2 processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClipper2-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClipper2/Public/Elements/PCGExClipper2RectClip.h)
-
-

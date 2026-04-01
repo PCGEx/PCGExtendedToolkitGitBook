@@ -1,10 +1,11 @@
 ---
+description: >-
+  Simplify connections by operating on isolated chains of nodes (only two
+  neighbors).
 icon: share-nodes
 ---
 
 # Cluster : Simplify
-
-Simplify connections by operating on isolated chains of nodes (only two neighbors).
 
 ### Overview
 
@@ -388,5 +389,3 @@ Graph and edge output properties for the simplified cluster.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExSimplifyClusters.h)
-
-

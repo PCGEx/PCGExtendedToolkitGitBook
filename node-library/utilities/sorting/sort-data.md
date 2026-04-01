@@ -1,10 +1,9 @@
 ---
+description: Sort collection using @Data domain attributes.
 icon: circle-plus
 ---
 
 # Sort Data
-
-Sort collection using @Data domain attributes.
 
 ### Overview
 
@@ -79,5 +78,3 @@ Default: `Ascending`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/Sorting/PCGExSortCollections.h)
-
-

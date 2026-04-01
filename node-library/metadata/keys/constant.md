@@ -1,10 +1,9 @@
 ---
+description: Outputs predefined mathematical and vector constants as PCG data.
 icon: circle
 ---
 
 # Constant
-
-Outputs predefined mathematical and vector constants as PCG data.
 
 ### Overview
 
@@ -214,5 +213,3 @@ Default: `{}` (empty map)
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Constants/PCGExConstants.h)
-
-

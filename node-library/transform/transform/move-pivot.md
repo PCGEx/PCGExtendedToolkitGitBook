@@ -1,10 +1,9 @@
 ---
+description: Move pivot point relative to its bounds.
 icon: circle
 ---
 
 # Move Pivot
-
-Move pivot point relative to its bounds.
 
 ### Overview
 
@@ -67,5 +66,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExMovePivot.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Use custom blueprint to read data from actor references.
 icon: circle
 ---
 
 # Pack Actor Data
-
-Use custom blueprint to read data from actor references.
 
 ### Overview
 
@@ -189,5 +188,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/PCGExPackActorData.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Distribute weighted tuple row values across input points.
 icon: circle
 ---
 
 # Tuple : Distribute
-
-Distribute weighted tuple row values across input points.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Create points as a regular polygon or star.
 icon: circle-dashed
 ---
 
 # Shape : Polygon
-
-Create points as a regular polygon or star.
 
 ### Overview
 
@@ -377,5 +376,3 @@ Default: `500`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsShapes-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsShapes/Public/Shapes/PCGExShapePolygon.h)
-
-

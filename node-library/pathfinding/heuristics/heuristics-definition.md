@@ -1,10 +1,9 @@
 ---
+description: Base class for all heuristic computational nodes used in pathfinding.
 icon: arrow-down-from-arc
 ---
 
 # Heuristics Definition
-
-Base class for all heuristic computational nodes used in pathfinding.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Heuristics based on tensors.
 icon: circle-dashed
 ---
 
 # Heuristics : Tensor
-
-Heuristics based on tensors.
 
 ### Overview
 
@@ -86,5 +85,3 @@ This heuristic inherits from the heuristics factory base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Heuristics/PCGExHeuristicTensor.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Filter out vtx from clusters.
 icon: circle-nodes
 ---
 
 # Cluster : Filter Vtx
-
-Filter out vtx from clusters.
 
 ### Overview
 
@@ -153,5 +152,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExFilterVtx.h)
-
-

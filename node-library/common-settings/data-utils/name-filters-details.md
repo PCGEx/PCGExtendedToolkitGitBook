@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures filtering of attributes or tags based on their names using pattern
+  matching.
 icon: sliders-simple
 ---
 
 # Name Filters Details
-
-Configures filtering of attributes or tags based on their names using pattern matching.
 
 ### Overview
 
@@ -102,5 +103,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Data/Utils/PCGExDataFilterDetails.h)
-
-

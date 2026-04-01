@@ -1,10 +1,9 @@
 ---
+description: Writes unique GUIDs as attributes to all points in a collection.
 icon: circle
 ---
 
 # Write GUID
-
-Writes unique GUIDs as attributes to all points in a collection.
 
 ### Overview
 
@@ -438,5 +437,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Utils/PCGExWriteGUID.h)
-
-

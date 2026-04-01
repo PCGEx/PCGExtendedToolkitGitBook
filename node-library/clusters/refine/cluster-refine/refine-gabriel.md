@@ -1,10 +1,11 @@
 ---
+description: >-
+  Refines a cluster into a Gabriel graph by removing edges that have other
+  vertices within their diametric circle.
 icon: function
 ---
 
 # Refine : Gabriel
-
-Refines a cluster into a Gabriel graph by removing edges that have other vertices within their diametric circle.
 
 ### Overview
 

@@ -1,10 +1,11 @@
 ---
+description: >-
+  A state provider that performs bulk directional adjacency checks and applies
+  bitmask operations based on the results.
 icon: circle-dashed
 ---
 
 # State : Bitmask Adjacency
-
-A state provider that performs bulk directional adjacency checks and applies bitmask operations based on the results.
 
 ### Overview
 
@@ -110,5 +111,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/States/PCGExAdjacencyStates.h)
-
-

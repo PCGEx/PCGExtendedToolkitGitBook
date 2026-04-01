@@ -1,10 +1,9 @@
 ---
+description: Global configuration for PCGEx. Found in Project Settings > Plugins > PCGEx.
 icon: gear
 ---
 
 # Plugin Settings
-
-Global configuration for PCGEx. Found in **Project Settings > Plugins > PCGEx**.
 
 These settings apply project-wide and affect default behaviors across all PCGEx nodes. Most can be left at their defaults — <mark style="color:$warning;">adjust them when you have a specific reason.</mark>
 
@@ -312,4 +311,4 @@ All color values are customizable `FLinearColor` values with RGBA components.
 
 ***
 
-📦 **Class**: `UPCGExGlobalSettings`  ·  [Source](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExtendedToolkit/Public/PCGExGlobalSettings.h)
+📦 **Class**: `UPCGExGlobalSettings` · [Source](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExtendedToolkit/Public/PCGExGlobalSettings.h)

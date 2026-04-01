@@ -1,10 +1,9 @@
 ---
+description: A more flexible alternative to the native Spawn Dynamic Mesh.
 icon: circle
 ---
 
 # Spawn Dynamic Mesh
-
-A more flexible alternative to the native Spawn Dynamic Mesh.
 
 ### Overview
 
@@ -139,5 +138,3 @@ Default: Empty
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTopology-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTopology/Public/Elements/PCGExSpawnDynamicMesh.h)
-
-

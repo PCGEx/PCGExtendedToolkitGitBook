@@ -1,10 +1,9 @@
 ---
+description: Output property values from staged entries as point attributes.
 icon: circle
 ---
 
 # Staging : Load Properties
-
-Output property values from staged entries as point attributes.
 
 ### Overview
 
@@ -67,5 +66,3 @@ This node inherits point filtering capabilities from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExStagingLoadProperties.h)
-
-

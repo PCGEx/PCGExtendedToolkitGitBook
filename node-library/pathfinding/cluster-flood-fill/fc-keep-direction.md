@@ -1,10 +1,9 @@
 ---
+description: Stop diffusion when the path direction changes beyond a threshold.
 icon: circle-dashed
 ---
 
 # FC : Keep Direction
-
-Stop diffusion when the path direction changes beyond a threshold.
 
 ### Overview
 
@@ -113,5 +112,3 @@ Note: The Steps setting is not available for this control.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlKeepDirection.h)
-
-

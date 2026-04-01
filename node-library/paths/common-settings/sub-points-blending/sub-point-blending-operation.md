@@ -1,10 +1,9 @@
 ---
+description: Base factory for sub-point attribute blending operations.
 icon: arrow-down-from-arc
 ---
 
 # Sub-Point Blending Operation
-
-Base factory for sub-point attribute blending operations.
 
 ### Overview
 

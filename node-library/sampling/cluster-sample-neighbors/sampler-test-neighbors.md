@@ -1,10 +1,9 @@
 ---
+description: Writes the number of neighbors that pass the provided filters.
 icon: circle-dashed
 ---
 
 # Sampler : Test Neighbors
-
-Writes the number of neighbors that pass the provided filters.
 
 ### Overview
 
@@ -290,5 +289,3 @@ This node inherits sampling configuration from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/NeighborSamplers/PCGExNeighborSampleFilters.h)
-
-

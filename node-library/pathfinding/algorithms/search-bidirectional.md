@@ -1,10 +1,9 @@
 ---
+description: Bidirectional search algorithm that searches from both seed and goal.
 icon: function
 ---
 
 # Search : Bidirectional
-
-Bidirectional search algorithm that searches from both seed and goal.
 
 ### Overview
 
@@ -63,5 +62,3 @@ This algorithm has no additional settings beyond those inherited from the base s
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Search/PCGExSearchBidirectional.h)
-
-

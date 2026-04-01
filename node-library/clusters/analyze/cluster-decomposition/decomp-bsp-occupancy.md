@@ -1,10 +1,9 @@
 ---
+description: Partition clusters using axis-aligned BSP splits through empty space.
 icon: function
 ---
 
 # Decomp : BSP Occupancy
-
-Partition clusters using axis-aligned BSP splits through empty space.
 
 ### Overview
 

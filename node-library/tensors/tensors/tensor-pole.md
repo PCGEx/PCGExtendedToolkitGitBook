@@ -1,10 +1,9 @@
 ---
+description: A tensor that pulls and/or pushes.
 icon: circle-dashed
 ---
 
 # Tensor : Pole
-
-A tensor that pulls and/or pushes.
 
 ### Overview
 
@@ -61,5 +60,3 @@ This node uses inherited settings from the tensor point factory base for control
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Tensors/PCGExTensorPole.h)
-
-

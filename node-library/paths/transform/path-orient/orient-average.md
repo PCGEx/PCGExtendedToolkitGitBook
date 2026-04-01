@@ -1,10 +1,9 @@
 ---
+description: Orients points by averaging the directions to neighboring path points.
 icon: function
 ---
 
 # Orient Average
-
-Orients points by averaging the directions to neighboring path points.
 
 ### Overview
 
@@ -48,5 +47,3 @@ This factory has no additional settings beyond those inherited from the base ori
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/Orient/PCGExOrientAverage.h)
-
-

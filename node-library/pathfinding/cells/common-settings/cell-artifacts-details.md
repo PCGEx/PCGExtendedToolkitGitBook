@@ -1,10 +1,9 @@
 ---
+description: Configures what data and metadata are generated for discovered cells.
 icon: sliders-simple
 ---
 
 # Cell Artifacts Details
-
-Configures what data and metadata are generated for discovered cells.
 
 ### Overview
 
@@ -192,5 +191,3 @@ Controls which tags from source data are forwarded to cell outputs.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExGraphs-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExGraphs/Public/Clusters/Artifacts/PCGExCellDetails.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Stop diffusion when path length or edge length exceeds a maximum.
 icon: circle-dashed
 ---
 
 # FC : Length
-
-Stop diffusion when path length or edge length exceeds a maximum.
 
 ### Overview
 
@@ -100,5 +99,3 @@ Minimum: 1
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlLength.h)
-
-

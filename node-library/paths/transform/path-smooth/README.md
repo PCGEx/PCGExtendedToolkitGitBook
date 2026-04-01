@@ -1,10 +1,9 @@
 ---
+description: Smooth paths points.
 icon: circle
 ---
 
 # Path : Smooth
-
-Smooth paths points.
 
 ### Overview
 

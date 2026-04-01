@@ -1,10 +1,9 @@
 ---
+description: Outputs data about a vertex's shortest, longest, and average edges.
 icon: circle-dashed
 ---
 
 # Vtx : Special Edges
-
-Outputs data about a vertex's shortest, longest, and average edges.
 
 ### Overview
 
@@ -156,5 +155,3 @@ See Vtx Property Provider for base class information.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/VtxProperties/PCGExVtxPropertySpecialEdges.h)
-
-

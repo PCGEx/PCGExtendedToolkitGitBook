@@ -1,10 +1,9 @@
 ---
+description: Removes or keeps edges based on connected filter evaluation.
 icon: function
 ---
 
 # Refine : Filter
-
-Removes or keeps edges based on connected filter evaluation.
 
 ### Overview
 

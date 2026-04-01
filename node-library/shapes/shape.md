@@ -1,10 +1,9 @@
 ---
+description: Creates a single shape builder node, to be used with a Shape processor node.
 icon: arrow-down-from-arc
 ---
 
 # Shape
-
-Creates a single shape builder node, to be used with a Shape processor node.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Find the closest vtx or edge on each cluster' bounds.
 icon: circle
 ---
 
 # Cluster : Find point on Bounds
-
-Find the closest vtx or edge on each cluster' bounds.
 
 ### Overview
 
@@ -173,5 +172,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExFindPointOnBoundsClusters.h)
-
-

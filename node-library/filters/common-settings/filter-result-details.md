@@ -1,10 +1,9 @@
 ---
+description: Configuration struct for writing filter pass/fail results to point attributes.
 icon: sliders-simple
 ---
 
 # Filter Result Details
-
-Configuration struct for writing filter pass/fail results to point attributes.
 
 ### Overview
 
@@ -176,5 +175,3 @@ This struct appears in the following nodes:
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Details/PCGExFilterDetails.h)
-
-

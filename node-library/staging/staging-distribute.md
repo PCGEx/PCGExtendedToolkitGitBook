@@ -1,10 +1,9 @@
 ---
+description: Distribute PCGEx Asset Collection entries to points.
 icon: circle
 ---
 
 # Staging : Distribute
-
-Distribute PCGEx Asset Collection entries to points.
 
 ### Overview
 
@@ -365,5 +364,3 @@ This node inherits point filtering capabilities from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExAssetStaging.h)
-
-

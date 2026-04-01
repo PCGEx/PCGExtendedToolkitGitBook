@@ -1,10 +1,9 @@
 ---
+description: Find the closest point on the nearest collidable surface.
 icon: circle
 ---
 
 # Sample : Nearest Surface
-
-Find the closest point on the nearest collidable surface.
 
 > Note : Only works with simple colliders.
 
@@ -323,5 +322,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExSampleNearestSurface.h)
-
-

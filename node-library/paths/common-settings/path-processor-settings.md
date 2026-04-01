@@ -1,12 +1,9 @@
 ---
+description: Base infrastructure for path processing operations.
 icon: code-commit
 ---
 
 # Path Processor Settings
-
-
-
-Base infrastructure for path processing operations.
 
 ### Overview
 
@@ -98,5 +95,3 @@ Each derived processor specializes in a specific path operation type.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Core/PCGExPathProcessor.h)
-
-

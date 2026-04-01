@@ -1,10 +1,9 @@
 ---
+description: Sample nearest target bounds.
 icon: circle
 ---
 
 # Sample : Nearest Bounds
-
-Sample nearest target bounds.
 
 ### Overview
 

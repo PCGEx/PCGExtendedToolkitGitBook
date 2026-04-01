@@ -1,10 +1,9 @@
 ---
+description: Compares a numeric attribute value read from the nearest target point.
 icon: circle-dashed
 ---
 
 # Filter : Compare Nearest (Numeric)
-
-Compares a numeric attribute value read from the nearest target point.
 
 ### Overview
 
@@ -173,5 +172,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExNumericCompareNearestFilter.h)
-
-

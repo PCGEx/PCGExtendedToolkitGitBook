@@ -1,10 +1,9 @@
 ---
+description: Connects points with similar scalar values (isolines/contours).
 icon: circle-dashed
 ---
 
 # G-Probe : Level Set
-
-Connects points with similar scalar values (isolines/contours).
 
 ### Overview
 

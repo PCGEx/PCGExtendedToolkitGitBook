@@ -1,10 +1,9 @@
 ---
+description: Find the closest transform on nearest polylines.
 icon: circle
 ---
 
 # Sample : Nearest Spline
-
-Find the closest transform on nearest polylines.
 
 ### Overview
 
@@ -328,5 +327,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExSampleNearestSpline.h)
-
-

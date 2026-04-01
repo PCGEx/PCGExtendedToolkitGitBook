@@ -1,10 +1,11 @@
 ---
+description: >-
+  Samples the field using six points around the sampling target location, and
+  averaging the results.
 icon: function
 ---
 
 # Tensor Sampler (Six Points)
-
-Samples the field using six points around the sampling target location, and averaging the results.
 
 ### Overview
 
@@ -116,5 +117,3 @@ Range: `1` to `16`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Samplers/PCGExTensorSamplerSixPoints.h)
-
-

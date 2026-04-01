@@ -1,10 +1,9 @@
 ---
+description: Abstract base class for nodes that create and output factory configurations.
 icon: code
 ---
 
 # Factory Provider (Base)
-
-Abstract base class for nodes that create and output factory configurations.
 
 ### Overview
 
@@ -156,5 +155,3 @@ Providers inherit common settings from UPCGExSettings:
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Factories/PCGExFactoryProvider.h)
-
-

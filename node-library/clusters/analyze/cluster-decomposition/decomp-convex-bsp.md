@@ -1,10 +1,9 @@
 ---
+description: Partition clusters by recursive convex hull splitting.
 icon: function
 ---
 
 # Decomp : Convex BSP
-
-Partition clusters by recursive convex hull splitting.
 
 ### Overview
 

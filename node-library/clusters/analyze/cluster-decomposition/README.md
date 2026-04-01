@@ -1,10 +1,9 @@
 ---
+description: Decompose clusters into cells and write a CellID attribute on nodes.
 icon: circle-nodes
 ---
 
 # Cluster : Decomposition
-
-Decompose clusters into cells and write a CellID attribute on nodes.
 
 ### Overview
 

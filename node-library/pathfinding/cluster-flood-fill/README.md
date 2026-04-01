@@ -1,10 +1,9 @@
 ---
+description: Diffuses seed attributes from vtx onto their neighbors.
 icon: circle-plus
 ---
 
 # Cluster : Flood Fill
-
-Diffuses seed attributes from vtx onto their neighbors.
 
 ### Overview
 
@@ -315,5 +314,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/Elements/PCGExFloodFillClusters.h)
-
-

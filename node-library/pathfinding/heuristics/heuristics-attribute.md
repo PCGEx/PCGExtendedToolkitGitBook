@@ -1,10 +1,9 @@
 ---
+description: Read a vtx or edge attribute as an heuristic value.
 icon: circle-dashed
 ---
 
 # Heuristics : Attribute
-
-Read a vtx or edge attribute as an heuristic value.
 
 ### Overview
 
@@ -147,5 +146,3 @@ This heuristic inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExHeuristics-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExHeuristics/Public/Heuristics/PCGExHeuristicAttribute.h)
-
-

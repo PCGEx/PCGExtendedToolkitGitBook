@@ -1,10 +1,9 @@
 ---
+description: A slower, more precise self pruning node.
 icon: circle
 ---
 
 # Self Pruning
-
-A slower, more precise self pruning node.
 
 ### Overview
 

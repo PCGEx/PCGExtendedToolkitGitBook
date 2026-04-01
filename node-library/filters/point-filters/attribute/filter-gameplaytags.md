@@ -1,10 +1,9 @@
 ---
+description: Checks gameplay tags of an actor reference.
 icon: circle-dashed
 ---
 
 # Filter : GameplayTags
-
-Checks gameplay tags of an actor reference.
 
 ### Overview
 
@@ -129,5 +128,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExGameplayTagsFilter.h)
-
-

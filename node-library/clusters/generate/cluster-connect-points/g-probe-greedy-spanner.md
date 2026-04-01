@@ -1,10 +1,9 @@
 ---
+description: Greedy t-spanner - sparse graph with path length guarantees.
 icon: circle-dashed
 ---
 
 # G-Probe : Greedy Spanner
-
-Greedy t-spanner - sparse graph with path length guarantees.
 
 ### Overview
 

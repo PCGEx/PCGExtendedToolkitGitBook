@@ -1,10 +1,11 @@
 ---
+description: >-
+  Abstract base factory that creates probe operations for finding nearby
+  connections during graph construction.
 icon: arrow-down-from-arc
 ---
 
 # Probe Definition
-
-Abstract base factory that creates probe operations for finding nearby connections during graph construction.
 
 ### Overview
 

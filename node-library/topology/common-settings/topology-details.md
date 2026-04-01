@@ -1,10 +1,9 @@
 ---
+description: Configures mesh generation settings for topology operations.
 icon: sliders-simple
 ---
 
 # Topology Details
-
-Configures mesh generation settings for topology operations.
 
 ### Overview
 
@@ -174,5 +173,3 @@ Default: `OriginalComponent`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTopology-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTopology/Public/PCGExTopology.h)
-
-

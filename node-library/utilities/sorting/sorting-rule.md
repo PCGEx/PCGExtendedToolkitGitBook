@@ -1,10 +1,9 @@
 ---
+description: Creates a single sorting rule to be used with the Sorting Rule inputs.
 icon: circle-dashed
 ---
 
 # Sorting Rule
-
-Creates a single sorting rule to be used with the Sorting Rule inputs.
 
 ### Overview
 
@@ -87,5 +86,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/Sorting/PCGExModularSortPoints.h)
-
-

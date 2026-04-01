@@ -1,10 +1,9 @@
 ---
+description: Caustic noise - water light patterns.
 icon: circle-dashed
 ---
 
 # Noise : Caustic
-
-Caustic noise - water light patterns.
 
 ### Overview
 
@@ -185,5 +184,3 @@ This noise inherits common settings from the base noise configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExNoise3D-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExNoise3D/Public/Noises/PCGExNoiseCaustic.h)
-
-

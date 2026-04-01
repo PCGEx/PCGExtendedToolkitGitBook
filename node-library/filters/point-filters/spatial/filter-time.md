@@ -1,10 +1,9 @@
 ---
+description: Checks point positions against a path/spline/polygon closest alpha.
 icon: circle-dashed
 ---
 
 # Filter : Time
-
-Checks point positions against a path/spline/polygon closest alpha.
 
 ### Overview
 
@@ -270,5 +269,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExTimeFilter.h)
-
-

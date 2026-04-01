@@ -1,10 +1,9 @@
 ---
+description: Creates a single partition rule to be used with the Partition by Values node.
 icon: circle-dashed
 ---
 
 # Partition Rule
-
-Creates a single partition rule to be used with the Partition by Values node.
 
 ### Overview
 
@@ -251,5 +250,3 @@ Default: `Partition`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/Partition/PCGExModularPartitionByValues.h)
-
-

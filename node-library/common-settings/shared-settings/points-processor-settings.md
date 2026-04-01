@@ -1,10 +1,9 @@
 ---
+description: Root base class for all point processing operations.
 icon: code
 ---
 
 # Points Processor Settings
-
-Root base class for all point processing operations.
 
 ### Overview
 
@@ -110,5 +109,3 @@ _Actual pin names vary by derived processor type_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Core/PCGExPointsProcessor.h)
-
-

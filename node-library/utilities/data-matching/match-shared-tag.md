@@ -1,10 +1,9 @@
 ---
+description: Matches based on shared tags between datasets.
 icon: circle-dashed
 ---
 
 # Match : Shared Tag
-
-Matches based on shared tags between datasets.
 
 ### Overview
 
@@ -226,5 +225,3 @@ This match rule inherits common settings from the base match rule configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExMatching-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExMatching/Public/Matching/PCGExMatchSharedTag.h)
-
-

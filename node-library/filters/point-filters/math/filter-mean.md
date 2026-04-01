@@ -1,10 +1,9 @@
 ---
+description: Compares values against their mean.
 icon: circle-dashed
 ---
 
 # Filter : Mean
-
-Compares values against their mean.
 
 ### Overview
 
@@ -207,5 +206,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExMeanFilter.h)
-
-

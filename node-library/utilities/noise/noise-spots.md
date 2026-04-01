@@ -1,10 +1,9 @@
 ---
+description: Spots noise - circular/shaped spot patterns.
 icon: circle-dashed
 ---
 
 # Noise : Spots
-
-Spots noise - circular/shaped spot patterns.
 
 ### Overview
 
@@ -211,5 +210,3 @@ This noise inherits common settings from the base noise configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExNoise3D-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExNoise3D/Public/Noises/PCGExNoiseSpots.h)
-
-

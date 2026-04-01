@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how external points (seeds, goals) are matched to the nearest node
+  or edge within a cluster.
 icon: sliders-simple
 ---
 
 # Node Selection Details
-
-Configures how external points (seeds, goals) are matched to the nearest node or edge within a cluster.
 
 ### Overview
 
@@ -69,5 +70,3 @@ Default: `-1`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Clusters/PCGExClusterCommon.h)
-
-

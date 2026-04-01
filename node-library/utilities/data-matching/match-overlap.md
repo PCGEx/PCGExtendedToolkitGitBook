@@ -1,10 +1,9 @@
 ---
+description: Matches based on spatial bounding box overlap.
 icon: circle-dashed
 ---
 
 # Match : Overlap
-
-Matches based on spatial bounding box overlap.
 
 ### Overview
 
@@ -211,5 +210,3 @@ This match rule inherits common settings from the base match rule configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExMatching-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExMatching/Public/Matching/PCGExMatchOverlap.h)
-
-

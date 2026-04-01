@@ -1,10 +1,9 @@
 ---
+description: Destroys actors previously spawned by PCG based on actor reference attributes.
 icon: circle
 ---
 
 # Destroy Actor
-
-Destroys actors previously spawned by PCG based on actor reference attributes.
 
 ### Overview
 
@@ -152,5 +151,3 @@ Default: `"ActorReference"`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Utils/PCGExDestroyActor.h)
-
-

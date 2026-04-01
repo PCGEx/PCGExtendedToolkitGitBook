@@ -1,10 +1,9 @@
 ---
+description: Stop fill after a certain number of vtx have been captured.
 icon: circle-dashed
 ---
 
 # FC : Count
-
-Stop fill after a certain number of vtx have been captured.
 
 ### Overview
 
@@ -91,5 +90,3 @@ Minimum: 1
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlCount.h)
-
-

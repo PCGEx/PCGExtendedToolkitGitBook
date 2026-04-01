@@ -1,10 +1,11 @@
 ---
+description: >-
+  Routes point collections based on their spatial relationship to reference
+  bounds.
 icon: circle
 ---
 
 # Spatial Triage
-
-Routes point collections based on their spatial relationship to reference bounds.
 
 ### Overview
 
@@ -109,5 +110,3 @@ Good for: spatial partitioning, bounds culling, partition filtering, tile-based 
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Filtering/PCGExSpatialTriage.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  Abstract base class for vertex property sub-nodes that compute and write
+  per-vertex data based on cluster topology.
 icon: arrow-down-from-arc
 ---
 
 # Vtx Property Provider
-
-Abstract base class for vertex property sub-nodes that compute and write per-vertex data based on cluster topology.
 
 ### Overview
 

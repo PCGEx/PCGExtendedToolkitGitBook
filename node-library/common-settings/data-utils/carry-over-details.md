@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures which attributes and tags are carried over when creating or
+  transforming point data.
 icon: sliders-simple
 ---
 
 # Carry Over Details
-
-Configures which attributes and tags are carried over when creating or transforming point data.
 
 ### Overview
 
@@ -95,5 +96,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Data/Utils/PCGExDataFilterDetails.h)
-
-

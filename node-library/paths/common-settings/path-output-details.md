@@ -1,10 +1,9 @@
 ---
+description: Configures filtering of output paths based on their point count.
 icon: sliders-simple
 ---
 
 # Path Output Details
-
-Configures filtering of output paths based on their point count.
 
 ### Overview
 
@@ -98,5 +97,3 @@ Default: `500`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Paths/PCGExPathOutputDetails.h)
-
-

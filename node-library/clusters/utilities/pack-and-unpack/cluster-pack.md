@@ -1,10 +1,11 @@
 ---
+description: >-
+  Pack each cluster into a single point data object containing both vtx and
+  edges.
 icon: circle
 ---
 
 # Cluster : Pack
-
-Pack each cluster into a single point data object containing both vtx and edges.
 
 ### Overview
 
@@ -57,5 +58,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExPackClusters.h)
-
-

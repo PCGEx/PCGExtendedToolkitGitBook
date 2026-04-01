@@ -1,10 +1,9 @@
 ---
+description: Create a Fibonacci Lattice sphere.
 icon: circle-dashed
 ---
 
 # Shape : φ Sphere
-
-Create a Fibonacci Lattice sphere.
 
 ### Overview
 

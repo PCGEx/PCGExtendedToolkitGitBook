@@ -1,10 +1,9 @@
 ---
+description: Base class for all filter factory provider nodes.
 icon: arrow-down-from-arc
 ---
 
 # Filter Definition
-
-Base class for all filter factory provider nodes.
 
 ### Overview
 

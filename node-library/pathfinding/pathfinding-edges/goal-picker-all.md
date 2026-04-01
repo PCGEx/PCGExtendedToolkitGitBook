@@ -1,10 +1,9 @@
 ---
+description: Each seed creates paths to all goals.
 icon: function
 ---
 
 # Goal Picker : All
-
-Each seed creates paths to all goals.
 
 ### Overview
 
@@ -52,5 +51,3 @@ This picker has no additional settings beyond those inherited from the base goal
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/GoalPickers/PCGExGoalPickerAll.h)
-
-

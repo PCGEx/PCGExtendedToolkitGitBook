@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters vertices based on the dot product (angle) between their connected
+  edges.
 icon: circle-dashed
 ---
 
 # Vtx Filter : Edge Angle
-
-Filters vertices based on the dot product (angle) between their connected edges.
 
 ### Overview
 
@@ -98,5 +99,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Nodes/PCGExNodeEdgeAngleFilter.h)
-
-

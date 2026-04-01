@@ -1,10 +1,9 @@
 ---
+description: Curated collection of Static Mesh references.
 icon: book
 ---
 
 # Mesh Collection
-
-Curated collection of Static Mesh references.
 
 ### Overview
 

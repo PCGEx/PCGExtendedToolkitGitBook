@@ -1,11 +1,12 @@
 ---
+description: >-
+  A tensor that samples nearby surfaces to compute direction fields. Uses all
+  connected surface sources additively.
 hidden: true
 icon: circle-dashed
 ---
 
 # Tensor : Surface
-
-A tensor that samples nearby surfaces to compute direction fields. Uses all connected surface sources additively.
 
 ### Overview
 
@@ -187,5 +188,3 @@ This node inherits from the tensor factory provider base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Tensors/PCGExTensorSurface.h)
-
-

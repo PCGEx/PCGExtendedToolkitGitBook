@@ -4,8 +4,6 @@ icon: circle
 
 # Lloyd Relax 2D
 
-Applies Lloyd relaxation to the input points.
-
 ### Overview
 
 Lloyd Relax 2D iteratively moves points toward more uniform spacing using 2D Voronoi-based relaxation. Points are projected onto a plane, then each iteration computes a 2D Voronoi diagram and moves points toward their cell centroids. This creates evenly distributed points on a surface while preserving their position along the projection axis.
@@ -95,5 +93,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExLloydRelax2D.h)
-
-

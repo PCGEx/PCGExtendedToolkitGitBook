@@ -1,10 +1,9 @@
 ---
+description: Fuse points based on distance.
 icon: circle
 ---
 
 # Fuse Points
-
-Fuse points based on distance.
 
 ### Overview
 
@@ -123,5 +122,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExFusePoints.h)
-
-

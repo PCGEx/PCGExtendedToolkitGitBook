@@ -1,10 +1,9 @@
 ---
+description: Execute multiple actions on points in priority order.
 icon: circle-plus
 ---
 
 # Batch Actions
-
-Execute multiple actions on points in priority order.
 
 ### Overview
 
@@ -86,5 +85,3 @@ Default: Empty (no consumption)
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsActions-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsActions/Public/Elements/PCGExBatchActions.h)
-
-

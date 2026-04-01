@@ -1,10 +1,11 @@
 ---
+description: >-
+  Common settings inherited by most PCGEx nodes for performance, cleanup, and
+  error handling.
 icon: arrow-down-from-arc
 ---
 
 # Shared Settings
-
-Common settings inherited by most PCGEx nodes for performance, cleanup, and error handling.
 
 ### Overview
 

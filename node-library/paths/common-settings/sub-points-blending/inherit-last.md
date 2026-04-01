@@ -1,10 +1,9 @@
 ---
+description: Copy attributes from the destination point to all sub-points.
 icon: function
 ---
 
 # Inherit Last
-
-Copy attributes from the destination point to all sub-points.
 
 ### Overview
 
@@ -50,5 +49,3 @@ The Default Blending for this factory is set to `CopyOther` (copy from destinati
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExBlending-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExBlending/Public/SubPoints/DataBlending/PCGExSubPointsBlendInheritEnd.h)
-
-

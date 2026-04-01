@@ -1,10 +1,11 @@
 ---
+description: >-
+  Abstract base class for fitting-based cluster relaxation operations that use
+  physics simulation principles.
 icon: arrow-down-from-arc
 ---
 
 # Relax Operation
-
-Abstract base class for fitting-based cluster relaxation operations that use physics simulation principles.
 
 ### Overview
 

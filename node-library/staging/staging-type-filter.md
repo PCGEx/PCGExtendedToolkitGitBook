@@ -1,10 +1,9 @@
 ---
+description: Filters staged points by their collection entry type.
 icon: circle
 ---
 
 # Staging : Type Filter
-
-Filters staged points by their collection entry type.
 
 ### Overview
 

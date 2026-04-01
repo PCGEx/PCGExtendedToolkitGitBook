@@ -1,10 +1,9 @@
 ---
+description: Compares a string attribute value against itself at another index.
 icon: circle-dashed
 ---
 
 # Filter : Self Compare (String)
-
-Compares a string attribute value against itself at another index.
 
 ### Overview
 
@@ -215,5 +214,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExStringSelfCompareFilter.h)
-
-

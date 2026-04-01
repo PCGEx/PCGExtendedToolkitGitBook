@@ -1,10 +1,9 @@
 ---
+description: Abstract base for all action factory types.
 icon: arrow-down-from-arc
 ---
 
 # Action
-
-Abstract base for all action factory types.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Base factory for path orientation methods.
 icon: arrow-down-from-arc
 ---
 
 # Orient Operation
-
-Base factory for path orientation methods.
 
 ### Overview
 

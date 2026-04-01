@@ -1,10 +1,9 @@
 ---
+description: Insert target points into paths at their nearest location.
 icon: circle
 ---
 
 # Path : Insert
-
-Insert target points into paths at their nearest location.
 
 ### Overview
 
@@ -504,5 +503,3 @@ Default: `NoInserts`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/PCGExPathInsert.h)
-
-

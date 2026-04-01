@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures which attributes should be gathered, collected, or transferred
+  during operations.
 icon: sliders-simple
 ---
 
 # Attribute Gather Details
-
-Configures which attributes should be gathered, collected, or transferred during operations.
 
 ### Overview
 
@@ -39,5 +40,3 @@ This struct inherits all settings from Name Filters Details.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Data/Utils/PCGExDataFilterDetails.h)
-
-

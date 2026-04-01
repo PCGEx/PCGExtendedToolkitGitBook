@@ -1,10 +1,11 @@
 ---
+description: >-
+  Outputs a new, unique data pointer for the input clusters; to avoid overlap
+  and unexpected behaviors.
 icon: share-nodes
 ---
 
 # Cluster : Make Unique
-
-Outputs a new, unique data pointer for the input clusters; to avoid overlap and unexpected behaviors.
 
 ### Overview
 

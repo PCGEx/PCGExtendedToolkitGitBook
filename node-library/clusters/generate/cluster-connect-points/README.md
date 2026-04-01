@@ -1,10 +1,9 @@
 ---
+description: Connect points according to a set of probes.
 icon: circle-nodes
 ---
 
 # Cluster : Connect Points
-
-Connect points according to a set of probes.
 
 ### Overview
 

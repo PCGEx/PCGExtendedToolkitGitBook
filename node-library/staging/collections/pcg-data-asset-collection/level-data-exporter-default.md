@@ -1,11 +1,9 @@
 ---
-description: Default Implementation
+description: Exports level actors as typed point data with optional collection generation.
 icon: function
 ---
 
 # Level Data Exporter (Default)
-
-Exports level actors as typed point data with optional collection generation.
 
 ### Overview
 

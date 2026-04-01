@@ -1,10 +1,9 @@
 ---
+description: Extract paths from navmesh.
 icon: circle
 ---
 
 # Pathfinding : Navmesh
-
-Extract paths from navmesh.
 
 ### Overview
 
@@ -201,5 +200,3 @@ Properties of the navigation agent used for pathfinding. Affects which areas of 
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfindingNavmesh-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfindingNavmesh/Public/Elements/PCGExPathfindingNavmesh.h)
-
-

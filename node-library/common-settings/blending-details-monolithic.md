@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how point properties and attributes are combined when merging or
+  fusing points.
 icon: sliders-simple
 ---
 
 # Blending Details (Monolithic)
-
-Configures how point properties and attributes are combined when merging or fusing points.
 
 ### Overview
 
