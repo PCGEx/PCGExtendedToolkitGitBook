@@ -1,10 +1,9 @@
 ---
+description: Use shape builders to create shapes from input seed points.
 icon: circle
 ---
 
 # Create Shapes
-
-Use shape builders to create shapes from input seed points.
 
 ### Overview
 

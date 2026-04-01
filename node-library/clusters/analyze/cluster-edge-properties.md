@@ -1,10 +1,9 @@
 ---
+description: Extract & write extra edge information to the point representing the edge.
 icon: share-nodes
 ---
 
 # Cluster : Edge Properties
-
-Extract & write extra edge information to the point representing the edge.
 
 ### Overview
 

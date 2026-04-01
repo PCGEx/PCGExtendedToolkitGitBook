@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters vertices by comparing an attribute value against values from adjacent
+  vertices or connected edges.
 icon: circle-dashed
 ---
 
 # Vtx Filter : Adjacency
-
-Filters vertices by comparing an attribute value against values from adjacent vertices or connected edges.
 
 ### Overview
 
@@ -158,8 +159,6 @@ Vertices connected only by edges with specific attributes:
 * Operand B Source: `Edge` (instead of Vtx)
 * Mode: `All`, Consolidation: `Individual`
 * Compare vertex attribute against edge attributes
-
-
 
 > This is a [filter-definition](../common-settings/filter-definition/ "mention")
 
@@ -391,5 +390,3 @@ Default: `DBL_COMPARE_TOLERANCE`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Nodes/PCGExNodeAdjacencyFilter.h)
-
-

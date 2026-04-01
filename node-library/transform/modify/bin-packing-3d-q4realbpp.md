@@ -4,7 +4,9 @@ icon: circle
 
 # Bin Packing 3D (Q4RealBPP)
 
+{% hint style="info" %}
 3D bin packing with real-world constraints from the [Q4RealBPP paper](https://www.nature.com/articles/s41598-023-39013-9): weight limits, category affinities, load bearing, and multi-objective scoring.
+{% endhint %}
 
 ### Overview
 
@@ -463,5 +465,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/Layout/PCGExBinPacking3D.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  A Picker that accepts lists of ranges in the form of FVector2, read from one
+  or more attributes.
 icon: circle-dashed
 ---
 
 # Picker : Ranges from Set
-
-A Picker that accepts lists of ranges in the form of FVector2, read from one or more attributes.
 
 ### Overview
 
@@ -108,5 +109,3 @@ This picker inherits common settings from the base picker configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExPickers-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExPickers/Public/Pickers/PCGExPickerAttributeSetRanges.h)
-
-

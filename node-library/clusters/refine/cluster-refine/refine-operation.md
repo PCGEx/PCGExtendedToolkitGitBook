@@ -1,10 +1,11 @@
 ---
+description: >-
+  Abstract base class for all edge refinement operations used with the Refine
+  Clusters node.
 icon: arrow-down-from-arc
 ---
 
 # Refine Operation
-
-Abstract base class for all edge refinement operations used with the Refine Clusters node.
 
 ### Overview
 

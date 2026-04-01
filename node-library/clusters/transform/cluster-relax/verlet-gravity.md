@@ -1,10 +1,11 @@
 ---
+description: >-
+  Physics-based relaxation using Verlet integration with gravity, friction, and
+  edge length constraints.
 icon: function
 ---
 
 # Verlet (Gravity)
-
-Physics-based relaxation using Verlet integration with gravity, friction, and edge length constraints.
 
 ### Overview
 
@@ -200,5 +201,3 @@ Default: `0.99`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Relaxations/PCGExVerletRelax.h)
-
-

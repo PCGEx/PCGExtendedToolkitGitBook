@@ -1,10 +1,9 @@
 ---
+description: Fix an order for edge start & end endpoints.
 icon: share-nodes
 ---
 
 # Cluster : Edge Order
-
-Fix an order for edge start & end endpoints.
 
 ### Overview
 
@@ -86,5 +85,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExEdgeOrder.h)
-
-

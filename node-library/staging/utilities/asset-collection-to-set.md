@@ -1,10 +1,9 @@
 ---
+description: Convert an asset collection to an attribute set.
 icon: circle
 ---
 
 # Asset Collection to Set
-
-Convert an asset collection to an attribute set.
 
 ### Overview
 
@@ -214,5 +213,3 @@ Default: Disabled, attribute name `NestingDepth`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCollections-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCollections/Public/Elements/PCGExAssetCollectionToSet.h)
-
-

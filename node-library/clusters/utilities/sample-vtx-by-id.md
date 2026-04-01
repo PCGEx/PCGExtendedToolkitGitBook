@@ -1,10 +1,9 @@
 ---
+description: Sample a cluster vtx by using a stored Vtx ID.
 icon: circle
 ---
 
 # Sample : Vtx by ID
-
-Sample a cluster vtx by using a stored Vtx ID.
 
 ### Overview
 
@@ -199,5 +198,3 @@ This node inherits common point processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExSampleVtxByID.h)
-
-

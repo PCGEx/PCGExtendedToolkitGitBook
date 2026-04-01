@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how objects are aligned and positioned relative to their bounds on
+  each axis.
 icon: sliders-simple
 ---
 
 # Justification Details
-
-Configures how objects are aligned and positioned relative to their bounds on each axis.
 
 ### Overview
 
@@ -172,5 +173,3 @@ Each axis uses `FPCGExSingleJustifyDetails` with the following options:
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Fitting/PCGExFitting.h)
-
-

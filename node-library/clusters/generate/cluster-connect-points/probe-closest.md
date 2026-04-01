@@ -1,10 +1,9 @@
 ---
+description: Connect to the N closest neighbors within search radius.
 icon: circle-dashed
 ---
 
 # Probe : Closest
-
-Connect to the N closest neighbors within search radius.
 
 ### Overview
 

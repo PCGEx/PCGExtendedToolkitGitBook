@@ -1,10 +1,9 @@
 ---
+description: Sample a tensor at point location and probe in that direction.
 icon: circle-dashed
 ---
 
 # Probe : Tensor
-
-Sample a tensor at point location and probe in that direction.
 
 ### Overview
 
@@ -156,5 +155,3 @@ This probe inherits from the probe factory base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Probes/PCGExProbeTensor.h)
-
-

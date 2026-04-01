@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how spawned components or actors attach to their parent in terms of
+  transform behavior.
 icon: sliders-simple
 ---
 
 # Attachment Rules
-
-Configures how spawned components or actors attach to their parent in terms of transform behavior.
 
 ### Overview
 
@@ -94,5 +95,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Details/PCGExAttachmentRules.h)
-
-

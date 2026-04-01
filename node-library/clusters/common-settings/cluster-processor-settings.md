@@ -1,10 +1,9 @@
 ---
+description: Base infrastructure for cluster/edge processing operations.
 icon: code
 ---
 
 # Cluster Processor Settings
-
-Base infrastructure for cluster/edge processing operations.
 
 ### Overview
 
@@ -122,5 +121,3 @@ Each derived processor specializes in a specific cluster operation type.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExGraphs-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExGraphs/Public/Core/PCGExClustersProcessor.h)
-
-

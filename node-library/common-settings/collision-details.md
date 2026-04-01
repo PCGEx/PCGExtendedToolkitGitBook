@@ -1,10 +1,9 @@
 ---
+description: Shared configuration for collision traces used across multiple nodes.
 icon: sliders-simple
 ---
 
 # Collision Details
-
-Shared configuration for collision traces used across multiple nodes.
 
 ### Overview
 
@@ -189,5 +188,3 @@ Actor selection criteria for actors to exclude from collision checks.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Details/PCGExCollisionDetails.h)
-
-

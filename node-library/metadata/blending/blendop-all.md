@@ -1,10 +1,9 @@
 ---
+description: Creates bulk blend operations from monolithic blending settings.
 icon: circle-dashed
 ---
 
 # BlendOp : All
-
-Creates bulk blend operations from monolithic blending settings.
 
 #### Overview
 

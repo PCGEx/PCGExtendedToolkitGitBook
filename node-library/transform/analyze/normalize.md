@@ -1,10 +1,9 @@
 ---
+description: Output normalized position against data bounds to a new vector attribute.
 icon: circle
 ---
 
 # Normalize
-
-Output normalized position against data bounds to a new vector attribute.
 
 ### Overview
 
@@ -170,5 +169,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExNormalize.h)
-
-

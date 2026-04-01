@@ -1,10 +1,12 @@
 ---
+description: >-
+  Ensure the input set of vertex and edges outputs clean, interconnected
+  clusters. May create new clusters, but does not create nor delete
+  points/edges.
 icon: share-nodes
 ---
 
 # Cluster : Sanitize
-
-Ensure the input set of vertex and edges outputs clean, interconnected clusters. May create new clusters, but does not create nor delete points/edges.
 
 ### Overview
 
@@ -58,5 +60,3 @@ This node inherits common cluster processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExSanitizeClusters.h)
-
-

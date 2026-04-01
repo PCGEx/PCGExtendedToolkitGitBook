@@ -1,10 +1,9 @@
 ---
+description: Stitch paths together by their endpoints.
 icon: circle
 ---
 
 # Path : Stitch
-
-Stitch paths together by their endpoints.
 
 ### Overview
 

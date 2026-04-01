@@ -1,10 +1,9 @@
 ---
+description: Output a single hull per cluster, as a path.
 icon: circle
 ---
 
 # Find Cluster Hull
-
-Output a single hull per cluster, as a path.
 
 ### Overview
 
@@ -146,5 +145,3 @@ _Advanced setting_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Elements/PCGExPathfindingFindClusterHull.h)
-
-

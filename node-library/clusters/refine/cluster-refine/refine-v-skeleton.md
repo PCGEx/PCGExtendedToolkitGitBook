@@ -1,10 +1,11 @@
 ---
+description: >-
+  Refines a cluster into a β-skeleton (beta-skeleton) graph using a configurable
+  neighborhood parameter.
 icon: function
 ---
 
 # Refine : β Skeleton
-
-Refines a cluster into a β-skeleton (beta-skeleton) graph using a configurable neighborhood parameter.
 
 ### Overview
 

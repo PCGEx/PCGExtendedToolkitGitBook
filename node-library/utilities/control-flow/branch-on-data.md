@@ -1,10 +1,9 @@
 ---
+description: Routes data to different output pins based on a @Data domain attribute value.
 icon: circle
 ---
 
 # Branch on Data
-
-Routes data to different output pins based on a @Data domain attribute value.
 
 ### Overview
 
@@ -361,5 +360,3 @@ All output pins carry the same data type as input.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/ControlFlow/PCGExBranchOnDataAttribute.h)
-
-

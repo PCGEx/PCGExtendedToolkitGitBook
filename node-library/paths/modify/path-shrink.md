@@ -1,10 +1,9 @@
 ---
+description: Shrink path from its beginning and end.
 icon: circle
 ---
 
 # Path : Shrink
-
-Shrink path from its beginning and end.
 
 ### Overview
 
@@ -249,5 +248,3 @@ This node inherits path processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/PCGExPathShrink.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Amplitude of a vertex, based on neighboring connections.
 icon: circle-dashed
 ---
 
 # Vtx : Amplitude
-
-Amplitude of a vertex, based on neighboring connections.
 
 ### Overview
 
@@ -364,5 +363,3 @@ Default: `(0, 0, 1)`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/VtxProperties/PCGExVtxPropertyAmplitude.h)
-
-

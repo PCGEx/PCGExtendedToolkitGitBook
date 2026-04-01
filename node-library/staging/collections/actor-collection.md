@@ -1,10 +1,9 @@
 ---
+description: Curated collection of Actor class references.
 icon: book
 ---
 
 # Actor Collection
-
-Curated collection of Actor class references.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Copies tags from matched targets to candidates.
 icon: circle-dashed
 ---
 
 # Match : Copy Tags
-
-Copies tags from matched targets to candidates.
 
 ### Overview
 
@@ -85,5 +84,3 @@ This match rule inherits common settings from the base match rule configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExMatching-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExMatching/Public/Matching/PCGExMatchCopyTags.h)
-
-

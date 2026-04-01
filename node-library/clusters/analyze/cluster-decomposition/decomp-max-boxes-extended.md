@@ -1,10 +1,11 @@
 ---
+description: >-
+  Advanced box extraction with per-node weights, axis bias, and heuristic merge
+  gating.
 icon: function
 ---
 
 # Decomp : Max Boxes (Extended)
-
-Advanced box extraction with per-node weights, axis bias, and heuristic merge gating.
 
 ### Overview
 

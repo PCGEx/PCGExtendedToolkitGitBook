@@ -1,10 +1,9 @@
 ---
+description: A simple Tuple attribute for creating structured parameter data.
 icon: circle
 ---
 
 # Tuple
-
-A simple Tuple attribute for creating structured parameter data.
 
 ### Overview
 
@@ -75,5 +74,3 @@ A list of tags separated by commas to apply to the output tuple data. Useful for
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExProperties-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExProperties/Public/Elements/PCGExTuple.h)
-
-

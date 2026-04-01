@@ -1,10 +1,9 @@
 ---
+description: Create texture data objects from paths.
 icon: circle
 ---
 
 # Get Texture Data
-
-Create texture data objects from paths.
 
 ### Overview
 
@@ -256,5 +255,3 @@ Default: `(-0.5, -0.5) to (0.5, 0.5)`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExGetTextureData.h)
-
-

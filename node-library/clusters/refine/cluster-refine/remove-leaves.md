@@ -1,10 +1,9 @@
 ---
+description: Removes leaf vertices (dead ends) and their connecting edges from the cluster.
 icon: function
 ---
 
 # Remove Leaves
-
-Removes leaf vertices (dead ends) and their connecting edges from the cluster.
 
 ### Overview
 
@@ -48,5 +47,3 @@ This refinement operation has no additional settings. It simply removes all curr
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersRefine/Public/Refinements/PCGExEdgeRefineRemoveLeaves.h)
-
-

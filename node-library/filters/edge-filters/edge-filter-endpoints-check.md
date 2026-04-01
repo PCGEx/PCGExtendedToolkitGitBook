@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters edges based on whether their endpoint vertices pass the connected
+  point filters.
 icon: circle-dashed
 ---
 
 # Edge Filter : Endpoints Check
-
-Filters edges based on whether their endpoint vertices pass the connected point filters.
 
 ### Overview
 
@@ -107,5 +108,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Edges/PCGExEdgeEndpointsCheckFilter.h)
-
-

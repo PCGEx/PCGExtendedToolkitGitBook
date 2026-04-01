@@ -1,10 +1,11 @@
 ---
+description: >-
+  Copies source points to target point locations with transform fitting and
+  attribute forwarding.
 icon: circle
 ---
 
 # Copy to Points
-
-Copies source points to target point locations with transform fitting and attribute forwarding.
 
 ### Overview
 
@@ -301,5 +302,3 @@ Result: Each piece scaled to fit in its target volume
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/PCGExCopyToPoints.h)
-
-

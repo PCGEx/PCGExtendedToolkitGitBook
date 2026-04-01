@@ -1,10 +1,9 @@
 ---
+description: Create points in a circular shape.
 icon: circle-dashed
 ---
 
 # Shape : Circle
-
-Create points in a circular shape.
 
 ### Overview
 
@@ -253,5 +252,3 @@ Default: `500`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsShapes-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsShapes/Public/Shapes/PCGExShapeCircle.h)
-
-

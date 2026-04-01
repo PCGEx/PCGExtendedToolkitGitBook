@@ -1,10 +1,9 @@
 ---
+description: Base infrastructure for data matching rules.
 icon: arrow-down-from-arc
 ---
 
 # Match Rule
-
-Base infrastructure for data matching rules.
 
 ### Overview
 

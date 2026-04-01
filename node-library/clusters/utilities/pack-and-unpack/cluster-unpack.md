@@ -1,10 +1,9 @@
 ---
+description: Restores vtx/edge clusters from packed dataset.
 icon: share-nodes
 ---
 
 # Cluster : Unpack
-
-Restores vtx/edge clusters from packed dataset.
 
 ### Overview
 
@@ -64,5 +63,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExUnpackClusters.h)
-
-

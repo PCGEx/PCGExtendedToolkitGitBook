@@ -1,10 +1,9 @@
 ---
+description: Creates sequential chain connections based on sorting criteria.
 icon: circle-dashed
 ---
 
 # G-Probe : Chain/Path
-
-Creates sequential chain connections based on sorting criteria.
 
 ### Overview
 

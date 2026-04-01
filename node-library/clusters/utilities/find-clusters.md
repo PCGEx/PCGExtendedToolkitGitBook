@@ -1,10 +1,9 @@
 ---
+description: Find vtx/edge pairs inside a soup of data collections.
 icon: share-nodes
 ---
 
 # Find Clusters
-
-Find vtx/edge pairs inside a soup of data collections.
 
 // TODO : Need more meat
 
@@ -78,5 +77,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExFindClustersData.h)
-
-

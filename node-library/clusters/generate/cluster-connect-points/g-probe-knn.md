@@ -1,10 +1,9 @@
 ---
+description: K-Nearest Neighbors connectivity.
 icon: circle-dashed
 ---
 
 # G-Probe : KNN
-
-K-Nearest Neighbors connectivity.
 
 ### Overview
 

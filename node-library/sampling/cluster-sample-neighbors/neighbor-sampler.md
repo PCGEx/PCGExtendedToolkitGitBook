@@ -1,10 +1,9 @@
 ---
+description: Base settings shared by all neighbor sampling sub-nodes.
 icon: arrow-down-from-arc
 ---
 
 # Neighbor Sampler
-
-Base settings shared by all neighbor sampling sub-nodes.
 
 ### Overview
 

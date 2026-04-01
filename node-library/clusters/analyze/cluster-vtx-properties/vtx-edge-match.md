@@ -1,10 +1,9 @@
 ---
+description: Find the edge that matches the closest provided direction.
 icon: circle-dashed
 ---
 
 # Vtx : Edge Match
-
-Find the edge that matches the closest provided direction.
 
 ### Overview
 
@@ -167,5 +166,3 @@ Default prefix: `Matching`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/VtxProperties/PCGExVtxPropertyEdgeMatch.h)
-
-

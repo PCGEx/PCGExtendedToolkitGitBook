@@ -1,10 +1,9 @@
 ---
+description: Filter using bitflag comparison.
 icon: circle-dashed
 ---
 
 # Filter : Bitmask
-
-Filter using bitflag comparison.
 
 ### Overview
 
@@ -165,5 +164,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExBitmaskFilter.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Output attribute statistics.
 icon: circle
 ---
 
 # Attribute Stats
-
-Output attribute statistics.
 
 ### Overview
 
@@ -384,5 +383,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/PCGExAttributeStats.h)
-
-

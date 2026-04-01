@@ -1,10 +1,9 @@
 ---
+description: A Picker that selects a range of values.
 icon: circle-dashed
 ---
 
 # Picker : Range
-
-A Picker that selects a range of values.
 
 ### Overview
 
@@ -159,5 +158,3 @@ This picker inherits common settings from the base picker configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExPickers-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExPickers/Public/Pickers/PCGExPickerConstantRange.h)
-
-

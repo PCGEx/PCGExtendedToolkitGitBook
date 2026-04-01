@@ -1,10 +1,9 @@
 ---
+description: Track accumulated attribute value along path, stop when threshold exceeded.
 icon: circle-dashed
 ---
 
 # FC : Attribute Accumulation
-
-Track accumulated attribute value along path, stop when threshold exceeded.
 
 ### Overview
 
@@ -149,5 +148,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlAttributeAccumulation.h)
-
-

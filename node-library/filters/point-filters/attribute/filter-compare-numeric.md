@@ -1,10 +1,9 @@
 ---
+description: (double) A == (double) B
 icon: circle-dashed
 ---
 
 # Filter : Compare (Numeric)
-
-(double) A == (double) B
 
 ### Overview
 
@@ -143,5 +142,3 @@ Default: `DBL_COMPARE_TOLERANCE`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExNumericCompareFilter.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  Orients points by distance-weighted blend of neighboring path point
+  directions.
 icon: function
 ---
 
 # Orient Weighted
-
-Orients points by distance-weighted blend of neighboring path point directions.
 
 ### Overview
 
@@ -62,5 +63,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/Orient/PCGExOrientWeighted.h)
-
-

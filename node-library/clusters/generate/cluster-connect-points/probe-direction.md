@@ -1,10 +1,9 @@
 ---
+description: Probe in a given direction.
 icon: circle-dashed
 ---
 
 # Probe : Direction
-
-Probe in a given direction.
 
 ### Overview
 

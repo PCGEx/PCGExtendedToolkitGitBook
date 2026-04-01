@@ -1,10 +1,9 @@
 ---
+description: Configures how objects are scaled to fit within target bounds or spaces.
 icon: sliders-simple
 ---
 
 # Scale To Fit Details
-
-Configures how objects are scaled to fit within target bounds or spaces.
 
 ### Overview
 
@@ -124,5 +123,3 @@ Default: `None`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Fitting/PCGExFitting.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Filter using a random value.
 icon: circle-dashed
 ---
 
 # Filter : Random
-
-Filter using a random value.
 
 ### Overview
 
@@ -219,5 +218,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExRandomFilter.h)
-
-

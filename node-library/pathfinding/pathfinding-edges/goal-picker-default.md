@@ -1,10 +1,9 @@
 ---
+description: Default goal picker that pairs seeds with goals by index.
 icon: function
 ---
 
 # Goal Picker : Default
-
-Default goal picker that pairs seeds with goals by index.
 
 ### Overview
 
@@ -62,5 +61,3 @@ Default: `Tile`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/GoalPickers/PCGExGoalPicker.h)
-
-

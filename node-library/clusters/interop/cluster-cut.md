@@ -1,10 +1,9 @@
 ---
+description: Cut clusters nodes & edges using paths.
 icon: share-nodes
 ---
 
 # Cluster : Cut
-
-Cut clusters nodes & edges using paths.
 
 ### Overview
 
@@ -170,5 +169,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Paths/PCGExCutClusters.h)
-
-

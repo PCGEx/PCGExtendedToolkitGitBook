@@ -1,10 +1,9 @@
 ---
+description: Merge points group to a single point representing their bounds.
 icon: circle
 ---
 
 # Points to Bounds
-
-Merge points group to a single point representing their bounds.
 
 ### Overview
 
@@ -196,5 +195,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExPointsToBounds.h)
-
-

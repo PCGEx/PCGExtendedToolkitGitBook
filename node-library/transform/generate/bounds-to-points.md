@@ -4,8 +4,6 @@ icon: circle
 
 # Bounds To Points
 
-Generate a point on the surface of the bounds.
-
 ### Overview
 
 This node creates new points at specific positions on each input point's bounding box surface. Position is controlled using UVW coordinates, where each axis ranges from -1 to 1 (edges of bounds) with 0 at the center. Optional symmetry generates mirrored pairs across an axis, useful for creating matching points on opposite sides of bounds.
@@ -199,5 +197,3 @@ Copies source point attributes as tags on output collections.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/Bounds/PCGExBoundsToPoints.h)
-
-

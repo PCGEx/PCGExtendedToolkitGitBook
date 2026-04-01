@@ -1,10 +1,9 @@
 ---
+description: Base classes for filters that operate on graph clusters (vertices and edges).
 icon: code
 ---
 
 # Cluster Filter Definition
-
-Base classes for filters that operate on graph clusters (vertices and edges).
 
 ### Overview
 
@@ -83,5 +82,3 @@ Cluster filters inherit all settings from point filters.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Core/PCGExClusterFilter.h)
-
-

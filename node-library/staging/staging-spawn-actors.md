@@ -1,10 +1,9 @@
 ---
+description: Spawns actors from staged collection entries.
 icon: circle
 ---
 
 # Staging : Spawn Actors
-
-Spawns actors from staged collection entries.
 
 ### Overview
 

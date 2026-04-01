@@ -1,10 +1,9 @@
 ---
+description: Partition clusters by uniform spatial grid.
 icon: function
 ---
 
 # Decomp : Grid Partition
-
-Partition clusters by uniform spatial grid.
 
 ### Overview
 

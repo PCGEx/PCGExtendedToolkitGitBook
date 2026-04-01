@@ -1,10 +1,9 @@
 ---
+description: Writes cluster states as an int64 flag mask attribute on vertices.
 icon: circle-nodes
 ---
 
 # Cluster : Write States
-
-Writes cluster states as an int64 flag mask attribute on vertices.
 
 ### Overview
 
@@ -78,5 +77,3 @@ Default: `0`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/States/PCGExClusterWriteStates.h)
-
-

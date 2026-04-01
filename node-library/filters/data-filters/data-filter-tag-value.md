@@ -1,10 +1,9 @@
 ---
+description: Test the value of one or multiple tags on the input collection.
 icon: circle-dashed
 ---
 
 # Data Filter : Tag Value
-
-Test the value of one or multiple tags on the input collection.
 
 ### Overview
 
@@ -211,5 +210,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Collections/PCGExTagValueFilter.h)
-
-

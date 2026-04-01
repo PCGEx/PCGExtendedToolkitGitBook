@@ -1,11 +1,10 @@
 ---
+description: Grow paths from seeds.
 hidden: true
 icon: circle-plus
 ---
 
 # Pathfinding : Grow Paths
-
-Grow paths from seeds.
 
 {% hint style="danger" %}
 This node is deprecated; use [cluster-flood-fill](cluster-flood-fill/ "mention") instead.
@@ -376,5 +375,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Elements/PCGExPathfindingGrowPaths.h)
-
-

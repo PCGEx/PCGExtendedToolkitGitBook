@@ -1,10 +1,9 @@
 ---
+description: Keep/Remove tags & attributes using string queries.
 icon: circle
 ---
 
 # Meta Cleanup
-
-Keep/Remove tags & attributes using string queries.
 
 ### Overview
 
@@ -122,5 +121,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/PCGExMetaCleanup.h)
-
-

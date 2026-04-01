@@ -1,10 +1,9 @@
 ---
+description: Create a Delaunay triangulated surface for each input dataset.
 icon: circle
 ---
 
 # Topology : Point Surface
-
-Create a Delaunay triangulated surface for each input dataset.
 
 ### Overview
 

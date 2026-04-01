@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures complete transform behavior including scaling, justification, and
+  inheritance from target points.
 icon: sliders
 ---
 
 # Transform Details
-
-Configures complete transform behavior including scaling, justification, and inheritance from target points.
 
 {% content-ref url="justification-details.md" %}
 [justification-details.md](justification-details.md)
@@ -101,5 +102,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Fitting/PCGExFitting.h)
-
-

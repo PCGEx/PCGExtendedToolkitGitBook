@@ -1,10 +1,9 @@
 ---
+description: Create a 3D delaunay tetrahedralization for each input dataset.
 icon: share-nodes
 ---
 
 # Cluster : Delaunay 3D
-
-Create a 3D delaunay tetrahedralization for each input dataset.
 
 ### Overview
 
@@ -152,5 +151,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersDiagrams/Public/Elements/PCGExBuildDelaunayGraph.h)
-
-

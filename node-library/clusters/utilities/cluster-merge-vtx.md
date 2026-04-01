@@ -1,10 +1,9 @@
 ---
+description: Merge Vtx so all edges share the same vtx collection.
 icon: share-nodes
 ---
 
 # Cluster : Merge Vtx
-
-Merge Vtx so all edges share the same vtx collection.
 
 ### Overview
 
@@ -58,5 +57,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExMergeVertices.h)
-
-

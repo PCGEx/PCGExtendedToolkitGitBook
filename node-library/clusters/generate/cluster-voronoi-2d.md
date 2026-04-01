@@ -1,10 +1,9 @@
 ---
+description: Create a 2D Voronoi graph for each input dataset.
 icon: share-nodes
 ---
 
 # Cluster : Voronoi 2D
-
-Create a 2D Voronoi graph for each input dataset.
 
 ### Overview
 

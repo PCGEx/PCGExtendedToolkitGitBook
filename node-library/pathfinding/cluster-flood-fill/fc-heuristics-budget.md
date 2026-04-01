@@ -1,10 +1,9 @@
 ---
+description: Stop diffusion when accumulated heuristic cost exceeds a budget.
 icon: circle-dashed
 ---
 
 # FC : Heuristics Budget
-
-Stop diffusion when accumulated heuristic cost exceeds a budget.
 
 ### Overview
 
@@ -134,5 +133,3 @@ Note: The Steps setting is not available for this control.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlHxBudget.h)
-
-

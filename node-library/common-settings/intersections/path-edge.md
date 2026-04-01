@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how intersections between edges or path segments are detected and
+  processed.
 icon: sliders-simple
 ---
 
 # Path ∩ Edge
-
-Configures how intersections between edges or path segments are detected and processed.
 
 ### Overview
 
@@ -147,5 +148,3 @@ Default: `bIsCrossing`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Paths/PCGExPathIntersectionDetails.h)
-
-

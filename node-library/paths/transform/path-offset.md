@@ -1,10 +1,9 @@
 ---
+description: Offset path points.
 icon: circle
 ---
 
 # Path : Offset
-
-Offset path points.
 
 {% hint style="success" %}
 ### Superseded by [clipper2-offset.md](../generate/clipper2-offset.md "mention")

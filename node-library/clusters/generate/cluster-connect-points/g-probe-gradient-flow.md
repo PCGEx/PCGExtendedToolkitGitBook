@@ -1,10 +1,9 @@
 ---
+description: Connect points following attribute gradient direction.
 icon: circle-dashed
 ---
 
 # G-Probe : Gradient Flow
-
-Connect points following attribute gradient direction.
 
 ### Overview
 

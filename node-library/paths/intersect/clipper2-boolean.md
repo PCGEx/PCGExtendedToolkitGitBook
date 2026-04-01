@@ -1,10 +1,9 @@
 ---
+description: Does a Clipper2 Boolean operation.
 icon: circle
 ---
 
 # Clipper2 : Boolean
-
-Does a Clipper2 Boolean operation.
 
 ### Overview
 
@@ -132,5 +131,3 @@ This node inherits common Clipper2 processing settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClipper2-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClipper2/Public/Elements/PCGExClipper2Boolean.h)
-
-

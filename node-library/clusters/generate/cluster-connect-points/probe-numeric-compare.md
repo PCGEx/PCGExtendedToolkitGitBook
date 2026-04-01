@@ -1,10 +1,11 @@
 ---
+description: >-
+  Connect points that pass the value comparison between the probing point and
+  the candidate point.
 icon: circle-dashed
 ---
 
 # Probe : Numeric Compare
-
-Connect points that pass the value comparison between the probing point and the candidate point.
 
 ### Overview
 
@@ -231,5 +232,3 @@ Default: `0`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsProbing-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsProbing/Public/Probes/PCGExProbeNumericCompare.h)
-
-

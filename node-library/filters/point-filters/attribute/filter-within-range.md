@@ -1,10 +1,9 @@
 ---
+description: Checks if a value is within a given range.
 icon: circle-dashed
 ---
 
 # Filter : Within Range
-
-Checks if a value is within a given range.
 
 ### Overview
 
@@ -167,5 +166,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExWithinRangeFilter.h)
-
-

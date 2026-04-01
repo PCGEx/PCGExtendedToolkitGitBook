@@ -1,10 +1,9 @@
 ---
+description: Routes point collections to multiple output pins based on filter conditions.
 icon: circle-plus
 ---
 
 # Uber Branch
-
-Routes point collections to multiple output pins based on filter conditions.
 
 ### Overview
 
@@ -181,5 +180,3 @@ _Output pins are dynamically created based on Num Branches_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/ControlFlow/PCGExUberBranch.h)
-
-

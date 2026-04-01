@@ -1,10 +1,9 @@
 ---
+description: Filters out point collections based on their point count.
 icon: circle
 ---
 
 # Discard By Point Count
-
-Filters out point collections based on their point count.
 
 ### Overview
 
@@ -234,5 +233,3 @@ Result: Collections with >1000 points discarded
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Filtering/PCGExDiscardByPointCount.h)
-
-

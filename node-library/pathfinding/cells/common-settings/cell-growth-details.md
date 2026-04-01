@@ -1,10 +1,9 @@
 ---
+description: Configures how cell boundaries grow or shrink during cell-finding operations.
 icon: sliders-simple
 ---
 
 # Cell Growth Details
-
-Configures how cell boundaries grow or shrink during cell-finding operations.
 
 ### Overview
 
@@ -63,5 +62,3 @@ Default: `0` (no growth)
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExGraphs-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExGraphs/Public/Clusters/Artifacts/PCGExCellDetails.h)
-
-

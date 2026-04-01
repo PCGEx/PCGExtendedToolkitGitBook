@@ -1,10 +1,11 @@
 ---
+description: >-
+  Data asset that stores named bitmask entries for reusable bitmask
+  configurations.
 icon: book
 ---
 
 # Bitmask Collection
-
-Data asset that stores named bitmask entries for reusable bitmask configurations.
 
 ### Overview
 
@@ -187,5 +188,3 @@ Collection: "WindDirections"
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Data/Bitmasks/PCGExBitmaskCollection.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Discard entire datasets based on how they overlap with each other.
 icon: circle
 ---
 
 # Discard By Overlap
-
-Discard entire datasets based on how they overlap with each other.
 
 > This is basically self-pruning for collections.
 
@@ -35,22 +34,22 @@ Each dataset gets a single **Weight** value that determines its pruning priority
 
 **Dynamic scores** — computed from actual overlaps, change as datasets are pruned:
 
-| Metric                   | What it measures                                          |
-| ------------------------ | --------------------------------------------------------- |
-| **Overlap Count**        | How many other datasets this one overlaps with            |
-| **Overlap Sub Count**    | Total number of individual point-to-point overlaps        |
-| **Overlap Volume**       | Cumulative intersection volume across all overlapping points |
-| **Overlap Volume Density** | Overlap volume divided by overlapping point count       |
+| Metric                     | What it measures                                             |
+| -------------------------- | ------------------------------------------------------------ |
+| **Overlap Count**          | How many other datasets this one overlaps with               |
+| **Overlap Sub Count**      | Total number of individual point-to-point overlaps           |
+| **Overlap Volume**         | Cumulative intersection volume across all overlapping points |
+| **Overlap Volume Density** | Overlap volume divided by overlapping point count            |
 
 **Static scores** — intrinsic to the dataset, don't change during pruning:
 
-| Metric              | What it measures                                     |
-| ------------------- | ---------------------------------------------------- |
-| **Num Points**      | How many points the dataset contains                 |
-| **Volume**          | Total volume of all point bounds                     |
-| **Volume Density**  | Points per unit of volume                            |
-| **Custom Tag Score** | Sum of score values for matching tags               |
-| **Data Score**      | Sum of `@Data` attribute values                      |
+| Metric               | What it measures                      |
+| -------------------- | ------------------------------------- |
+| **Num Points**       | How many points the dataset contains  |
+| **Volume**           | Total volume of all point bounds      |
+| **Volume Density**   | Points per unit of volume             |
+| **Custom Tag Score** | Sum of score values for matching tags |
+| **Data Score**       | Sum of `@Data` attribute values       |
 
 Each raw score is **normalized relative to the current maximum** across all remaining datasets (so the highest becomes 1.0). The final weight is:
 
@@ -137,16 +136,16 @@ Default: `10`
 
 <summary><strong>Weighting</strong> <code>FPCGExOverlapScoresWeighting</code></summary>
 
-See [How Scoring Works](#how-scoring-works) above for a full explanation of how these combine.
+See [How Scoring Works](discard-by-overlap.md#how-scoring-works) above for a full explanation of how these combine.
 
 **Dynamic Weights** (from overlaps — change as datasets are pruned):
 
-| Property                   | Default | Description                            |
-| -------------------------- | ------- | -------------------------------------- |
-| **Dynamic Balance**        | `1`     | Weight of dynamic category vs static   |
-| **Overlap Count**          | `2`     | Weight for number of overlapping sets  |
+| Property                   | Default | Description                             |
+| -------------------------- | ------- | --------------------------------------- |
+| **Dynamic Balance**        | `1`     | Weight of dynamic category vs static    |
+| **Overlap Count**          | `2`     | Weight for number of overlapping sets   |
 | **Overlap Sub Count**      | `1`     | Weight for number of overlapping points |
-| **Overlap Volume**         | `0`     | Weight for cumulative overlap volume   |
+| **Overlap Volume**         | `0`     | Weight for cumulative overlap volume    |
 | **Overlap Volume Density** | `0`     | Weight for volume per overlapping point |
 
 **Static Weights** (intrinsic to dataset — constant during pruning):
@@ -235,5 +234,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExDiscardByOverlap.h)
-
-

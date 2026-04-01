@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how crossing edges are detected and processed during cluster
+  fusing.
 icon: sliders-simple
 ---
 
 # Edge ∩ Edge
-
-Configures how crossing edges are detected and processed during cluster fusing.
 
 ### Overview
 
@@ -146,5 +147,3 @@ Default: `bCrossing`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExBlending-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExBlending/Public/Details/PCGExIntersectionDetails.h)
-
-

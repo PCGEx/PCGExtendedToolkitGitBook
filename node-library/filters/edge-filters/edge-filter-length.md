@@ -1,10 +1,9 @@
 ---
+description: Filters edges based on their length compared to a threshold value.
 icon: circle-dashed
 ---
 
 # Edge Filter : Length
-
-Filters edges based on their length compared to a threshold value.
 
 ### Overview
 
@@ -135,5 +134,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Edges/PCGExEdgeLengthFilter.h)
-
-

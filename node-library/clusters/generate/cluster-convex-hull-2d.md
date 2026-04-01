@@ -1,10 +1,9 @@
 ---
+description: Create a 2D Convex Hull triangulation for each input dataset.
 icon: share-nodes
 ---
 
 # Cluster : Convex Hull 2D
-
-Create a 2D Convex Hull triangulation for each input dataset.
 
 ### Overview
 
@@ -123,5 +122,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersDiagrams/Public/Elements/PCGExBuildConvexHull2D.h)
-
-

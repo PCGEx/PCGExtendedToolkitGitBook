@@ -1,10 +1,11 @@
 ---
+description: >-
+  Find the collision point on the nearest collidable surface in a given
+  direction.
 icon: circle
 ---
 
 # Sample : Line Trace
-
-Find the collision point on the nearest collidable surface in a given direction.
 
 ### Overview
 
@@ -358,5 +359,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Elements/PCGExSampleSurfaceGuided.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Spawns level instances from staged points.
 icon: circle
 ---
 
 # Staging : Spawn Level
-
-Spawns level instances from staged points.
 
 ### Overview
 

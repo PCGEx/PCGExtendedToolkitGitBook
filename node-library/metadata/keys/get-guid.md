@@ -1,10 +1,9 @@
 ---
+description: Retrieves a single GUID from a specific point index as param data.
 icon: circle
 ---
 
 # Get GUID
-
-Retrieves a single GUID from a specific point index as param data.
 
 ### Overview
 
@@ -356,5 +355,3 @@ Use as database key or reference ID
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Utils/PCGExGetGUID.h)
-
-

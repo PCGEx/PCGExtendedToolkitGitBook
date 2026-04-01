@@ -4,8 +4,6 @@ icon: circle-dashed
 
 # Tensor : Noise
 
-A tensor that uses 3D noises as direction.
-
 ### Overview
 
 The Noise Tensor generates directions from 3D noise functions, creating organic, spatially-varying flow fields. The noise is sampled at each probe position to produce a direction vector, enabling natural-looking variations that change smoothly across space. Different noise types (Perlin, Simplex, etc.) produce different flow characteristics.
@@ -115,5 +113,3 @@ This node inherits from the tensor factory provider base.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Tensors/PCGExTensorNoise.h)
-
-

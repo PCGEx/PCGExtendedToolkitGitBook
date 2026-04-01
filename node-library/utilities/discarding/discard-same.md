@@ -1,10 +1,9 @@
 ---
+description: Removes duplicate point collections based on configurable similarity tests.
 icon: circle
 ---
 
 # Discard Same
-
-Removes duplicate point collections based on configurable similarity tests.
 
 ### Overview
 
@@ -412,5 +411,3 @@ Sort direction when Sort Input Values = true.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Filtering/PCGExDiscardSame.h)
-
-

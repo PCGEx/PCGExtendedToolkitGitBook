@@ -1,10 +1,9 @@
 ---
+description: Base factory data classes for all point filters.
 icon: code
 ---
 
 # Point Filter Definition
-
-Base factory data classes for all point filters.
 
 ### Overview
 
@@ -88,5 +87,3 @@ All filter factory data classes share these internal properties:
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Core/PCGExPointFilter.h)
-
-

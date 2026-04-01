@@ -1,10 +1,9 @@
 ---
+description: Merge paths to edge clusters for glorious pathfinding inception.
 icon: share-nodes
 ---
 
 # Path : To Clusters
-
-Merge paths to edge clusters for glorious pathfinding inception.
 
 ### Overview
 
@@ -208,5 +207,3 @@ Graph and edge output properties for the generated cluster.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Paths/PCGExPathToClusters.h)
-
-

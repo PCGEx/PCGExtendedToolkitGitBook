@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how the directional orientation of edges is determined within a
+  cluster.
 icon: sliders-simple
 ---
 
 # Edge Direction Settings
-
-Configures how the directional orientation of edges is determined within a cluster.
 
 ### Overview
 
@@ -86,5 +87,3 @@ Default: `SmallestToGreatest`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExCore-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExCore/Public/Clusters/PCGExEdgeDirectionDetails.h)
-
-

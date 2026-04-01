@@ -1,10 +1,9 @@
 ---
+description: 'Base factory type for smoothing algorithms used by Path : Smooth.'
 icon: arrow-down-from-arc
 ---
 
 # Smoothing
-
-Base factory type for smoothing algorithms used by Path : Smooth.
 
 ### Overview
 

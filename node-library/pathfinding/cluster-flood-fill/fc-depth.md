@@ -1,10 +1,9 @@
 ---
+description: Control fill based on diffusion depth.
 icon: circle-dashed
 ---
 
 # FC : Depth
-
-Control fill based on diffusion depth.
 
 ### Overview
 
@@ -95,5 +94,3 @@ Minimum: 1
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlDepth.h)
-
-

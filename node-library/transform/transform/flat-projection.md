@@ -1,10 +1,9 @@
 ---
+description: Project points from their position in space to the XY plane.
 icon: circle
 ---
 
 # Flat Projection
-
-Project points from their position in space to the XY plane.
 
 ### Overview
 
@@ -159,5 +158,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExFlatProjection.h)
-
-

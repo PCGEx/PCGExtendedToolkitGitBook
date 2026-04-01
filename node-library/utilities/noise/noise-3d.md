@@ -1,10 +1,9 @@
 ---
+description: Core base classes for the 3D noise system.
 icon: arrow-down-from-arc
 ---
 
 # Noise 3D
-
-Core base classes for the 3D noise system.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Attempts to find the contours of all cluster cells.
 icon: circle
 ---
 
 # Find All Cells
-
-Attempts to find the contours of all cluster cells.
 
 ### Overview
 
@@ -166,5 +165,3 @@ _Advanced setting_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Elements/PCGExPathfindingFindAllCells.h)
-
-

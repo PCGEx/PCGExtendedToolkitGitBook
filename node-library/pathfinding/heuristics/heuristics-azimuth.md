@@ -1,10 +1,9 @@
 ---
+description: Heuristics based on direction toward final goal (north star).
 icon: circle-dashed
 ---
 
 # Heuristics : Azimuth
-
-Heuristics based on direction toward final goal (north star).
 
 ### Overview
 
@@ -50,5 +49,3 @@ This heuristic inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExHeuristics-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExHeuristics/Public/Heuristics/PCGExHeuristicAzimuth.h)
-
-

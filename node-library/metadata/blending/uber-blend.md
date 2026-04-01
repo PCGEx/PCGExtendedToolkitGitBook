@@ -1,10 +1,9 @@
 ---
+description: One-stop node to combine multiple blends.
 icon: circle
 ---
 
 # Uber Blend
-
-One-stop node to combine multiple blends.
 
 ### Overview
 
@@ -65,5 +64,3 @@ This node has no node-specific settings beyond the inherited base settings.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Elements/PCGExBlendAttributes.h)
-
-

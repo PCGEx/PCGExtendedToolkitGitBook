@@ -1,10 +1,9 @@
 ---
+description: Compare a value against spatial noise.
 icon: circle-dashed
 ---
 
 # Filter : Noise
-
-Compare a value against spatial noise.
 
 ### Overview
 
@@ -147,5 +146,3 @@ Default: `DBL_COMPARE_TOLERANCE`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsMeta-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsMeta/Public/Filters/Points/PCGExNoiseFilter.h)
-
-

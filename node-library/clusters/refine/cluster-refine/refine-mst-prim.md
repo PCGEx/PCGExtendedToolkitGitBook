@@ -1,10 +1,9 @@
 ---
+description: Refines a cluster into a minimum spanning tree using Prim's algorithm.
 icon: function
 ---
 
 # Refine : MST (Prim)
-
-Refines a cluster into a minimum spanning tree using Prim's algorithm.
 
 ### Overview
 
@@ -59,5 +58,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersRefine/Public/Refinements/PCGExEdgeRefinePrimMST.h)
-
-

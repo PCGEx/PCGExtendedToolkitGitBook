@@ -1,10 +1,9 @@
 ---
+description: Adaptive step size based on field curvature. More accurate in curved regions.
 icon: function
 ---
 
 # Tensor Sampler (Adaptive RK)
-
-Adaptive step size based on field curvature. More accurate in curved regions.
 
 ### Overview
 
@@ -116,5 +115,3 @@ Range: `1` to `16`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsTensors-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsTensors/Public/Samplers/PCGExTensorSamplerAdaptive.h)
-
-

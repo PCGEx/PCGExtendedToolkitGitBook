@@ -1,10 +1,9 @@
 ---
+description: Compares the distance from each point to the nearest target.
 icon: circle-dashed
 ---
 
 # Filter : Distance
-
-Compares the distance from each point to the nearest target.
 
 ### Overview
 
@@ -176,5 +175,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExDistanceFilter.h)
-
-

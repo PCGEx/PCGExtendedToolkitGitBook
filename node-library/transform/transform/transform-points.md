@@ -1,10 +1,9 @@
 ---
+description: Applies transform variations to points with attribute override support.
 icon: circle
 ---
 
 # Transform Points
-
-Applies transform variations to points with attribute override support.
 
 ### Overview
 
@@ -520,5 +519,3 @@ This allows complete flexibility in sourcing variation parameters from either co
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/PCGExTransformPoints.h)
-
-

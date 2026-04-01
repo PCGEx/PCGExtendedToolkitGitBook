@@ -1,10 +1,9 @@
 ---
+description: Heuristics based on distance.
 icon: circle-dashed
 ---
 
 # Heuristics : Shortest Distance
-
-Heuristics based on distance.
 
 ### Overview
 
@@ -54,5 +53,3 @@ This heuristic inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExHeuristics-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExHeuristics/Public/Heuristics/PCGExHeuristicDistance.h)
-
-

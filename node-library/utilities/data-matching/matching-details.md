@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how data collections are matched and paired for operations
+  requiring multiple inputs.
 icon: sliders-simple
 ---
 
 # Matching Details
-
-Configures how data collections are matched and paired for operations requiring multiple inputs.
 
 ### Overview
 
@@ -130,5 +131,3 @@ Default: `1`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExMatching-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExMatching/Public/Details/PCGExMatchingDetails.h)
-
-

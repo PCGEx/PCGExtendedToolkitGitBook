@@ -1,10 +1,9 @@
 ---
+description: Combines multiple bitmasks using bitwise operations.
 icon: circle
 ---
 
 # Bitmask Merge
-
-Combines multiple bitmasks using bitwise operations.
 
 ### Overview
 
@@ -158,5 +157,3 @@ XOR → 0110 (toggle flags 0 and 1)
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Bitmasks/PCGExBitmaskMerge.h)
-
-

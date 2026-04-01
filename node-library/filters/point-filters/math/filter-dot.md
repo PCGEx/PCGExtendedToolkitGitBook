@@ -1,10 +1,9 @@
 ---
+description: Compares the dot value of two vectors.
 icon: circle-dashed
 ---
 
 # Filter : Dot
-
-Compares the dot value of two vectors.
 
 ### Overview
 
@@ -194,5 +193,3 @@ Configuration for the dot product comparison.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExDotFilter.h)
-
-

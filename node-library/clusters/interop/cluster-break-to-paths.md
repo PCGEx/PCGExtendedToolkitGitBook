@@ -1,10 +1,9 @@
 ---
+description: Create individual paths from continuous edge chains.
 icon: circle
 ---
 
 # Cluster : Break to Paths
-
-Create individual paths from continuous edge chains.
 
 ### Overview
 
@@ -169,5 +168,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Paths/PCGExBreakClustersToPaths.h)
-
-

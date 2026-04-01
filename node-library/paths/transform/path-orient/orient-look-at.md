@@ -1,10 +1,9 @@
 ---
+description: Orients points to look at a target point, direction, or position.
 icon: function
 ---
 
 # Orient Look At
-
-Orients points to look at a target point, direction, or position.
 
 ### Overview
 
@@ -77,5 +76,3 @@ The vector attribute to read the look-at direction or position from.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPaths-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPaths/Public/Elements/Orient/PCGExOrientLookAt.h)
-
-

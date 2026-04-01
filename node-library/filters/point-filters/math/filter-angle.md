@@ -1,10 +1,9 @@
 ---
+description: Compares the dot product of directions between a point and its neighbors.
 icon: circle-dashed
 ---
 
 # Filter : Angle
-
-Compares the dot product of directions between a point and its neighbors.
 
 ### Overview
 
@@ -142,5 +141,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExAngleFilter.h)
-
-

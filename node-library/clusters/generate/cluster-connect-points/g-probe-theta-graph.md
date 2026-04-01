@@ -1,10 +1,9 @@
 ---
+description: Theta/Yao graph spanner - connects to nearest in angular cones.
 icon: circle-dashed
 ---
 
 # G-Probe : Theta Graph
-
-Theta/Yao graph spanner - connects to nearest in angular cones.
 
 ### Overview
 

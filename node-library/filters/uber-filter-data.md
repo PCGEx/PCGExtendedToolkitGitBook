@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters entire point collections based on how many points pass filter
+  conditions.
 icon: circle-plus
 ---
 
 # Uber Filter (Data)
-
-Filters entire point collections based on how many points pass filter conditions.
 
 ### Overview
 
@@ -343,5 +344,3 @@ Multiple filters can be connected and are combined based on their factory settin
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Filtering/PCGExUberFilterCollections.h)
-
-

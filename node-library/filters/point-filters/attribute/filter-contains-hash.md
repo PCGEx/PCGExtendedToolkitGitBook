@@ -1,10 +1,11 @@
 ---
+description: >-
+  Checks whether a given value hash is contained within one or more sets of
+  values.
 icon: circle-dashed
 ---
 
 # Filter : Contains (Hash)
-
-Checks whether a given value hash is contained within one or more sets of values.
 
 ### Overview
 
@@ -151,5 +152,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExValueHashFilter.h)
-
-

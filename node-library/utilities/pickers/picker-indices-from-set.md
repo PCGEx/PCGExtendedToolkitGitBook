@@ -1,10 +1,9 @@
 ---
+description: A Picker that accepts lists of values, read from one or more attributes.
 icon: circle-dashed
 ---
 
 # Picker : Indices from Set
-
-A Picker that accepts lists of values, read from one or more attributes.
 
 ### Overview
 
@@ -91,5 +90,3 @@ This picker inherits common settings from the base picker configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExPickers-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExPickers/Public/Pickers/PCGExPickerAttributeSet.h)
-
-

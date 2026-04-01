@@ -1,10 +1,11 @@
 ---
+description: >-
+  Relaxes cluster vertices by detecting and resolving overlaps between spheres
+  centered on each vertex.
 icon: function
 ---
 
 # Radius Fitting
-
-Relaxes cluster vertices by detecting and resolving overlaps between spheres centered on each vertex.
 
 ### Overview
 
@@ -98,5 +99,3 @@ See Fitting Relax Base for details.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Relaxations/PCGExRadiusFittingRelax.h)
-
-

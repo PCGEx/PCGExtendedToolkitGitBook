@@ -1,10 +1,9 @@
 ---
+description: Copy attributes from the source point to all sub-points.
 icon: function
 ---
 
 # Inherit First
-
-Copy attributes from the source point to all sub-points.
 
 ### Overview
 
@@ -50,5 +49,3 @@ The Default Blending for this factory is set to `Copy` (copy from source point) 
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExBlending-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExBlending/Public/SubPoints/DataBlending/PCGExSubPointsBlendInheritStart.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  Configures how seed points are transformed and annotated based on the cells
+  they produced.
 icon: sliders-simple
 ---
 
 # Cell Seed Mutation Details
-
-Configures how seed points are transformed and annotated based on the cells they produced.
 
 ### Overview
 
@@ -146,5 +147,3 @@ Default: `None`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExGraphs-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExGraphs/Public/Clusters/Artifacts/PCGExCellDetails.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Write the number of times a point shares its location with another.
 icon: circle
 ---
 
 # Collocation Count
-
-Write the number of times a point shares its location with another.
 
 ### Overview
 
@@ -100,5 +99,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSpatial-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSpatial/Public/Elements/PCGExCollocationCount.h)
-
-

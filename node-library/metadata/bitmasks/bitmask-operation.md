@@ -1,10 +1,9 @@
 ---
+description: Applies bitwise operations to point attributes.
 icon: circle
 ---
 
 # Bitmask Operation
-
-Applies bitwise operations to point attributes.
 
 ### Overview
 
@@ -233,5 +232,3 @@ Result: All flags cleared
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/Bitmasks/PCGExBitwiseOperation.h)
-
-

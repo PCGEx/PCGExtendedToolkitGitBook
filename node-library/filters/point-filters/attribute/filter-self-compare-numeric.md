@@ -1,10 +1,11 @@
 ---
+description: >-
+  Compares an attribute value at the current point against the same attribute at
+  a different index.
 icon: circle-dashed
 ---
 
 # Filter : Self Compare (Numeric)
-
-Compares an attribute value at the current point against the same attribute at a different index.
 
 ### Overview
 
@@ -208,5 +209,3 @@ Default: `Fail`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExNumericSelfCompareFilter.h)
-
-

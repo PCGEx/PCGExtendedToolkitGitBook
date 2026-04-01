@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters vertices by comparing the directions of their connected edges against
+  a reference direction.
 icon: circle-dashed
 ---
 
 # Vtx Filter : Edge Direction
-
-Filters vertices by comparing the directions of their connected edges against a reference direction.
 
 ### Overview
 
@@ -176,5 +177,3 @@ Settings for vector hash comparison mode.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Nodes/PCGExNodeEdgeDirectionFilter.h)
-
-

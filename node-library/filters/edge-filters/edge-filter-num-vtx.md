@@ -4,8 +4,6 @@ icon: circle-dashed
 
 # Edge Filter : Num Vtx
 
-Filters edges based on the number of neighbors (adjacency count) at their endpoint vertices.
-
 ### Overview
 
 This edge filter evaluates the neighbor count at edge endpoints and compares the result against a threshold. The mode determines how endpoint neighbor counts are combined — using the sum of both endpoints, requiring any endpoint to meet the threshold, or requiring both endpoints to meet it. This allows you to filter edges based on connectivity patterns, such as keeping only edges between well-connected vertices or removing edges that connect to leaf nodes.
@@ -157,5 +155,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Edges/PCGExEdgeNeighborsCountFilter.h)
-
-

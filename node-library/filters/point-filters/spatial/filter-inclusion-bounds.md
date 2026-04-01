@@ -1,10 +1,11 @@
 ---
+description: >-
+  Tests whether points intersect or are contained within target bounding
+  volumes.
 icon: circle-dashed
 ---
 
 # Filter : Inclusion (Bounds)
-
-Tests whether points intersect or are contained within target bounding volumes.
 
 ### Overview
 
@@ -189,5 +190,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExBoundsFilter.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Tests input data against targets using match rules.
 icon: circle-dashed
 ---
 
 # Filter : Data Match
-
-Tests input data against targets using match rules.
 
 ### Overview
 

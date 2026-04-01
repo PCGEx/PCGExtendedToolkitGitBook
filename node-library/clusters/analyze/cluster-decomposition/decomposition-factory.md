@@ -1,10 +1,9 @@
 ---
+description: Base factory for cluster decomposition operations.
 icon: arrow-down-from-arc
 ---
 
 # Decomposition Factory
-
-Base factory for cluster decomposition operations.
 
 ### Overview
 

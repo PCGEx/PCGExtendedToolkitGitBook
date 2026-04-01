@@ -1,10 +1,9 @@
 ---
+description: Connects to a specific index, ignoring search radius.
 icon: circle-dashed
 ---
 
 # Probe : Index
-
-Connects to a specific index, ignoring search radius.
 
 ### Overview
 

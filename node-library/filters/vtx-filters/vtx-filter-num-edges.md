@@ -1,10 +1,9 @@
 ---
+description: Filters vertices based on the number of edges (neighbors) connected to them.
 icon: circle-dashed
 ---
 
 # Vtx Filter : Num Edges
-
-Filters vertices based on the number of edges (neighbors) connected to them.
 
 ### Overview
 
@@ -127,5 +126,3 @@ Default: `DBL_COMPARE_TOLERANCE`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Nodes/PCGExNodeNeighborsCountFilter.h)
-
-

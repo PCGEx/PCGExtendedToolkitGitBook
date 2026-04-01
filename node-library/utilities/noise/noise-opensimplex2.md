@@ -1,10 +1,9 @@
 ---
+description: OpenSimplex2 - patent-free, high quality gradient noise.
 icon: circle-dashed
 ---
 
 # Noise : OpenSimplex2
-
-OpenSimplex2 - patent-free, high quality gradient noise.
 
 ### Overview
 
@@ -138,5 +137,3 @@ This noise inherits common settings from the base noise configuration.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExNoise3D-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExNoise3D/Public/Noises/PCGExNoiseOpenSimplex2.h)
-
-

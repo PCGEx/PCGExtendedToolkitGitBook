@@ -1,10 +1,9 @@
 ---
+description: Checks whether segments between consecutive points cross path-like data.
 icon: circle-dashed
 ---
 
 # Filter : Segment Cross
-
-Checks whether segments between consecutive points cross path-like data.
 
 ### Overview
 
@@ -142,5 +141,3 @@ Default: `true`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExSegmentCrossFilter.h)
-
-

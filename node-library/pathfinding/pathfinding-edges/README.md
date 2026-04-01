@@ -1,10 +1,9 @@
 ---
+description: Extract paths from edges clusters.
 icon: circle-plus
 ---
 
 # Pathfinding : Edges
-
-Extract paths from edges clusters.
 
 ### Overview
 
@@ -286,5 +285,3 @@ _Advanced setting_
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Elements/PCGExPathfindingEdges.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  Identifies bridge edges using Tarjan's DFS algorithm and removes them from the
+  cluster.
 icon: function
 ---
 
 # Refine : DFS (Tarjan)
-
-Identifies bridge edges using Tarjan's DFS algorithm and removes them from the cluster.
 
 ### Overview
 
@@ -57,5 +58,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersRefine/Public/Refinements/PCGExEdgeRefineTrajanDFS.h)
-
-

@@ -1,10 +1,11 @@
 ---
+description: >-
+  Creates a graph from cell adjacency relationships. Points are cell centroids,
+  edges connect adjacent cells.
 icon: share-nodes
 ---
 
 # Cluster : Cell Diagram
-
-Creates a graph from cell adjacency relationships. Points are cell centroids, edges connect adjacent cells.
 
 ### Overview
 
@@ -395,5 +396,3 @@ This node inherits common settings from its base class.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClustersDiagrams/Public/Elements/PCGExBuildCellDiagram.h)
-
-

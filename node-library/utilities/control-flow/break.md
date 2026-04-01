@@ -1,10 +1,9 @@
 ---
+description: Tracks recursion depth and conditions to control recursive subgraph execution.
 icon: circle
 ---
 
 # Break
-
-Tracks recursion depth and conditions to control recursive subgraph execution.
 
 ### Overview
 
@@ -441,5 +440,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFoundations-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFoundations/Public/Elements/ControlFlow/PCGExRecursionTracker.h)
-
-

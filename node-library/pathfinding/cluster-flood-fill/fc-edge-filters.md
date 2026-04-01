@@ -1,10 +1,9 @@
 ---
+description: Filter edges along which the diffusion can occur.
 icon: circle-dashed
 ---
 
 # FC : Edge Filters
-
-Filter edges along which the diffusion can occur.
 
 ### Overview
 
@@ -64,5 +63,3 @@ Note: The Source setting is not available for this control as it always evaluate
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsFloodFill-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsFloodFill/Public/FillControls/PCGExFillControlEdgeFilters.h)
-
-

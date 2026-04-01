@@ -1,10 +1,9 @@
 ---
+description: Core base classes for the picker system.
 icon: arrow-down-from-arc
 ---
 
 # Picker
-
-Core base classes for the picker system.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Turns splines to paths.
 icon: circle
 ---
 
 # Spline to Path
-
-Turns splines to paths.
 
 ### Overview
 

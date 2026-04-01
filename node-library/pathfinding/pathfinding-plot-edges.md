@@ -1,10 +1,11 @@
 ---
+description: >-
+  Extract a single path from edges clusters, going through every seed points in
+  order.
 icon: circle-plus
 ---
 
 # Pathfinding : Plot Edges
-
-Extract a single path from edges clusters, going through every seed points in order.
 
 ### Overview
 
@@ -271,5 +272,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsPathfinding-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsPathfinding/Public/Elements/PCGExPathfindingPlotEdges.h)
-
-

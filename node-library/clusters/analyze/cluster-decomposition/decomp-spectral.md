@@ -1,10 +1,9 @@
 ---
+description: Partition clusters using graph Laplacian spectral bisection.
 icon: function
 ---
 
 # Decomp : Spectral
-
-Partition clusters using graph Laplacian spectral bisection.
 
 ### Overview
 

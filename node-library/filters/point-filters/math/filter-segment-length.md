@@ -1,10 +1,11 @@
 ---
+description: >-
+  Compares the distance between the tested point and another point inside the
+  same dataset.
 icon: circle-dashed
 ---
 
 # Filter : Segment Length
-
-Compares the distance between the tested point and another point inside the same dataset.
 
 ### Overview
 
@@ -271,5 +272,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExSegmentLengthFilter.h)
-
-

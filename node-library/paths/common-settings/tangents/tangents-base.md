@@ -1,10 +1,9 @@
 ---
+description: Base factory and configuration structures for tangent calculation systems.
 icon: arrow-down-from-arc
 ---
 
 # Tangents (Base)
-
-Base factory and configuration structures for tangent calculation systems.
 
 ### Overview
 

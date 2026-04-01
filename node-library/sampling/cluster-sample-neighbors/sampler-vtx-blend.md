@@ -1,10 +1,11 @@
 ---
+description: >-
+  Create a vertex attribute sampler that uses blend operations to blend values
+  from neighbors.
 icon: circle-dashed
 ---
 
 # Sampler : Vtx Blend
-
-Create a vertex attribute sampler that uses blend operations to blend values from neighbors.
 
 ### Overview
 
@@ -60,5 +61,3 @@ Each attribute uses its own blend operation's rules.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/Meta/NeighborSamplers/PCGExNeighborSampleBlend.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: Creates clusters from mesh topology.
 icon: share-nodes
 ---
 
 # Mesh to Clusters
-
-Creates clusters from mesh topology.
 
 ### Overview
 
@@ -184,5 +183,3 @@ Which input point attributes to forward onto the generated clusters.
 ***
 
 📦 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Elements/PCGExMeshToClusters.h)
-
-

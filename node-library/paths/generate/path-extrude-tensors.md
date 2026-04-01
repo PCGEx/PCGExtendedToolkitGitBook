@@ -1,10 +1,9 @@
 ---
+description: Extrude input points into paths along tensors.
 icon: circle-plus
 ---
 
 # Path : Extrude Tensors
-
-Extrude input points into paths along tensors.
 
 ### Overview
 

@@ -1,10 +1,9 @@
 ---
+description: Partition clusters by extracting largest axis-aligned boxes.
 icon: function
 ---
 
 # Decomp : Max Boxes
-
-Partition clusters by extracting largest axis-aligned boxes.
 
 ### Overview
 

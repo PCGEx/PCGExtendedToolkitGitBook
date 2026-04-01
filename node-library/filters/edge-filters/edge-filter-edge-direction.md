@@ -1,10 +1,11 @@
 ---
+description: >-
+  Filters edges by comparing their direction against a reference direction using
+  dot product or hash comparison.
 icon: circle-dashed
 ---
 
 # Edge Filter : Edge Direction
-
-Filters edges by comparing their direction against a reference direction using dot product or hash comparison.
 
 ### Overview
 
@@ -162,5 +163,3 @@ Settings for vector hash comparison mode.
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsClusters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsClusters/Public/Filters/Edges/PCGExIsoEdgeDirectionFilter.h)
-
-

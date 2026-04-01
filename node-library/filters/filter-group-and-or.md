@@ -1,10 +1,9 @@
 ---
+description: Combines multiple filters into a single composite filter.
 icon: circle-dashed
 ---
 
 # Filter Group (And/Or)
-
-Combines multiple filters into a single composite filter.
 
 ### Overview
 
@@ -127,5 +126,3 @@ Default: `false`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExFilters-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExFilters/Public/Filters/Points/PCGExFilterGroup.h)
-
-

@@ -1,10 +1,9 @@
 ---
+description: A simple texture parameter definition.
 icon: circle-dashed
 ---
 
 # Texture Param
-
-A simple texture parameter definition.
 
 ### Overview
 
@@ -165,5 +164,3 @@ Default: `-1`
 ***
 
 [![Static Badge](https://img.shields.io/badge/Source-PCGExElementsSampling-473F69)](https://github.com/Nebukam/PCGExtendedToolkit/blob/main/Source/PCGExElementsSampling/Public/Core/PCGExTexParamFactoryProvider.h)
-
-
